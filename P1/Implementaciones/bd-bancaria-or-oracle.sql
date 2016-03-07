@@ -1,6 +1,19 @@
-CREATE OR REPLACE TYPE tipoOperacion as ENUM( 'ingresada', 'retirada', 'transferida');
+DROP TABLE usuarioTabla_p2;
+DROP TABLE oficinaTabla_p2;
+DROP TABLE cuentaTabla_p2;
+DROP TABLE operacionTabla_p2;
+DROP TABLE tiene_p2;
+DROP TABLE pertenece_p2;
+DROP TABLE hace_p2;
+DROP TYPE address_p2 FORCE;
+DROP TYPE usuario_p2;
+DROP TYPE cuentaCorriente_p2;
+DROP TYPE cuentaAhorro_p2;
+DROP TYPE cuenta_p2 FORCE;
+DROP TYPE oficina_p2;
+DROP TYPE operacion_p2;
 
-CREATE OR REPLACE TYPE address as OBJECT(
+CREATE OR REPLACE TYPE address_p2 as OBJECT(
 	calle VARCHAR(30),
 	portal VARCHAR(10),
 	piso INT(3),
@@ -8,62 +21,62 @@ CREATE OR REPLACE TYPE address as OBJECT(
 	pais VARCHAR(20)
 );
 
-CREATE OR REPLACE TYPE usuario as OBJECT(
-	dni VARCHAR(9),
-	nombre VARCHAR(20),
-	apellidos VARCHAR(40),
-	edad INT(3),
-	direccion address,
-	email VARCHAR(20),
-	telefono INT(9)
+CREATE OR REPLACE TYPE usuario_p2 as OBJECT(
+	dni VARCHAR(10),
+	nombre VARCHAR(30),
+	apellidos VARCHAR(80),
+	edad NUMBER(3),
+	direccion address_p2,
+	email VARCHAR(80),
+	telefono NUMBER(15)
 );
 
-CREATE OR REPLACE TYPE cuenta as OBJECT(
+CREATE OR REPLACE TYPE cuenta_p2 as OBJECT(
 	iban VARCHAR(34),
 	numero VARCHAR(34),
-	creacion DATE(40),
+	creacion DATE,
 	saldo FLOAT(20)
 )NOT FINAL;
 
-CREATE OR REPLACE TYPE cuentaCorriente as OBJECT under cuenta();
+CREATE OR REPLACE TYPE cuentaCorriente_p2 UNDER cuenta_p2();
 
-CREATE OR REPLACE TYPE cuentaAhorro as OBJECT under cuenta(
+CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
 	interes FLOAT(5),
 	dia DATE
 );
 
-CREATE OR REPLACE TYPE oficina as OBJECT(
+CREATE OR REPLACE TYPE oficina_p2 as OBJECT(
 	codigo VARCHAR(50),
-	direccion address,
+	direccion address_p2,
 	telefono INT(9)
 );
 
-CREATE OR REPLACE TYPE operacion as OBJECT(
-	contador INT(50),
-	tipo VARCHAR(20),		--mirar si hacer tipo nuevo
+CREATE OR REPLACE TYPE operacion_p2 as OBJECT(
+	contador INT(20),
+	tipo VARCHAR(15),		--mirar si hacer tipo nuevo
 	fechaHora DATE,		--juntar fecha y hora porque el tipo date en oracle almacena las dos
 	cOrigen VARCHAR(34),
 	cDestino VARCHAR(34),
-	sucursal VARCHAR(50),
-	concepto VARCHAR(50)
+	sucursal VARCHAR(80),
+	concepto VARCHAR(200)
 );
 
-CREATE TABLE usuarioTabla OF usuario(PRIMARY KEY(dni));
-CREATE TABLE cuentaTabla OF cuenta(PRIMARY KEY(iban));
-CREATE TABLE oficinaTabla OF oficina(PRIMARY KEY(codigo));
-CREATE TABLE operacionTabla OF operacion(PRIMARY KEY(contador));
+CREATE TABLE usuarioTabla_p2 OF usuario_p2(PRIMARY KEY(dni));
+CREATE TABLE cuentaTabla_p2 OF cuenta_p2(PRIMARY KEY(iban));
+CREATE TABLE oficinaTabla_p2 OF oficina_p2(PRIMARY KEY(codigo));
+CREATE TABLE operacionTabla_p2 OF operacion_p2(PRIMARY KEY(contador));
 
-CREATE TABLE tiene(
-	dni REF(usuarioTabla),
-	iban REF(cuentaTabla)
+CREATE TABLE tiene_p2(
+	dni REF usuario_p2,
+	iban REF cuenta_p2
 );
 
-CREATE TABLE pertenece(
-	codigo REF(oficinaTabla),
-	iban REF(cuentaTabla)
+CREATE TABLE pertenece_p2(
+	codigo REF oficina_p2,
+	iban REF cuenta_p2
 );
 
-CREATE TABLE hace(
-	iban REF(cuentaTabla),
-	contador REF(operacionTabla)
+CREATE TABLE hace_p2(
+	iban REF cuenta_p2,
+	contador REF operacion_p2
 );
