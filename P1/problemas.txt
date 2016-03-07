@@ -1,0 +1,16 @@
+Problemas encontrados durante la instalación de los SGBD:
+
+- Para el uso de la máquina virtual, se decide configurarla desde la consola de la propia máquina, pero se usará 
+conexión a través de ssh para limitar los posibles problemas con el teclado, por ejemplo.
+ 
+- Como se ha explicado en el enunciado de la práctica, la instalación de Oracle da problemas con la memoria SWAP.
+Se ha solucionado con las instrucciones proporcionadas.
+
+- Se ha encontrado un problema a la hora de elegir el puerto para futuras configuraciones en caso de querer 
+conectarse desde Solaris. Se ha decidido buscar y elegir el puerto que usa por defecto MySql = 13306.
+
+- A la hora de configurar Oracle se ha encontrado un problema relativo al PATH, ya que una mala configuración (no se ha
+copiado correctamente una instrucción, un espacio se ha omitido), impedía arrancar el servidor oracle. 
+
+- Se han encontrado varios problemas con la configuración debido a la inexperience con PostgreSQL. Se ha seguido un tutorial
+de internet para poder acceder normalmente desde root, sin tener que conectarnos al usuario postgres. 
