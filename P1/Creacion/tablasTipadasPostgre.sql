@@ -1,19 +1,12 @@
 CREATE TYPE tipoOperacion as ENUM( 'ingresada', 'retirada', 'transferida');
 
-CREATE TYPE address AS(
-	calle VARCHAR(30),
-	portal VARCHAR(10),
-	piso INT(3), 
-	ciudad VARCHAR(20),
-	pais VARCHAR(20)
-);
 
 CREATE TYPE usuario AS(
 	dni VARCHAR(9),
 	nombre VARCHAR(20),
 	apellidos VARCHAR(40),
 	edad INT(3),
-	direccion address,
+	direccion VARCHAR(80),
 	email VARCHAR(20),
 	telefono INT(9)
 );
@@ -33,7 +26,7 @@ CREATE TYPE cuentaAhorro AS cuenta(
 
 CREATE TYPE oficina AS(
 	codigo VARCHAR(50),
-	direccion address,
+	direccion VARCHAR(80),
 	telefono INT(9)
 );
 

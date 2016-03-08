@@ -5,7 +5,6 @@ DROP TABLE operacionTabla_p2;
 DROP TABLE tiene_p2;
 DROP TABLE pertenece_p2;
 DROP TABLE hace_p2;
-DROP TYPE address_p2 FORCE;
 DROP TYPE usuario_p2;
 DROP TYPE cuentaCorriente_p2;
 DROP TYPE cuentaAhorro_p2;
@@ -13,20 +12,13 @@ DROP TYPE cuenta_p2 FORCE;
 DROP TYPE oficina_p2;
 DROP TYPE operacion_p2;
 
-CREATE OR REPLACE TYPE address_p2 as OBJECT(
-	calle VARCHAR(30),
-	portal VARCHAR(10),
-	piso INT(3),
-	ciudad VARCHAR(20),
-	pais VARCHAR(20)
-);
 
 CREATE OR REPLACE TYPE usuario_p2 as OBJECT(
 	dni VARCHAR(10),
 	nombre VARCHAR(30),
 	apellidos VARCHAR(80),
 	edad NUMBER(3),
-	direccion address_p2,
+	direccion VARCHAR(80),
 	email VARCHAR(80),
 	telefono NUMBER(15)
 );
@@ -47,7 +39,7 @@ CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
 
 CREATE OR REPLACE TYPE oficina_p2 as OBJECT(
 	codigo VARCHAR(50),
-	direccion address_p2,
+	direccion VARCHAR(80),
 	telefono INT(9)
 );
 
