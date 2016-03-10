@@ -30,6 +30,8 @@ CREATE OR REPLACE TYPE cuenta_p2 as OBJECT(
 	saldo FLOAT(20)
 )NOT FINAL;
 
+
+
 CREATE OR REPLACE TYPE cuentaCorriente_p2 UNDER cuenta_p2();
 
 CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(

@@ -1,0 +1,8 @@
+Para obtener referencias de una tabla
+
+select ref(u) from usuarioTabla_p2 u where dni = '31168350Y';
+Resultado:
+REF(U)
+--------------------------------------------------------------------------------
+00002802092DB137662FF1787CE050007F01010D062DB1354EEBBC4843E050007F01010D020040A6
+FA0000
