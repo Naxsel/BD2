@@ -27,8 +27,8 @@ CREATE TABLE Tiene_p1 (
   dni VARCHAR(10),
   iban VARCHAR(34),
   titular CHAR NOT NULL,
-  FOREIGN KEY (dni) REFERENCES Usuario(dni),
-  FOREIGN KEY (iban) REFERENCES Cuenta(iban),
+  FOREIGN KEY (dni) REFERENCES Usuario_p1(dni),
+  FOREIGN KEY (iban) REFERENCES Cuenta_p1(iban),
   PRIMARY KEY (dni,iban)
 );
 
@@ -41,9 +41,9 @@ CREATE TABLE Operacion_p1 (
   cdestino VARCHAR(34),
   sucursal VARCHAR(80),
   concepto VARCHAR(200),
-  FOREIGN KEY (iban) REFERENCES Cuenta(iban),
-  FOREIGN KEY (corigen) REFERENCES Cuenta(iban),
-  FOREIGN KEY (cdestino) REFERENCES Cuenta(iban),
+  FOREIGN KEY (iban) REFERENCES Cuenta_p1(iban),
+  FOREIGN KEY (corigen) REFERENCES Cuenta_p1(iban),
+  FOREIGN KEY (cdestino) REFERENCES Cuenta_p1(iban),
   PRIMARY KEY (iban,contador)
 );
 
@@ -63,9 +63,8 @@ CREATE TABLE Oficina_p1 (
 CREATE TABLE Pertenece_p1 (
   iban VARCHAR(34),
   codigo NUMBER(4),
-  FOREIGN KEY (iban) REFERENCES Cuenta(iban),
-  FOREIGN KEY (codigo) REFERENCES Oficina(codigo),
+  FOREIGN KEY (iban) REFERENCES Cuenta_p1(iban),
+  FOREIGN KEY (codigo) REFERENCES Oficina_p1(codigo),
   PRIMARY KEY (iban,codigo)
 );
 
-SELECT * from DBA_ALL_TABLES;
