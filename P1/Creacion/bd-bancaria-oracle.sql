@@ -32,8 +32,8 @@ CREATE TABLE Tiene_p1 (
   PRIMARY KEY (dni,iban)
 );
 
+drop table Operacion_p1;
 CREATE TABLE Operacion_p1 (
-  iban VARCHAR(34),
   contador INT NOT NULL ,
   tipo CHAR NOT NULL,
   fechahora TIMESTAMP NOT NULL,
@@ -41,10 +41,9 @@ CREATE TABLE Operacion_p1 (
   cdestino VARCHAR(34),
   sucursal VARCHAR(80),
   concepto VARCHAR(200),
-  FOREIGN KEY (iban) REFERENCES Cuenta_p1(iban),
   FOREIGN KEY (corigen) REFERENCES Cuenta_p1(iban),
   FOREIGN KEY (cdestino) REFERENCES Cuenta_p1(iban),
-  PRIMARY KEY (iban,contador)
+  PRIMARY KEY (contador)
 );
 
 CREATE TABLE CAhorro_p1 (
