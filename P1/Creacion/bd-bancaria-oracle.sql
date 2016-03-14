@@ -26,7 +26,6 @@ CREATE TABLE Cuenta_p1 (
 CREATE TABLE Tiene_p1 (
   dni VARCHAR(10),
   iban VARCHAR(34),
-  titular CHAR NOT NULL,
   FOREIGN KEY (dni) REFERENCES Usuario_p1(dni),
   FOREIGN KEY (iban) REFERENCES Cuenta_p1(iban),
   PRIMARY KEY (dni,iban)
