@@ -373,8 +373,8 @@ IBAN</columns>
       <schema id="2" parent="1" name="public">
         <object-id>2200</object-id>
         <comment>standard public schema</comment>
-        <introspection-state-number>860</introspection-state-number>
-        <introspection-timestamp>2016-03-14.11:13:52.804</introspection-timestamp>
+        <introspection-state-number>5844</introspection-state-number>
+        <introspection-timestamp>2016-03-14.13:10:46.796</introspection-timestamp>
       </schema>
       <object-type id="3" parent="2" name="tipooperacion">
         <object-id>24815</object-id>
@@ -414,39 +414,39 @@ IBAN</columns>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
       <object-type id="9" parent="2" name="tipooperacion_p3">
-        <object-id>25100</object-id>
-        <state-number>845</state-number>
+        <object-id>26595</object-id>
+        <state-number>5831</state-number>
         <sub-kind>ENUM</sub-kind>
         <sub-category>ENUM</sub-category>
         <labels>ingresada,retirada,transferida</labels>
       </object-type>
       <object-type id="10" parent="2" name="usuario_p3">
-        <object-id>25109</object-id>
-        <state-number>846</state-number>
+        <object-id>26603</object-id>
+        <state-number>5832</state-number>
         <sub-kind>COMPOSITE</sub-kind>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
       <object-type id="11" parent="2" name="cuenta_p3">
-        <object-id>25112</object-id>
-        <state-number>847</state-number>
+        <object-id>26606</object-id>
+        <state-number>5833</state-number>
         <sub-kind>COMPOSITE</sub-kind>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
       <object-type id="12" parent="2" name="cuentaahorro_p3">
-        <object-id>25116</object-id>
-        <state-number>849</state-number>
+        <object-id>26610</object-id>
+        <state-number>5835</state-number>
         <sub-kind>COMPOSITE</sub-kind>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
       <object-type id="13" parent="2" name="oficina_p3">
-        <object-id>25119</object-id>
-        <state-number>850</state-number>
+        <object-id>26613</object-id>
+        <state-number>5836</state-number>
         <sub-kind>COMPOSITE</sub-kind>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
       <object-type id="14" parent="2" name="operacion_p3">
-        <object-id>25122</object-id>
-        <state-number>851</state-number>
+        <object-id>26616</object-id>
+        <state-number>5837</state-number>
         <sub-kind>COMPOSITE</sub-kind>
         <sub-category>COMPOSITE</sub-category>
       </object-type>
@@ -455,675 +455,645 @@ IBAN</columns>
         <state-number>769</state-number>
       </table>
       <table id="16" parent="2" name="cuentaahorrotabla_p3">
-        <object-id>25139</object-id>
-        <state-number>855</state-number>
+        <object-id>26627</object-id>
+        <state-number>5840</state-number>
       </table>
       <table id="17" parent="2" name="cuentacorrientetabla">
         <object-id>24847</object-id>
         <state-number>768</state-number>
       </table>
-      <table id="18" parent="2" name="cuentacorrientetabla_p3">
-        <object-id>25133</object-id>
-        <state-number>854</state-number>
-      </table>
-      <table id="19" parent="2" name="cuentatabla">
+      <table id="18" parent="2" name="cuentatabla">
         <object-id>24842</object-id>
         <state-number>774</state-number>
       </table>
-      <table id="20" parent="2" name="cuentatabla_p3">
-        <object-id>25128</object-id>
-        <state-number>860</state-number>
+      <table id="19" parent="2" name="cuentatabla_p3">
+        <object-id>26622</object-id>
+        <state-number>5844</state-number>
       </table>
-      <table id="21" parent="2" name="hace">
+      <table id="20" parent="2" name="hace">
         <object-id>24895</object-id>
         <state-number>774</state-number>
       </table>
-      <table id="22" parent="2" name="hace_p3">
-        <object-id>25181</object-id>
-        <state-number>860</state-number>
-      </table>
-      <table id="23" parent="2" name="oficinatabla">
+      <table id="21" parent="2" name="oficinatabla">
         <object-id>24859</object-id>
         <state-number>773</state-number>
       </table>
-      <table id="24" parent="2" name="oficinatabla_p3">
-        <object-id>25145</object-id>
-        <state-number>859</state-number>
+      <table id="22" parent="2" name="oficinatabla_p3">
+        <object-id>26633</object-id>
+        <state-number>5844</state-number>
       </table>
-      <table id="25" parent="2" name="operaciontabla">
+      <table id="23" parent="2" name="operaciontabla">
         <object-id>24864</object-id>
         <state-number>774</state-number>
       </table>
-      <table id="26" parent="2" name="operaciontabla_p3">
-        <object-id>25150</object-id>
-        <state-number>860</state-number>
+      <table id="24" parent="2" name="operaciontabla_p3">
+        <object-id>26638</object-id>
+        <state-number>5842</state-number>
       </table>
-      <table id="27" parent="2" name="pertenece">
+      <table id="25" parent="2" name="pertenece">
         <object-id>24882</object-id>
         <state-number>773</state-number>
       </table>
-      <table id="28" parent="2" name="pertenece_p3">
-        <object-id>25168</object-id>
-        <state-number>859</state-number>
+      <table id="26" parent="2" name="pertenece_p3">
+        <object-id>26666</object-id>
+        <state-number>5844</state-number>
       </table>
-      <table id="29" parent="2" name="tiene">
+      <table id="27" parent="2" name="tiene">
         <object-id>24869</object-id>
         <state-number>772</state-number>
       </table>
-      <table id="30" parent="2" name="tiene_p3">
-        <object-id>25155</object-id>
-        <state-number>858</state-number>
+      <table id="28" parent="2" name="tiene_p3">
+        <object-id>26653</object-id>
+        <state-number>5843</state-number>
       </table>
-      <table id="31" parent="2" name="usuariotabla">
+      <table id="29" parent="2" name="usuariotabla">
         <object-id>24837</object-id>
         <state-number>772</state-number>
       </table>
-      <table id="32" parent="2" name="usuariotabla_p3">
-        <object-id>25123</object-id>
-        <state-number>858</state-number>
+      <table id="30" parent="2" name="usuariotabla_p3">
+        <object-id>26617</object-id>
+        <state-number>5843</state-number>
       </table>
-      <object-attribute id="33" parent="4" name="dni">
+      <object-attribute id="31" parent="4" name="dni">
         <data-type>varchar(9)</data-type>
       </object-attribute>
-      <object-attribute id="34" parent="4" name="nombre">
+      <object-attribute id="32" parent="4" name="nombre">
         <data-type>varchar(20)</data-type>
       </object-attribute>
-      <object-attribute id="35" parent="4" name="apellidos">
+      <object-attribute id="33" parent="4" name="apellidos">
         <data-type>varchar(40)</data-type>
       </object-attribute>
-      <object-attribute id="36" parent="4" name="edad">
+      <object-attribute id="34" parent="4" name="edad">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="37" parent="4" name="direccion">
+      <object-attribute id="35" parent="4" name="direccion">
         <data-type>varchar(80)</data-type>
       </object-attribute>
-      <object-attribute id="38" parent="4" name="email">
+      <object-attribute id="36" parent="4" name="email">
         <data-type>varchar(20)</data-type>
       </object-attribute>
-      <object-attribute id="39" parent="4" name="telefono">
+      <object-attribute id="37" parent="4" name="telefono">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="40" parent="5" name="iban">
+      <object-attribute id="38" parent="5" name="iban">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="41" parent="5" name="numero">
+      <object-attribute id="39" parent="5" name="numero">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="42" parent="5" name="creacion">
+      <object-attribute id="40" parent="5" name="creacion">
         <data-type>date</data-type>
       </object-attribute>
-      <object-attribute id="43" parent="5" name="saldo">
+      <object-attribute id="41" parent="5" name="saldo">
         <data-type>real</data-type>
       </object-attribute>
-      <object-attribute id="44" parent="6" name="interes">
+      <object-attribute id="42" parent="6" name="interes">
         <data-type>real</data-type>
       </object-attribute>
-      <object-attribute id="45" parent="6" name="dia">
+      <object-attribute id="43" parent="6" name="dia">
         <data-type>date</data-type>
       </object-attribute>
-      <object-attribute id="46" parent="7" name="codigo">
+      <object-attribute id="44" parent="7" name="codigo">
         <data-type>varchar(50)</data-type>
       </object-attribute>
-      <object-attribute id="47" parent="7" name="direccion">
+      <object-attribute id="45" parent="7" name="direccion">
         <data-type>varchar(80)</data-type>
       </object-attribute>
-      <object-attribute id="48" parent="7" name="telefono">
+      <object-attribute id="46" parent="7" name="telefono">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="49" parent="8" name="contador">
+      <object-attribute id="47" parent="8" name="contador">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="50" parent="8" name="tipo">
+      <object-attribute id="48" parent="8" name="tipo">
         <data-type>varchar(20)</data-type>
       </object-attribute>
-      <object-attribute id="51" parent="8" name="fechahora">
+      <object-attribute id="49" parent="8" name="fechahora">
         <data-type>date</data-type>
       </object-attribute>
-      <object-attribute id="52" parent="8" name="corigen">
+      <object-attribute id="50" parent="8" name="corigen">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="53" parent="8" name="cdestino">
+      <object-attribute id="51" parent="8" name="cdestino">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="54" parent="8" name="sucursal">
+      <object-attribute id="52" parent="8" name="sucursal">
         <data-type>varchar(50)</data-type>
       </object-attribute>
-      <object-attribute id="55" parent="8" name="concepto">
+      <object-attribute id="53" parent="8" name="concepto">
         <data-type>varchar(50)</data-type>
       </object-attribute>
-      <object-attribute id="56" parent="10" name="dni">
-        <data-type>varchar(9)</data-type>
+      <object-attribute id="54" parent="10" name="dni">
+        <data-type>varchar(10)</data-type>
       </object-attribute>
-      <object-attribute id="57" parent="10" name="nombre">
-        <data-type>varchar(20)</data-type>
+      <object-attribute id="55" parent="10" name="nombre">
+        <data-type>varchar(30)</data-type>
       </object-attribute>
-      <object-attribute id="58" parent="10" name="apellidos">
-        <data-type>varchar(40)</data-type>
-      </object-attribute>
-      <object-attribute id="59" parent="10" name="edad">
-        <data-type>integer</data-type>
-      </object-attribute>
-      <object-attribute id="60" parent="10" name="direccion">
+      <object-attribute id="56" parent="10" name="apellidos">
         <data-type>varchar(80)</data-type>
       </object-attribute>
-      <object-attribute id="61" parent="10" name="email">
-        <data-type>varchar(20)</data-type>
-      </object-attribute>
-      <object-attribute id="62" parent="10" name="telefono">
+      <object-attribute id="57" parent="10" name="edad">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="63" parent="11" name="iban">
-        <data-type>varchar(34)</data-type>
-      </object-attribute>
-      <object-attribute id="64" parent="11" name="numero">
-        <data-type>varchar(34)</data-type>
-      </object-attribute>
-      <object-attribute id="65" parent="11" name="creacion">
-        <data-type>date</data-type>
-      </object-attribute>
-      <object-attribute id="66" parent="11" name="saldo">
-        <data-type>real</data-type>
-      </object-attribute>
-      <object-attribute id="67" parent="12" name="interes">
-        <data-type>real</data-type>
-      </object-attribute>
-      <object-attribute id="68" parent="12" name="dia">
-        <data-type>date</data-type>
-      </object-attribute>
-      <object-attribute id="69" parent="13" name="codigo">
-        <data-type>varchar(50)</data-type>
-      </object-attribute>
-      <object-attribute id="70" parent="13" name="direccion">
+      <object-attribute id="58" parent="10" name="direccion">
         <data-type>varchar(80)</data-type>
       </object-attribute>
-      <object-attribute id="71" parent="13" name="telefono">
+      <object-attribute id="59" parent="10" name="email">
+        <data-type>varchar(80)</data-type>
+      </object-attribute>
+      <object-attribute id="60" parent="10" name="telefono">
         <data-type>integer</data-type>
       </object-attribute>
-      <object-attribute id="72" parent="14" name="contador">
-        <data-type>integer</data-type>
+      <object-attribute id="61" parent="11" name="iban">
+        <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="73" parent="14" name="tipo">
-        <data-type>varchar(20)</data-type>
+      <object-attribute id="62" parent="11" name="numero">
+        <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="74" parent="14" name="fechahora">
+      <object-attribute id="63" parent="11" name="creacion">
         <data-type>date</data-type>
       </object-attribute>
-      <object-attribute id="75" parent="14" name="corigen">
+      <object-attribute id="64" parent="11" name="saldo">
+        <data-type>real</data-type>
+      </object-attribute>
+      <object-attribute id="65" parent="12" name="interes">
+        <data-type>real</data-type>
+      </object-attribute>
+      <object-attribute id="66" parent="12" name="dia">
+        <data-type>integer</data-type>
+      </object-attribute>
+      <object-attribute id="67" parent="13" name="codigo">
+        <data-type>integer</data-type>
+      </object-attribute>
+      <object-attribute id="68" parent="13" name="direccion">
+        <data-type>varchar(80)</data-type>
+      </object-attribute>
+      <object-attribute id="69" parent="13" name="telefono">
+        <data-type>integer</data-type>
+      </object-attribute>
+      <object-attribute id="70" parent="14" name="contador">
+        <data-type>integer</data-type>
+      </object-attribute>
+      <object-attribute id="71" parent="14" name="tipo">
+        <data-type>char</data-type>
+      </object-attribute>
+      <object-attribute id="72" parent="14" name="fechahora">
+        <data-type>date</data-type>
+      </object-attribute>
+      <object-attribute id="73" parent="14" name="corigen">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="76" parent="14" name="cdestino">
+      <object-attribute id="74" parent="14" name="cdestino">
         <data-type>varchar(34)</data-type>
       </object-attribute>
-      <object-attribute id="77" parent="14" name="sucursal">
-        <data-type>varchar(50)</data-type>
+      <object-attribute id="75" parent="14" name="sucursal">
+        <data-type>varchar(80)</data-type>
       </object-attribute>
-      <object-attribute id="78" parent="14" name="concepto">
-        <data-type>varchar(50)</data-type>
+      <object-attribute id="76" parent="14" name="concepto">
+        <data-type>varchar(200)</data-type>
       </object-attribute>
-      <column id="79" parent="15" name="iban">
+      <object-attribute id="77" parent="14" name="cantidad">
+        <data-type>real</data-type>
+      </object-attribute>
+      <column id="78" parent="15" name="iban">
         <state-number>769</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="80" parent="15" name="numero">
+      <column id="79" parent="15" name="numero">
         <state-number>769</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="81" parent="15" name="creacion">
+      <column id="80" parent="15" name="creacion">
         <state-number>769</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="82" parent="15" name="saldo">
+      <column id="81" parent="15" name="saldo">
         <state-number>769</state-number>
         <data-type>real</data-type>
       </column>
-      <column id="83" parent="15" name="cahorro">
+      <column id="82" parent="15" name="cahorro">
         <state-number>769</state-number>
         <data-type>cuenta</data-type>
       </column>
-      <column id="84" parent="16" name="iban">
-        <state-number>855</state-number>
+      <column id="83" parent="16" name="iban">
+        <state-number>5840</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="85" parent="16" name="numero">
-        <state-number>855</state-number>
+      <column id="84" parent="16" name="numero">
+        <state-number>5840</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="86" parent="16" name="creacion">
-        <state-number>855</state-number>
+      <column id="85" parent="16" name="creacion">
+        <state-number>5840</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="87" parent="16" name="saldo">
-        <state-number>855</state-number>
+      <column id="86" parent="16" name="saldo">
+        <state-number>5840</state-number>
         <data-type>real</data-type>
       </column>
-      <column id="88" parent="16" name="cahorro">
-        <state-number>855</state-number>
-        <data-type>cuenta_p3</data-type>
+      <column id="87" parent="16" name="cahorro">
+        <state-number>5840</state-number>
+        <data-type>cuentaahorro_p3</data-type>
       </column>
-      <column id="89" parent="17" name="iban">
+      <column id="88" parent="17" name="iban">
         <state-number>768</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="90" parent="17" name="numero">
+      <column id="89" parent="17" name="numero">
         <state-number>768</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="91" parent="17" name="creacion">
+      <column id="90" parent="17" name="creacion">
         <state-number>768</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="92" parent="17" name="saldo">
+      <column id="91" parent="17" name="saldo">
         <state-number>768</state-number>
         <data-type>real</data-type>
       </column>
-      <column id="93" parent="17" name="ccorriente">
+      <column id="92" parent="17" name="ccorriente">
         <state-number>768</state-number>
         <data-type>cuenta</data-type>
       </column>
-      <column id="94" parent="18" name="iban">
-        <state-number>854</state-number>
-        <mandatory>1</mandatory>
-        <data-type>varchar(34)</data-type>
-      </column>
-      <column id="95" parent="18" name="numero">
-        <state-number>854</state-number>
-        <data-type>varchar(34)</data-type>
-      </column>
-      <column id="96" parent="18" name="creacion">
-        <state-number>854</state-number>
-        <data-type>date</data-type>
-      </column>
-      <column id="97" parent="18" name="saldo">
-        <state-number>854</state-number>
-        <data-type>real</data-type>
-      </column>
-      <column id="98" parent="18" name="ccorriente">
-        <state-number>854</state-number>
-        <data-type>cuenta_p3</data-type>
-      </column>
-      <column id="99" parent="19" name="iban">
+      <column id="93" parent="18" name="iban">
         <state-number>767</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="100" parent="19" name="numero">
+      <column id="94" parent="18" name="numero">
         <state-number>767</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="101" parent="19" name="creacion">
+      <column id="95" parent="18" name="creacion">
         <state-number>767</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="102" parent="19" name="saldo">
+      <column id="96" parent="18" name="saldo">
         <state-number>767</state-number>
         <data-type>real</data-type>
       </column>
-      <index id="103" parent="19" name="cuentatabla_pkey">
+      <index id="97" parent="18" name="cuentatabla_pkey">
         <object-id>24845</object-id>
         <columns>iban</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="104" parent="19" name="cuentatabla_pkey">
+      <key id="98" parent="18" name="cuentatabla_pkey">
         <columns>iban</columns>
         <underlying-index>cuentatabla_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="105" parent="20" name="iban">
-        <state-number>853</state-number>
+      <column id="99" parent="19" name="iban">
+        <state-number>5839</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="106" parent="20" name="numero">
-        <state-number>853</state-number>
+      <column id="100" parent="19" name="numero">
+        <state-number>5839</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="107" parent="20" name="creacion">
-        <state-number>853</state-number>
+      <column id="101" parent="19" name="creacion">
+        <state-number>5839</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="108" parent="20" name="saldo">
-        <state-number>853</state-number>
+      <column id="102" parent="19" name="saldo">
+        <state-number>5839</state-number>
         <data-type>real</data-type>
       </column>
-      <index id="109" parent="20" name="cuentatabla_p3_pkey">
-        <object-id>25131</object-id>
+      <index id="103" parent="19" name="cuentatabla_p3_pkey">
+        <object-id>26625</object-id>
         <columns>iban</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="110" parent="20" name="cuentatabla_p3_pkey">
+      <key id="104" parent="19" name="cuentatabla_p3_pkey">
         <columns>iban</columns>
         <underlying-index>cuentatabla_p3_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="111" parent="21" name="iban">
+      <column id="105" parent="20" name="iban">
         <state-number>774</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="112" parent="21" name="contador">
+      <column id="106" parent="20" name="contador">
         <state-number>774</state-number>
         <data-type>integer</data-type>
       </column>
-      <foreign-key id="113" parent="21" name="hace_iban_fkey">
+      <foreign-key id="107" parent="20" name="hace_iban_fkey">
         <columns>iban</columns>
         <ref-key>~.cuentatabla.cuentatabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="114" parent="21" name="hace_contador_fkey">
+      <foreign-key id="108" parent="20" name="hace_contador_fkey">
         <columns>contador</columns>
         <ref-key>~.operaciontabla.operaciontabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="115" parent="22" name="iban">
-        <state-number>860</state-number>
-        <data-type>varchar(34)</data-type>
-      </column>
-      <column id="116" parent="22" name="contador">
-        <state-number>860</state-number>
-        <data-type>integer</data-type>
-      </column>
-      <foreign-key id="117" parent="22" name="hace_p3_iban_fkey">
-        <columns>iban</columns>
-        <ref-key>~.cuentatabla_p3.cuentatabla_p3_pkey</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <foreign-key id="118" parent="22" name="hace_p3_contador_fkey">
-        <columns>contador</columns>
-        <ref-key>~.operaciontabla_p3.operaciontabla_p3_pkey</ref-key>
-        <cascade-update-rule>restrict</cascade-update-rule>
-        <cascade-delete-rule>restrict</cascade-delete-rule>
-      </foreign-key>
-      <column id="119" parent="23" name="codigo">
+      <column id="109" parent="21" name="codigo">
         <state-number>770</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="120" parent="23" name="direccion">
+      <column id="110" parent="21" name="direccion">
         <state-number>770</state-number>
         <data-type>varchar(80)</data-type>
       </column>
-      <column id="121" parent="23" name="telefono">
+      <column id="111" parent="21" name="telefono">
         <state-number>770</state-number>
         <data-type>integer</data-type>
       </column>
-      <index id="122" parent="23" name="oficinatabla_pkey">
+      <index id="112" parent="21" name="oficinatabla_pkey">
         <object-id>24862</object-id>
         <columns>codigo</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="123" parent="23" name="oficinatabla_pkey">
+      <key id="113" parent="21" name="oficinatabla_pkey">
         <columns>codigo</columns>
         <underlying-index>oficinatabla_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="124" parent="24" name="codigo">
-        <state-number>856</state-number>
+      <column id="114" parent="22" name="codigo">
+        <state-number>5841</state-number>
         <mandatory>1</mandatory>
-        <data-type>varchar(50)</data-type>
-      </column>
-      <column id="125" parent="24" name="direccion">
-        <state-number>856</state-number>
-        <data-type>varchar(80)</data-type>
-      </column>
-      <column id="126" parent="24" name="telefono">
-        <state-number>856</state-number>
         <data-type>integer</data-type>
       </column>
-      <index id="127" parent="24" name="oficinatabla_p3_pkey">
-        <object-id>25148</object-id>
+      <column id="115" parent="22" name="direccion">
+        <state-number>5841</state-number>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="116" parent="22" name="telefono">
+        <state-number>5841</state-number>
+        <data-type>integer</data-type>
+      </column>
+      <index id="117" parent="22" name="oficinatabla_p3_pkey">
+        <object-id>26636</object-id>
         <columns>codigo</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="128" parent="24" name="oficinatabla_p3_pkey">
+      <key id="118" parent="22" name="oficinatabla_p3_pkey">
         <columns>codigo</columns>
         <underlying-index>oficinatabla_p3_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="129" parent="25" name="contador">
+      <column id="119" parent="23" name="contador">
         <state-number>771</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
-      <column id="130" parent="25" name="tipo">
+      <column id="120" parent="23" name="tipo">
         <state-number>771</state-number>
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="131" parent="25" name="fechahora">
+      <column id="121" parent="23" name="fechahora">
         <state-number>771</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="132" parent="25" name="corigen">
+      <column id="122" parent="23" name="corigen">
         <state-number>771</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="133" parent="25" name="cdestino">
+      <column id="123" parent="23" name="cdestino">
         <state-number>771</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="134" parent="25" name="sucursal">
+      <column id="124" parent="23" name="sucursal">
         <state-number>771</state-number>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="135" parent="25" name="concepto">
+      <column id="125" parent="23" name="concepto">
         <state-number>771</state-number>
         <data-type>varchar(50)</data-type>
       </column>
-      <index id="136" parent="25" name="operaciontabla_pkey">
+      <index id="126" parent="23" name="operaciontabla_pkey">
         <object-id>24867</object-id>
         <columns>contador</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="137" parent="25" name="operaciontabla_pkey">
+      <key id="127" parent="23" name="operaciontabla_pkey">
         <columns>contador</columns>
         <underlying-index>operaciontabla_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="138" parent="26" name="contador">
-        <state-number>857</state-number>
+      <column id="128" parent="24" name="contador">
+        <state-number>5842</state-number>
         <mandatory>1</mandatory>
         <data-type>integer</data-type>
       </column>
-      <column id="139" parent="26" name="tipo">
-        <state-number>857</state-number>
-        <data-type>varchar(20)</data-type>
+      <column id="129" parent="24" name="tipo">
+        <state-number>5842</state-number>
+        <data-type>char</data-type>
       </column>
-      <column id="140" parent="26" name="fechahora">
-        <state-number>857</state-number>
+      <column id="130" parent="24" name="fechahora">
+        <state-number>5842</state-number>
         <data-type>date</data-type>
       </column>
-      <column id="141" parent="26" name="corigen">
-        <state-number>857</state-number>
+      <column id="131" parent="24" name="corigen">
+        <state-number>5842</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="142" parent="26" name="cdestino">
-        <state-number>857</state-number>
+      <column id="132" parent="24" name="cdestino">
+        <state-number>5842</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <column id="143" parent="26" name="sucursal">
-        <state-number>857</state-number>
-        <data-type>varchar(50)</data-type>
+      <column id="133" parent="24" name="sucursal">
+        <state-number>5842</state-number>
+        <data-type>varchar(80)</data-type>
       </column>
-      <column id="144" parent="26" name="concepto">
-        <state-number>857</state-number>
-        <data-type>varchar(50)</data-type>
+      <column id="134" parent="24" name="concepto">
+        <state-number>5842</state-number>
+        <data-type>varchar(200)</data-type>
       </column>
-      <index id="145" parent="26" name="operaciontabla_p3_pkey">
-        <object-id>25153</object-id>
+      <column id="135" parent="24" name="cantidad">
+        <state-number>5842</state-number>
+        <data-type>real</data-type>
+      </column>
+      <index id="136" parent="24" name="operaciontabla_p3_pkey">
+        <object-id>26641</object-id>
         <columns>contador</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="146" parent="26" name="operaciontabla_p3_pkey">
+      <key id="137" parent="24" name="operaciontabla_p3_pkey">
         <columns>contador</columns>
         <underlying-index>operaciontabla_p3_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="147" parent="27" name="codigo">
+      <foreign-key id="138" parent="24" name="operaciontabla_p3_corigen_fkey">
+        <columns>corigen</columns>
+        <ref-key>~.cuentatabla_p3.cuentatabla_p3_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="139" parent="24" name="operaciontabla_p3_cdestino_fkey">
+        <columns>cdestino</columns>
+        <ref-key>~.cuentatabla_p3.cuentatabla_p3_pkey</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="140" parent="25" name="codigo">
         <state-number>773</state-number>
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="148" parent="27" name="iban">
+      <column id="141" parent="25" name="iban">
         <state-number>773</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <foreign-key id="149" parent="27" name="pertenece_codigo_fkey">
+      <foreign-key id="142" parent="25" name="pertenece_codigo_fkey">
         <columns>codigo</columns>
         <ref-key>~.oficinatabla.oficinatabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="150" parent="27" name="pertenece_iban_fkey">
+      <foreign-key id="143" parent="25" name="pertenece_iban_fkey">
         <columns>iban</columns>
         <ref-key>~.cuentatabla.cuentatabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="151" parent="28" name="codigo">
-        <state-number>859</state-number>
-        <data-type>varchar(50)</data-type>
+      <column id="144" parent="26" name="codigo">
+        <state-number>5844</state-number>
+        <data-type>integer</data-type>
       </column>
-      <column id="152" parent="28" name="iban">
-        <state-number>859</state-number>
+      <column id="145" parent="26" name="iban">
+        <state-number>5844</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <foreign-key id="153" parent="28" name="pertenece_p3_codigo_fkey">
+      <foreign-key id="146" parent="26" name="pertenece_p3_codigo_fkey">
         <columns>codigo</columns>
         <ref-key>~.oficinatabla_p3.oficinatabla_p3_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="154" parent="28" name="pertenece_p3_iban_fkey">
+      <foreign-key id="147" parent="26" name="pertenece_p3_iban_fkey">
         <columns>iban</columns>
         <ref-key>~.cuentatabla_p3.cuentatabla_p3_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="155" parent="29" name="dni">
+      <column id="148" parent="27" name="dni">
         <state-number>772</state-number>
         <data-type>varchar(9)</data-type>
       </column>
-      <column id="156" parent="29" name="iban">
+      <column id="149" parent="27" name="iban">
         <state-number>772</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <foreign-key id="157" parent="29" name="tiene_dni_fkey">
+      <foreign-key id="150" parent="27" name="tiene_dni_fkey">
         <columns>dni</columns>
         <ref-key>~.usuariotabla.usuariotabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="158" parent="29" name="tiene_iban_fkey">
+      <foreign-key id="151" parent="27" name="tiene_iban_fkey">
         <columns>iban</columns>
         <ref-key>~.cuentatabla.cuentatabla_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="159" parent="30" name="dni">
-        <state-number>858</state-number>
-        <data-type>varchar(9)</data-type>
+      <column id="152" parent="28" name="dni">
+        <state-number>5843</state-number>
+        <data-type>varchar(10)</data-type>
       </column>
-      <column id="160" parent="30" name="iban">
-        <state-number>858</state-number>
+      <column id="153" parent="28" name="iban">
+        <state-number>5843</state-number>
         <data-type>varchar(34)</data-type>
       </column>
-      <foreign-key id="161" parent="30" name="tiene_p3_dni_fkey">
+      <foreign-key id="154" parent="28" name="tiene_p3_dni_fkey">
         <columns>dni</columns>
         <ref-key>~.usuariotabla_p3.usuariotabla_p3_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <foreign-key id="162" parent="30" name="tiene_p3_iban_fkey">
+      <foreign-key id="155" parent="28" name="tiene_p3_iban_fkey">
         <columns>iban</columns>
         <ref-key>~.cuentatabla_p3.cuentatabla_p3_pkey</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="163" parent="31" name="dni">
+      <column id="156" parent="29" name="dni">
         <state-number>766</state-number>
         <mandatory>1</mandatory>
         <data-type>varchar(9)</data-type>
       </column>
-      <column id="164" parent="31" name="nombre">
+      <column id="157" parent="29" name="nombre">
         <state-number>766</state-number>
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="165" parent="31" name="apellidos">
+      <column id="158" parent="29" name="apellidos">
         <state-number>766</state-number>
         <data-type>varchar(40)</data-type>
       </column>
-      <column id="166" parent="31" name="edad">
+      <column id="159" parent="29" name="edad">
         <state-number>766</state-number>
         <data-type>integer</data-type>
       </column>
-      <column id="167" parent="31" name="direccion">
+      <column id="160" parent="29" name="direccion">
         <state-number>766</state-number>
         <data-type>varchar(80)</data-type>
       </column>
-      <column id="168" parent="31" name="email">
+      <column id="161" parent="29" name="email">
         <state-number>766</state-number>
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="169" parent="31" name="telefono">
+      <column id="162" parent="29" name="telefono">
         <state-number>766</state-number>
         <data-type>integer</data-type>
       </column>
-      <index id="170" parent="31" name="usuariotabla_pkey">
+      <index id="163" parent="29" name="usuariotabla_pkey">
         <object-id>24840</object-id>
         <columns>dni</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="171" parent="31" name="usuariotabla_pkey">
+      <key id="164" parent="29" name="usuariotabla_pkey">
         <columns>dni</columns>
         <underlying-index>usuariotabla_pkey</underlying-index>
         <primary>1</primary>
       </key>
-      <column id="172" parent="32" name="dni">
-        <state-number>852</state-number>
+      <column id="165" parent="30" name="dni">
+        <state-number>5838</state-number>
         <mandatory>1</mandatory>
-        <data-type>varchar(9)</data-type>
+        <data-type>varchar(10)</data-type>
       </column>
-      <column id="173" parent="32" name="nombre">
-        <state-number>852</state-number>
-        <data-type>varchar(20)</data-type>
+      <column id="166" parent="30" name="nombre">
+        <state-number>5838</state-number>
+        <data-type>varchar(30)</data-type>
       </column>
-      <column id="174" parent="32" name="apellidos">
-        <state-number>852</state-number>
-        <data-type>varchar(40)</data-type>
-      </column>
-      <column id="175" parent="32" name="edad">
-        <state-number>852</state-number>
-        <data-type>integer</data-type>
-      </column>
-      <column id="176" parent="32" name="direccion">
-        <state-number>852</state-number>
+      <column id="167" parent="30" name="apellidos">
+        <state-number>5838</state-number>
         <data-type>varchar(80)</data-type>
       </column>
-      <column id="177" parent="32" name="email">
-        <state-number>852</state-number>
-        <data-type>varchar(20)</data-type>
-      </column>
-      <column id="178" parent="32" name="telefono">
-        <state-number>852</state-number>
+      <column id="168" parent="30" name="edad">
+        <state-number>5838</state-number>
         <data-type>integer</data-type>
       </column>
-      <index id="179" parent="32" name="usuariotabla_p3_pkey">
-        <object-id>25126</object-id>
+      <column id="169" parent="30" name="direccion">
+        <state-number>5838</state-number>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="170" parent="30" name="email">
+        <state-number>5838</state-number>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="171" parent="30" name="telefono">
+        <state-number>5838</state-number>
+        <data-type>integer</data-type>
+      </column>
+      <index id="172" parent="30" name="usuariotabla_p3_pkey">
+        <object-id>26620</object-id>
         <columns>dni</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="180" parent="32" name="usuariotabla_p3_pkey">
+      <key id="173" parent="30" name="usuariotabla_p3_pkey">
         <columns>dni</columns>
         <underlying-index>usuariotabla_p3_pkey</underlying-index>
         <primary>1</primary>
