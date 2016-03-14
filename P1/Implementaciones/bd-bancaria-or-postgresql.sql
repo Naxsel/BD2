@@ -31,13 +31,14 @@ CREATE TYPE cuenta_p3 AS(
   iban VARCHAR(34),
   numero VARCHAR(34),
   creacion DATE,
-  saldo FLOAT(20)
+  saldo REAL
 );
 
+/* Que poner para que no sea ONLY SHELL?? */
 CREATE TYPE cuentaCorriente_p3;
 
 CREATE TYPE cuentaAhorro_p3 AS (
-  interes FLOAT(20),
+  interes REAL,
   dia INTEGER
 );
 
@@ -55,13 +56,13 @@ CREATE TYPE operacion_p3 AS(
   cDestino VARCHAR(34),
   sucursal VARCHAR(80),
   concepto VARCHAR(200),
-  cantidad INTEGER
+  cantidad REAL
 );
 
 CREATE TABLE usuarioTabla_p3 OF usuario_p3(PRIMARY KEY(dni));		/*añadir constraint?*/
 CREATE TABLE cuentaTabla_p3 OF cuenta_p3(PRIMARY KEY(iban));
-CREATE TABLE cuentaCorrienteTabla_p3(cCorriente cuenta_p3) INHERITS (cuentaTabla_p3);
-CREATE TABLE cuentaAhorroTabla_p3(cAhorro cuenta_p3) INHERITS (cuentaTabla_p3);
+/* CREATE TABLE cuentaCorrienteTabla_p3(cCorriente cuentaCorriente_p3) INHERITS (cuentaTabla_p3); */
+CREATE TABLE cuentaAhorroTabla_p3(cAhorro cuentaAhorro_p3) INHERITS (cuentaTabla_p3);
 CREATE TABLE oficinaTabla_p3 OF oficina_p3(PRIMARY KEY(codigo));
 CREATE TABLE operacionTabla_p3 OF operacion_p3(PRIMARY KEY(contador),
   FOREIGN KEY (cDestino) REFERENCES cuentatabla_p3(iban),
