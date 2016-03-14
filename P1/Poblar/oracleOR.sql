@@ -309,9 +309,9 @@ INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8848','9311 Pro
 
 -- Pertenece (Todas las cuentas de cuentaTabla_p2 pertenece a una oficina)
 /*Cambiar lo que está comentado para que funcione con referencias! */
-/*
-INSERT INTO pertenece_p2 (iban,codigo) VALUES((SELECT cuenta_p2(ref(cu)) from cuentaTabla_p2 cu where cu.iban='FP33730958577227579078926552917807'),(SELECT oficina_p2(ref(o)) from oficinaTabla_p2 o where o.codigo='1986'));
 
+INSERT INTO pertenece_p2 (iban,codigo) VALUES((SELECT cuenta_p2(ref(cu)) from cuentaTabla_p2 cu where cu.iban='FP33730958577227579078926552917807' and ROWNUM = 1) ,(SELECT oficina_p2(ref(o)) from oficinaTabla_p2 o where o.codigo='1986' and ROWNUM = 1));
+/*
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('JI40453364997466550044235348213144','1986');
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('HL76676038213950241779936041435785','1986');
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('BD19607765245983312200917823690887','1986');
