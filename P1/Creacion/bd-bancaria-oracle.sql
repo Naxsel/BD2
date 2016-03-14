@@ -86,7 +86,9 @@ CREATE OR REPLACE TRIGGER Modificar_Saldo
         UPDATE CUENTA_P1 SET saldo = valor + :new.cantidad WHERE IBAN = :new.cdestino;
       ELSE
           DBMS_OUTPUT.PUT_LINE("Operacion Incorrecta");
-        END IF;
       END IF;
+    ELSE
+      raise_application_error("Saldo Insuficiente");
+    END IF;
   END Modificar_saldo;
 
