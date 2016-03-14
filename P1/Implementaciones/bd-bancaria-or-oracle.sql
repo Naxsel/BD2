@@ -52,7 +52,8 @@ CREATE OR REPLACE TYPE operacion_p2 as OBJECT(
 	cOrigen VARCHAR(34),
 	cDestino VARCHAR(34),
 	sucursal VARCHAR(80),
-	concepto VARCHAR(200)
+	concepto VARCHAR(200),
+  cantidad NUMBER
 );
 
 CREATE TABLE usuarioTabla_p2 OF usuario_p2(PRIMARY KEY(dni));
