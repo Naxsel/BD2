@@ -1,7 +1,5 @@
 DROP TABLE usuarioTabla_p3 CASCADE;
 DROP TABLE cuentaTabla_p3 CASCADE;
-/*DROP TABLE cuentaAhorroTabla_p3;
-DROP TABLE cuentaCorrienteTabla_p3; */
 DROP TABLE oficinaTabla_p3 CASCADE;
 DROP TABLE operacionTabla_p3 CASCADE;
 DROP TABLE tiene_p3;
@@ -9,9 +7,7 @@ DROP TABLE pertenece_p3;
 
 DROP TYPE tipooperacion_p3;
 DROP TYPE usuario_p3;
-DROP TYPE cuenta_p3;
-DROP TYPE cuentaCorriente_p3;
-DROP TYPE cuentaAhorro_p3;
+DROP TYPE cuenta_p3 CASCADE;
 DROP TYPE oficina_p3 CASCADE;
 DROP TYPE operacion_p3 CASCADE;
 
@@ -34,14 +30,6 @@ CREATE TYPE cuenta_p3 AS(
   saldo REAL
 );
 
-/* Que poner para que no sea ONLY SHELL?? */
-CREATE TYPE cuentaCorriente_p3;
-
-CREATE TYPE cuentaAhorro_p3 AS (
-  interes REAL,
-  dia INTEGER
-);
-
 CREATE TYPE oficina_p3 AS(
   codigo INTEGER,
   direccion VARCHAR(80),
@@ -61,8 +49,7 @@ CREATE TYPE operacion_p3 AS(
 
 CREATE TABLE usuarioTabla_p3 OF usuario_p3(PRIMARY KEY(dni));		/*añadir constraint?*/
 CREATE TABLE cuentaTabla_p3 OF cuenta_p3(PRIMARY KEY(iban));
-/* CREATE TABLE cuentaCorrienteTabla_p3(cCorriente cuentaCorriente_p3) INHERITS (cuentaTabla_p3); */
-CREATE TABLE cuentaAhorroTabla_p3(cAhorro cuentaAhorro_p3) INHERITS (cuentaTabla_p3);
+CREATE TABLE cuentaAhorroTabla_p3(PRIMARY KEY (iban),interes REAL, dia INTEGER)INHERITS (cuentaTabla_p3);
 CREATE TABLE oficinaTabla_p3 OF oficina_p3(PRIMARY KEY(codigo));
 CREATE TABLE operacionTabla_p3 OF operacion_p3(PRIMARY KEY(contador),
   FOREIGN KEY (cDestino) REFERENCES cuentatabla_p3(iban),
