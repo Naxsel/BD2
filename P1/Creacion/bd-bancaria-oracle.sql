@@ -112,5 +112,41 @@ FOR EACH ROW
         UPDATE CUENTA_P1 SET saldo = valor - :new.cantidad WHERE IBAN = :new.corigen;
         UPDATE CUENTA_P1 SET saldo = valor + :new.cantidad WHERE IBAN = :new.cdestino;
       END IF;
+    ELSE
+      RAISE_APPLICATION_ERROR (-20100, 'Operacion rechazada');
     END IF;
-  END Modificar_saldo;
+  END;
+  /
+
+
+
+ CREATE OR REPLACE PROCEDURE Intereses IS
+  dia char;
+  valor float;
+  BEGIN
+      FOR rec IN (SELECT * FROM CAhorro_p1) LOOP
+        Select saldo into valor from Cuenta_p1 where iban = rec.iban;
+       IF (EXTRACT(DAY FROM SYSDATE) = rec.dia)
+         THEN
+           --dbms_output.put_line('Se añade interes a la cuenta: ' || rec.iban || 'que tenia el saldo: ' || valor);
+           --dbms_output.put_line((rec.interes / 100)*valor + valor);
+           UPDATE Cuenta_p1 set saldo = (rec.interes / 100)*valor + valor where iban = rec.iban;
+       END IF;
+     END LOOP;
+   END;
+/
+
+
+--Este trabajo indica que cada dia se ejecute el procedimiento Intereses
+DECLARE
+  jobno   NUMBER;
+BEGIN
+  DBMS_JOB.SUBMIT(
+   job  => jobno
+  ,what => 'begin intereses; end;'
+  ,next_date => SYSDATE
+  ,interval  => 'SYSDATE+1');
+  COMMIT;
+END;
+/
+

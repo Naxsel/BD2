@@ -1,10 +1,10 @@
-truncate TABLE Pertenece_p1;
-truncate TABLE Oficina_p1;
-truncate TABLE CAhorro_p1;
-truncate TABLE Operacion_p1;
-truncate TABLE Tiene_p1;
-truncate TABLE Cuenta_p1;
-truncate TABLE Usuario_p1;
+truncate table Pertenece_p1;
+truncate table Oficina_p1;
+truncate table CAhorro_p1;
+truncate table Operacion_p1;
+truncate table Tiene_p1;
+truncate table Cuenta_p1;
+truncate table Usuario_p1;
 
 -- Usuario
 INSERT INTO Usuario_p1 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911');
@@ -439,20 +439,20 @@ INSERT INTO CAHORRO_P1 (IBAN,INTERES, DIA) VALUES ('CZ11209217849850715441903620
 INSERT INTO CAHORRO_P1 (IBAN,INTERES, DIA) VALUES ('AR32595816696735123283490230286479', '3,0', '5');
 INSERT INTO CAHORRO_P1 (IBAN,INTERES, DIA) VALUES ('PA57877801854929214196122747132446', '2,5', '3');
 INSERT INTO CAHORRO_P1 (IBAN,INTERES, DIA) VALUES ('AG22068521770637896137627734009238', '1,85', '2');
-
+update CAhorro_p1 set dia=28 where dia>28;
 
 
 -- Operacion_p1
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (1,'t',TO_DATE('2014-10-20 08:13:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (2,'t',TO_DATE('2009-03-19 02:59:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (3,'t',TO_DATE('2008-10-04 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (4,'t',TO_DATE('2008-12-29 02:24:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (5,'t',TO_DATE('2012-08-20 15:50:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (6,'t',TO_DATE('2012-10-13 09:28:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (7,'t',TO_DATE('2008-07-22 03:32:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (8,'t',TO_DATE('2013-08-16 05:15:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (9,'t',TO_DATE('2013-05-31 13:26:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
-INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (10,'t',TO_DATE('2014-06-06 20:20:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','100,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (1,'t',TO_DATE('2014-10-20 08:13:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (2,'t',TO_DATE('2009-03-19 02:59:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (3,'t',TO_DATE('2008-10-04 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (4,'t',TO_DATE('2008-12-29 02:24:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (5,'t',TO_DATE('2012-08-20 15:50:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (6,'t',TO_DATE('2012-10-13 09:28:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (7,'t',TO_DATE('2008-07-22 03:32:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (8,'t',TO_DATE('2013-08-16 05:15:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (9,'t',TO_DATE('2013-05-31 13:26:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
+INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (10,'t',TO_DATE('2014-06-06 20:20:00', 'yyyy-mm-dd HH24:MI:SS'),'FP33730958577227579078926552917807','JI40453364997466550044235348213144','','','10,25');
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (11,'t',TO_DATE('2006-05-05 14:01:00', 'yyyy-mm-dd HH24:MI:SS'),'VX49974070678271238458117005418174','WL20881903893391450526693915360220','','','25,50');
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (12,'t',TO_DATE('2011-05-29 22:12:00', 'yyyy-mm-dd HH24:MI:SS'),'VX49974070678271238458117005418174','WL20881903893391450526693915360220','','','25,50');
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto, cantidad) VALUES (13,'t',TO_DATE('2011-07-04 11:43:00', 'yyyy-mm-dd HH24:MI:SS'),'VX49974070678271238458117005418174','WL20881903893391450526693915360220','','','25,50');
@@ -540,5 +540,4 @@ INSERT INTO TIENE_P1 (IBAN,dni) VALUES ('CZ11209217849850715441903620157354','24
 INSERT INTO TIENE_P1 (IBAN,dni) VALUES ('BY10087113578567912692979144432606','65291361T');
 INSERT INTO TIENE_P1 (IBAN,dni) VALUES ('WC68289017036674620243379974093682','80650823K');
 INSERT INTO TIENE_P1 (IBAN,dni) VALUES ('BY10087113578567912692979144432606','30135317S');
-
 
