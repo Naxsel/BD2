@@ -66,3 +66,27 @@ CREATE TABLE Pertenece_p1 (
   PRIMARY KEY (iban,codigo)
 );
 
+SET SERVEROUT ON;
+
+
+CREATE OR REPLACE TRIGGER Modificar_Saldo
+  BEFORE INSERT on Operacion_p1
+  FOR EACH ROW
+  DECLARE
+    valor FLOAT;
+  BEGIN
+    SELECT saldo into valor FROM Cuenta_p1 WHERE IBAN = :new.corigen;
+    IF(:new.tipo = 'i') THEN
+      UPDATE CUENTA_P1 SET saldo = valor + :new.cantidad WHERE IBAN = :new.corigen;
+    ELSIF (valor >= :new.cantidad) THEN
+      IF(:new.tipo = 'r') THEN
+        UPDATE CUENTA_P1 SET saldo = valor - :new.cantidad WHERE IBAN = :new.corigen;
+      ELSEIF(:new.tipo = 'T') THEN
+        UPDATE CUENTA_P1 SET saldo = valor - :new.cantidad WHERE IBAN = :new.corigen;
+        UPDATE CUENTA_P1 SET saldo = valor + :new.cantidad WHERE IBAN = :new.cdestino;
+      ELSE
+          DBMS_OUTPUT.PUT_LINE("Operacion Incorrecta");
+        END IF;
+      END IF;
+  END Modificar_saldo;
+
