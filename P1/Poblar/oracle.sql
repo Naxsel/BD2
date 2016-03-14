@@ -201,6 +201,7 @@ INSERT INTO Cuenta_p1 (iban,numero,creacion,saldo) VALUES ('OI224115021512352915
 INSERT INTO Cuenta_p1 (iban,numero,creacion,saldo) VALUES ('DX24266876469249982555172258133759','HR584194513110096587135765',TO_DATE('2015-09-21', 'yyyy-mm-dd'),'11,74');
 INSERT INTO Cuenta_p1 (iban,numero,creacion,saldo) VALUES ('IX08452657898345529796726578677976','EG059014545540882993377467',TO_DATE('2016-10-01', 'yyyy-mm-dd'),'1953,36');
 INSERT INTO Cuenta_p1 (iban,numero,creacion,saldo) VALUES ('BY10087113578567912692979144432606','DA442510510273806814083072',TO_DATE('2015-05-14', 'yyyy-mm-dd'),'1559,90');
+INSERT INTO Cuenta_p1 (iban,numero,creacion,saldo) VALUES ('BY10087113578567912692979144432606','DA442510510273806814083072',TO_DATE('2015-05-14', 'yyyy-mm-dd'),'1559,90');
 -- Oficina
 
 INSERT INTO Oficina_p1 (codigo,direccion,telefono) VALUES ('7778','880-8708 Volutpat Carretera','862869364');
@@ -537,3 +538,5 @@ INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,conc
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (98,'',TO_DATE('2015-10-27 14:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (99,'',TO_DATE('2006-05-20 14:23:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO Operacion_p1 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (100,'',TO_DATE('2007-09-29 21:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+
+
