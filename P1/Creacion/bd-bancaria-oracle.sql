@@ -31,7 +31,7 @@ CREATE TABLE Tiene_p1 (
   PRIMARY KEY (dni,iban)
 );
 
-drop table Operacion_p1;
+
 CREATE TABLE Operacion_p1 (
   contador INT NOT NULL ,
   tipo CHAR NOT NULL,

@@ -1,3 +1,11 @@
+truncate TABLE Pertenece_p1;
+truncate TABLE Oficina_p1;
+truncate TABLE CAhorro_p1;
+truncate TABLE Operacion_p1;
+truncate TABLE Tiene_p1;
+truncate TABLE Cuenta_p1;
+truncate TABLE Usuario_p1;
+
 -- Usuario
 INSERT INTO Usuario_p1 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911');
 INSERT INTO Usuario_p1 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('92141555M','Bruno','Stewart',89,'Apartado núm.: 183, 7005 Praesent Ctra.','libero.Integer.in@Cumsociisnatoque.org','89316763');
