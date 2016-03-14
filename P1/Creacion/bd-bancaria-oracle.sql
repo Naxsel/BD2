@@ -41,6 +41,7 @@ CREATE TABLE Operacion_p1 (
   cdestino VARCHAR(34),
   sucursal VARCHAR(80),
   concepto VARCHAR(200),
+  cantidad NUMBER,
   FOREIGN KEY (corigen) REFERENCES Cuenta_p1(iban),
   FOREIGN KEY (cdestino) REFERENCES Cuenta_p1(iban),
   PRIMARY KEY (contador)

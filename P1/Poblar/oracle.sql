@@ -307,7 +307,6 @@ INSERT INTO Oficina_p1 (codigo,direccion,telefono) VALUES ('8848','9311 Proin Ca
 
 
 
-
 -- Pertenece (Todas las cuentas de Cuenta_p1 pertenece a una oficina)
 
 INSERT INTO PERTENECE_P1 (IBAN,CODIGO) VALUES ('FP33730958577227579078926552917807','1986');
