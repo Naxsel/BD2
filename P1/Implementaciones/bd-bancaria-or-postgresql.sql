@@ -11,7 +11,7 @@ DROP TYPE cuenta_p3 CASCADE;
 DROP TYPE oficina_p3 CASCADE;
 DROP TYPE operacion_p3 CASCADE;
 
-CREATE TYPE tipoOperacion_p3 as ENUM( 'ingresada', 'retirada', 'transferida');
+CREATE TYPE tipoOperacion_p3 as ENUM( 'ingreso', 'retirada', 'transferencia');
 
 CREATE TYPE usuario_p3 AS(
   dni VARCHAR(10),
@@ -38,7 +38,7 @@ CREATE TYPE oficina_p3 AS(
 
 CREATE TYPE operacion_p3 AS(
   contador INTEGER,
-  tipo CHAR,
+  tipo tipoOperacion_p3,
   fechaHora DATE,
   cOrigen VARCHAR(34),
   cDestino VARCHAR(34),
