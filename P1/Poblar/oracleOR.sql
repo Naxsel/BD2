@@ -1,5 +1,8 @@
 -- Cuenta
-INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11,58');
+
+INSERT INTO cuentaTabla_p2 VALUES (cuenta_P2('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11,58',NULL));
+INSERT INTO cuentaTabla_p2 VALUES (cuentaAhorro_P2('FP33730958577227579078926552917807','2,65','10'));
+/*
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('JI40453364997466550044235348213144','TL198715503499491378322716',TO_DATE('2016-08-17', 'yyyy-mm-dd'),'1412,07');
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('HL76676038213950241779936041435785','PG652702401877598541560408',TO_DATE('2015-03-07', 'yyyy-mm-dd'),'244,81');
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('BD19607765245983312200917823690887','YE869232102933034067936432',TO_DATE('2015-07-25', 'yyyy-mm-dd'),'1833,01');
@@ -99,8 +102,10 @@ INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('OI2241150215123
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('DX24266876469249982555172258133759','HR584194513110096587135765',TO_DATE('2015-09-21', 'yyyy-mm-dd'),'11,74');
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('IX08452657898345529796726578677976','EG059014545540882993377467',TO_DATE('2016-10-01', 'yyyy-mm-dd'),'1953,36');
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('BY10087113578567912692979144432606','DA442510510273806814083072',TO_DATE('2015-05-14', 'yyyy-mm-dd'),'1559,90');
+*/
 -- Usuario
-INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911', listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FP33730958577227579078926552917807')));
+INSERT INTO usuarioTabla_p2 VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911', listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FP33730958577227579078926552917807')));
+/*
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('92141555M','Bruno','Stewart',89,'Apartado núm.: 183, 7005 Praesent Ctra.','libero.Integer.in@Cumsociisnatoque.org','89316763');
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('38331046C','Otto','Frederick',97,'Apdo.:822-776 Sed, Avenida','senectus@velit.co.uk','17481518');
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('77927535U','Cara','Sanford',38,'828-2547 Lorem Calle','facilisis.non@sagittis.org','82656233');
@@ -200,11 +205,12 @@ INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono)
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('59266254I','Urielle','Reyes',24,'6709 Facilisi. C/','viverra.Maecenas@mollisneccursus.org','86456180');
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('71056385F','Ella','Chen',99,'Apartado núm.: 520, 6796 Eu Carretera','et@eu.net','46737107');
 INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('94059211M','Jenette','Monroe',90,'7352 Laoreet, Avda.','urna.suscipit.nonummy@facilisisfacilisismagna.ca','61406530');
-
+*/
 
 -- Oficina
 
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7778','880-8708 Volutpat Carretera','862869364');
+INSERT INTO oficinaTabla_p2 VALUES ('1986','880-8708 Volutpat Carretera','862869364', listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FP33730958577227579078926552917807')));
+/*
 INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5401','Apartado núm.: 517, 4078 Sollicitudin Av.','615365146');
 INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4622','Apdo.:587-7511 Pellentesque Avenida','208867799');
 INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4870','2608 Mauris Avda.','138327395');
@@ -306,11 +312,11 @@ INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1508','Apartado
 INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8848','9311 Proin Carretera','744948262');
 
 
-
+*/
 
 -- Pertenece (Todas las cuentas de cuentaTabla_p2 pertenece a una oficina)
 
-
+/*
 INSERT INTO pertenece_p2 (iban,codigo) VALUES((SELECT cuenta_p2(ref(cu)) from cuentaTabla_p2 cu where cu.iban='FP33730958577227579078926552917807') ,(SELECT oficina_p2(ref(o)) from oficinaTabla_p2 o where o.codigo='1986'));
 
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('JI40453364997466550044235348213144','1986');
@@ -412,9 +418,10 @@ INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('OI224115021512352915805015489547
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('DX24266876469249982555172258133759','8848');
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('IX08452657898345529796726578677976','8848');
 INSERT INTO pertenece_p2 (IBAN,CODIGO) VALUES ('BY10087113578567912692979144432606','8848');
-
+*/
 -- Cuenta de Ahorro
-INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('FP33730958577227579078926552917807', '2,65', '10');
+--INSERT INTO CUENTATABLA_P2 VALUES (CUENTAAHORRO_P2('FP33730958577227579078926552917807', '2,65', '10',NULL));
+/*
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('JI40453364997466550044235348213144', '3,0', '1');
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('HL76676038213950241779936041435785', '2,5', '31');
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('BD19607765245983312200917823690887', '2,5', '28');
@@ -434,11 +441,13 @@ INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('CZ112092178498507154419
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('AR32595816696735123283490230286479', '3,0', '5');
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('PA57877801854929214196122747132446', '2,5', '3');
 INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('AG22068521770637896137627734009238', '1,85', '2');
-
+*/
 
 
 
 -- operacionTabla_p2
+/*
+
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (1,'',TO_DATE('2014-10-20 08:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (2,'',TO_DATE('2009-03-19 02:59:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (3,'',TO_DATE('2008-10-04 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
@@ -539,8 +548,9 @@ INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (98,'',TO_DATE('2015-10-27 14:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (99,'',TO_DATE('2006-05-20 14:23:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
 INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (100,'',TO_DATE('2007-09-29 21:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+*/
 
-/*Tabla tiene_p1*/
+/*Tabla tiene_p1
 
 INSERT INTO tiene_p2 (IBAN,dni) VALUES ('FP33730958577227579078926552917807','31168350Y');
 INSERT INTO tiene_p2 (IBAN,dni) VALUES ('JI40453364997466550044235348213144','92141555M');
@@ -562,3 +572,4 @@ INSERT INTO tiene_p2 (IBAN,dni) VALUES ('CZ11209217849850715441903620157354','17
 INSERT INTO tiene_p2 (IBAN,dni) VALUES ('AR32595816696735123283490230286479','68163525V');
 INSERT INTO tiene_p2 (IBAN,dni) VALUES ('PA57877801854929214196122747132446','93953253G');
 INSERT INTO tiene_p2 (IBAN,dni) VALUES ('AG22068521770637896137627734009238','30135317S');
+*/

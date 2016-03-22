@@ -12,8 +12,11 @@ DROP TYPE cuenta_p2 FORCE;
 DROP TYPE oficina_p2;
 DROP TYPE operacion_p2;
 DROP TYPE listaCuentas_p2;
+DROP TYPE listaOperaciones_p2;
 
 CREATE TYPE listaCuentas_p2 AS VARRAY(110) OF REF cuenta_p2;
+CREATE TYPE listaOperaciones_p2 AS VARRAY(110) OF REF operacion_p2;
+
 
 CREATE OR REPLACE TYPE usuario_p2 as OBJECT(
 	dni VARCHAR(10),
@@ -23,14 +26,15 @@ CREATE OR REPLACE TYPE usuario_p2 as OBJECT(
 	direccion VARCHAR(80),
 	email VARCHAR(80),
 	telefono NUMBER(15),
-  cuentas listaCuentas_p2
+  cuentasUsuario listaCuentas_p2
 );
 
 CREATE OR REPLACE TYPE cuenta_p2 as OBJECT(
 	iban VARCHAR(34),
 	numero VARCHAR(34),
 	creacion DATE,
-	saldo FLOAT(20)
+	saldo FLOAT(20),
+  operaciones listaOperaciones_p2
 )NOT FINAL;
 
 
@@ -44,7 +48,8 @@ CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
 CREATE OR REPLACE TYPE oficina_p2 as OBJECT(
 	codigo VARCHAR(50),
 	direccion VARCHAR(80),
-	telefono INT(9)
+	telefono INT(9),
+  cuentasOficina listaCuentas_p2
 );
 
 CREATE OR REPLACE TYPE operacion_p2 as OBJECT(
@@ -55,7 +60,8 @@ CREATE OR REPLACE TYPE operacion_p2 as OBJECT(
 	cDestino VARCHAR(34),
 	sucursal VARCHAR(80),
 	concepto VARCHAR(200),
-  cantidad NUMBER
+  cantidad NUMBER,
+  cuentasOperacion listaCuentas_p2
 );
 
 CREATE TABLE usuarioTabla_p2 OF usuario_p2(PRIMARY KEY(dni));
