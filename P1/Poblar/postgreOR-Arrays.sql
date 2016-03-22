@@ -1,3 +1,6 @@
+INSERT INTO cuentaTabla_p3 (iban,numero,creacion,saldo) VALUES ('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11.58');
+INSERT INTO usuarioTabla_p3 VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911', '{FP33730958577227579078926552917807}');
+/*
 -- Usuario
 INSERT INTO usuarioTabla_p3 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911');
 INSERT INTO usuarioTabla_p3 (dni,nombre,apellidos,edad,direccion,email,telefono) VALUES ('92141555M','Bruno','Stewart',89,'Apartado núm.: 183, 7005 Praesent Ctra.','libero.Integer.in@Cumsociisnatoque.org','89316763');
@@ -531,8 +534,3 @@ INSERT INTO tiene_P3 (IBAN,dni) VALUES ('CZ11209217849850715441903620157354','24
 INSERT INTO tiene_P3 (IBAN,dni) VALUES ('BY10087113578567912692979144432606','65291361T');
 INSERT INTO tiene_P3 (IBAN,dni) VALUES ('WC68289017036674620243379974093682','80650823K');
 INSERT INTO tiene_P3 (IBAN,dni) VALUES ('BY10087113578567912692979144432606','30135317S');
-
-
-INSERT INTO cuentaTabla_p3 (iban,numero,creacion,saldo) VALUES ('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11.58');
-INSERT INTO usuarioTabla_p3 VALUES ('31168350Y','Naida','Ayala',81,'2817 Dictum. C.','et.netus@dolorDonecfringilla.edu','23980911', '{FP33730958577227579078926552917807}');
-
