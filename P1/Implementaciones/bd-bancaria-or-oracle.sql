@@ -33,16 +33,16 @@ CREATE OR REPLACE TYPE cuenta_p2 as OBJECT(
 	iban VARCHAR(34),
 	numero VARCHAR(34),
 	creacion DATE,
-	saldo FLOAT(20),
-  operaciones listaOperaciones_p2
+	saldo FLOAT,
+  listaOperaciones listaOperaciones_p2
 )NOT FINAL;
 
 
 CREATE OR REPLACE TYPE cuentaCorriente_p2 UNDER cuenta_p2();
 
 CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
-	interes FLOAT(5),
-	dia DATE
+	interes FLOAT,
+	dia NUMBER(2)
 );
 
 CREATE OR REPLACE TYPE oficina_p2 as OBJECT(
