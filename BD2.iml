@@ -8,5 +8,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="db4o-8.0.184.15484-all-java5" level="application" />
   </component>
 </module>
