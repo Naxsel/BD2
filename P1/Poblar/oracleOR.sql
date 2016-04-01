@@ -1,8 +1,107 @@
 -- Cuenta
-INSERT INTO operacionTabla_p2 VALUES (10,'',TO_DATE('2014-06-06 20:20:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
-INSERT INTO cuentaTabla_p2 VALUES (cuentaAhorro_P2('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11,58',listaOperaciones_p2((SELECT REF(o) FROM OPERACIONTABLA_P2 o where o.contador = 10)),'2,65','10'));
+INSERT INTO operacionTabla_p2  VALUES (1,'',TO_DATE('2014-10-20 08:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (2,'',TO_DATE('2009-03-19 02:59:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (3,'',TO_DATE('2008-10-04 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (4,'',TO_DATE('2008-12-29 02:24:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (5,'',TO_DATE('2012-08-20 15:50:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (6,'',TO_DATE('2012-10-13 09:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (7,'',TO_DATE('2008-07-22 03:32:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (8,'',TO_DATE('2013-08-16 05:15:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (9,'',TO_DATE('2013-05-31 13:26:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (10,'',TO_DATE('2014-06-06 20:20:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (11,'',TO_DATE('2006-05-05 14:01:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (12,'',TO_DATE('2011-05-29 22:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (13,'',TO_DATE('2011-07-04 11:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (14,'',TO_DATE('2010-05-08 15:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (15,'',TO_DATE('2014-06-23 08:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (16,'',TO_DATE('2014-01-15 11:21:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (17,'',TO_DATE('2007-12-13 16:22:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (18,'',TO_DATE('2009-03-03 14:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (19,'',TO_DATE('2006-05-31 13:07:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (20,'',TO_DATE('2011-01-05 23:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (21,'',TO_DATE('2012-02-19 07:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (22,'',TO_DATE('2009-06-21 20:52:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (23,'',TO_DATE('2012-05-08 23:33:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (24,'',TO_DATE('2011-12-18 16:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (25,'',TO_DATE('2014-08-19 03:59:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (26,'',TO_DATE('2008-06-17 19:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (27,'',TO_DATE('2009-05-09 08:34:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (28,'',TO_DATE('2011-10-15 11:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (29,'',TO_DATE('2013-10-07 10:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (30,'',TO_DATE('2008-09-26 12:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (31,'',TO_DATE('2016-01-04 19:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (32,'',TO_DATE('2007-12-01 13:38:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (33,'',TO_DATE('2014-10-25 15:07:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (34,'',TO_DATE('2008-03-25 08:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (35,'',TO_DATE('2012-08-12 08:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (36,'',TO_DATE('2015-05-24 17:20:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (37,'',TO_DATE('2005-06-06 00:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (38,'',TO_DATE('2014-03-08 01:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (39,'',TO_DATE('2011-07-06 19:05:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (40,'',TO_DATE('2013-05-18 21:45:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (41,'',TO_DATE('2012-12-14 14:05:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (42,'',TO_DATE('2014-04-18 12:33:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (43,'',TO_DATE('2014-11-04 18:03:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (44,'',TO_DATE('2014-08-21 22:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (45,'',TO_DATE('2011-11-29 02:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (46,'',TO_DATE('2007-09-21 00:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (47,'',TO_DATE('2009-12-03 04:00:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (48,'',TO_DATE('2009-04-01 04:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (49,'',TO_DATE('2006-11-30 19:54:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (50,'',TO_DATE('2012-05-13 21:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (51,'',TO_DATE('2015-09-18 23:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (52,'',TO_DATE('2010-03-27 22:16:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (53,'',TO_DATE('2007-07-16 09:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (54,'',TO_DATE('2015-03-04 04:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (55,'',TO_DATE('2007-04-30 20:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (56,'',TO_DATE('2011-01-28 12:36:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (57,'',TO_DATE('2010-01-01 10:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (58,'',TO_DATE('2008-07-08 21:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (59,'',TO_DATE('2008-05-21 17:02:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (60,'',TO_DATE('2007-03-09 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (61,'',TO_DATE('2010-05-04 21:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (62,'',TO_DATE('2013-06-21 09:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (63,'',TO_DATE('2013-12-20 02:58:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (64,'',TO_DATE('2012-07-19 12:17:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (65,'',TO_DATE('2008-08-04 15:06:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (66,'',TO_DATE('2007-06-13 11:08:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (67,'',TO_DATE('2015-04-03 16:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (68,'',TO_DATE('2007-02-03 11:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+INSERT INTO operacionTabla_p2  VALUES (69,'',TO_DATE('2013-05-03 14:52:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','','',NULL);
+/*INSERT INTO operacionTabla_p2  VALUES (70,'',TO_DATE('2015-06-19 23:50:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (71,'',TO_DATE('2007-09-06 05:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (72,'',TO_DATE('2005-12-13 22:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (73,'',TO_DATE('2011-03-06 07:34:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (74,'',TO_DATE('2007-11-30 07:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (75,'',TO_DATE('2015-08-15 10:15:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (76,'',TO_DATE('2014-03-02 12:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (77,'',TO_DATE('2015-10-25 22:26:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (78,'',TO_DATE('2006-09-03 21:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (79,'',TO_DATE('2015-11-01 00:09:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (80,'',TO_DATE('2014-06-19 09:55:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (81,'',TO_DATE('2015-03-29 20:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (82,'',TO_DATE('2010-06-07 10:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (83,'',TO_DATE('2005-03-25 21:16:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (84,'',TO_DATE('2010-04-21 15:03:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (85,'',TO_DATE('2014-01-11 02:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (86,'',TO_DATE('2013-03-13 19:58:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (87,'',TO_DATE('2007-01-09 18:54:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (88,'',TO_DATE('2007-03-15 00:44:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (89,'',TO_DATE('2006-04-28 11:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (90,'',TO_DATE('2011-04-11 17:41:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (91,'',TO_DATE('2013-06-29 12:32:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (92,'',TO_DATE('2006-02-26 11:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (93,'',TO_DATE('2010-08-11 14:39:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (94,'',TO_DATE('2012-05-21 20:53:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (95,'',TO_DATE('2006-11-05 07:57:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (96,'',TO_DATE('2006-12-21 00:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (97,'',TO_DATE('2013-05-17 02:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (98,'',TO_DATE('2015-10-27 14:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (99,'',TO_DATE('2006-05-20 14:23:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
+INSERT INTO operacionTabla_p2  VALUES (100,'',TO_DATE('2007-09-29 21:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','',''); */
+
+--INSERT INTO cuentaTabla_p2 VALUES (cuentaAhorro_p2('FP33730958577227579078926552917807','ZP918886081013488002618758',TO_DATE('2016-03-03', 'yyyy-mm-dd'),'11,58',listaOperaciones_p2((SELECT REF(o) FROM OPERACIONTABLA_P2 o where o.contador = 10)),'2,65','10'));
 --INSERT INTO cuentaTabla_p2 VALUES (cuentaAhorro_P2('FP33730958577227579078926552917807','2,65','10'));
-SHOW ERRORS;
 /*
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('JI40453364997466550044235348213144','TL198715503499491378322716',TO_DATE('2016-08-17', 'yyyy-mm-dd'),'1412,07');
 INSERT INTO cuentaTabla_p2 (iban,numero,creacion,saldo) VALUES ('HL76676038213950241779936041435785','PG652702401877598541560408',TO_DATE('2015-03-07', 'yyyy-mm-dd'),'244,81');
@@ -210,110 +309,152 @@ INSERT INTO usuarioTabla_p2 (dni,nombre,apellidos,edad,direccion,email,telefono)
 
 -- Oficina
 
-INSERT INTO oficinaTabla_p2 VALUES ('1986','880-8708 Volutpat Carretera','862869364', listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FP33730958577227579078926552917807')));
-/*
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5401','Apartado núm.: 517, 4078 Sollicitudin Av.','615365146');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4622','Apdo.:587-7511 Pellentesque Avenida','208867799');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4870','2608 Mauris Avda.','138327395');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4135','726-9715 Aliquet. Avenida','349535106');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8312','8300 Pharetra. Av.','167705336');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6865','8046 Donec ','429372675');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6588','2510 Auctor Ctra.','266394560');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9085','9856 Quis C/','172801270');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6723','366-6381 Vitae, Avda.','482537700');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7815','Apdo.:788-9134 Integer C.','155877285');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0053','927-2337 Phasellus Ctra.','374726347');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3937','Apartado núm.: 449, 8583 Nam C/','398209460');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7381','Apdo.:645-886 Et Calle','900884290');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8289','731-3133 Malesuada C/','114425144');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0778','Apartado núm.: 131, 166 Turpis. C/','428687262');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9839','Apartado núm.: 224, 7943 Sagittis ','960283979');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6731','Apdo.:563-6530 Nisl ','447138342');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1037','Apartado núm.: 900, 8829 Iaculis Avenida','220936534');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9696','Apartado núm.: 849, 2237 Elementum, Avenida','317447810');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2838','2002 Pharetra ','875629548');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2663','242-9757 Ut Avda.','614297443');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8705','Apdo.:488-2021 Etiam Ctra.','250993504');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2435','Apdo.:433-5271 Vestibulum C/','679395075');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7949','472-6422 Leo. Calle','905960355');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5385','Apdo.:347-7212 Ipsum C/','208129171');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0029','453-6456 Felis. Ctra.','453449524');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1315','6074 Convallis C/','161296236');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3584','765-3599 Fermentum Avda.','392647754');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1740','Apartado núm.: 764, 7446 Fames C/','111980176');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9388','Apdo.:576-8498 Ac Avda.','399868169');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3952','Apdo.:914-1916 Iaculis Avenida','328977634');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4005','Apdo.:382-2888 Iaculis C.','666961518');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6739','9281 Metus. Ctra.','648910244');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1739','Apdo.:992-369 Tincidunt C.','631470413');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9065','Apartado núm.: 662, 6879 Feugiat ','215282357');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4355','Apartado núm.: 626, 5029 Rhoncus Calle','326994565');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6681','Apartado núm.: 757, 9977 Pede. Carretera','566238819');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6718','3248 Vivamus Ctra.','115956700');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0815','Apartado núm.: 454, 7013 Mi ','463984313');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5289','Apdo.:496-5036 Elit, Calle','388772833');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7975','5910 Metus Av.','914169626');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1445','Apartado núm.: 503, 432 Imperdiet, Carretera','395387647');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1605','757-1930 Integer Av.','214503061');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4893','546-6483 Nunc Ctra.','998172273');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3722','Apdo.:877-8260 Sociis Calle','698959634');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4074','Apartado núm.: 832, 1959 Phasellus Calle','577802095');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6289','Apartado núm.: 234, 8627 Cras Avda.','247517139');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3137','Apartado núm.: 845, 4405 Neque. Avenida','757452215');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5695','412-9918 Netus Avda.','273894182');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2988','Apartado núm.: 590, 3003 Nibh. Avda.','209986218');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3756','2356 Vulputate, Avenida','773916054');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6887','Apartado núm.: 324, 7643 Nulla ','734523414');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7734','9618 Non Avda.','619759891');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2001','Apartado núm.: 115, 9415 Pharetra. Avda.','848274845');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6233','Apartado núm.: 215, 1455 Euismod Ctra.','384694338');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3172','Apartado núm.: 580, 4565 Ipsum Avenida','497773220');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6124','Apdo.:412-6395 Phasellus Ctra.','537954812');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5590','Apdo.:362-2291 At, Ctra.','739325659');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8571','Apdo.:461-1976 Vitae Calle','845480695');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1043','Apartado núm.: 359, 7955 Suspendisse Avenida','893948440');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0768','Apdo.:416-5869 Dui Avda.','523196196');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2142','838-148 Nunc Avenida','390273713');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1210','263-7460 Arcu. C.','864490136');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4588','Apartado núm.: 482, 8926 Lorem, Avenida','743415503');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8815','7277 Neque. C.','505608311');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7203','902-8970 Dui Calle','692567635');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5228','817-2600 Tincidunt Calle','847388553');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8178','Apdo.:216-2750 Faucibus Ctra.','772753720');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3072','Apartado núm.: 411, 9276 Turpis ','331964911');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7920','Apdo.:168-5059 Mauris ','960695517');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7343','6786 Enim Avda.','995597553');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7226','2823 Rutrum. Av.','828908641');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9321','Apartado núm.: 751, 2088 Metus. Ctra.','317933852');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('7717','4693 Sed Ctra.','762218517');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4799','Apartado núm.: 786, 6349 Vestibulum Avenida','471558930');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9683','Apdo.:871-2900 Blandit Calle','211837294');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2423','677-7485 Habitant Carretera','583234591');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4378','4792 Faucibus Avenida','922162250');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1705','744-9497 A, Calle','217957825');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4207','Apdo.:830-2663 Massa. Carretera','623936459');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3132','Apartado núm.: 688, 4195 Dui. Carretera','616333723');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4396','382-1733 Mus. Ctra.','699843784');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2049','Apartado núm.: 821, 610 Amet, Avda.','142436380');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1986','328-2856 Sit Avda.','414118468');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5932','Apartado núm.: 225, 6921 Blandit Avenida','630824281');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('2081','Apartado núm.: 927, 1373 Integer Av.','410507916');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('0886','Apdo.:294-9707 Enim. C.','851207640');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4593','827-6675 Nec Calle','307212069');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3502','897-4181 Augue. Calle','531689160');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6445','Apartado núm.: 561, 5888 Ut, Avenida','596929870');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('3434','Apartado núm.: 132, 3014 Mauris Calle','843944968');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('4142','271-6894 Hendrerit. Carretera','238445637');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('5870','6532 Enim. C.','866348790');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('9514','Apdo.:186-3493 Eu Av.','626909784');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('6656','Apdo.:406-7707 Maecenas ','558876002');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1199','Apartado núm.: 242, 6187 Quisque Carretera','319512827');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8934','1080 Mi Carretera','465780993');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('1508','Apartado núm.: 772, 282 Semper C/','536574688');
-INSERT INTO oficinaTabla_p2 (codigo,direccion,telefono) VALUES ('8848','9311 Proin Carretera','744948262');
+INSERT INTO oficinaTabla_p2 VALUES ('1986','880-8708 Volutpat Carretera','862869364', listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FP33730958577227579078926552917807'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'JI40453364997466550044235348213144'),
+                                                                                                      (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'HL76676038213950241779936041435785'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BD19607765245983312200917823690887'),
+                                                                                                      (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'HR80011754363760623558518621971359'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'TC21975092033903028935377885821921'),
+                                                                                                      (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RJ82870931752843605801348664024434'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OR88691482977841194690319235692353'),
+                                                                                                      (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OA95633548864133819790922760765435')));
+                                                                                       -- (SELECT CAST(COLLECT(REF(c)) AS listaCuentas_p2) FROM Cuentatabla_p2 c WHERE c.iban= 'xxxx')
+INSERT INTO oficinaTabla_p2  VALUES ('6445','Apartado núm.: 561, 5888 Ut, Avenida','596929870',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BI93137422139573451319199350680286'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'VX49974070678271238458117005418174'),
+                                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'EO98500155929072427788207743122255'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PE02267316774640124817561016121571'),
+                                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'MC34720153034518480223567180403259'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'II19860669879734995631145967201418'),
+                                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'WR03493457992206687764115095160218'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'CZ11209217849850715441903620157354'),
+                                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AR32595816696735123283490230286479'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PA57877801854929214196122747132446')));
+INSERT INTO oficinaTabla_p2  VALUES ('3434','Apartado núm.: 132, 3014 Mauris Calle','843944968',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AG22068521770637896137627734009238'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'HC87502145828591193867053415268618'),
+                                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'LQ08783030688975279554851173836495'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'QX48459802571066563602681623869264'),
+                                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'GZ21915937507216369402268531389374'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FY46505572115842257706433948574753'),
+                                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FK12940619672042304844556888713503'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'UC67348960132029765997147884237004'),
+                                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'JB88611756771488451742615401327975'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FS12372367945023429729934776277642')));
+INSERT INTO oficinaTabla_p2  VALUES ('4142','271-6894 Hendrerit. Carretera','238445637',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RF97661384155930614251460461901457'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FO47266042977795964425519691637166'),
+                                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RQ91366066304566668570537896480186'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FW92919684430978571229084986963387'),
+                                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BQ71468749696325528230318660031169'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OJ26689642584785244639864376338362'),
+                                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OB41067646554454778104581790209771'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'XF97109853146322660632150715818621'),
+                                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'ZJ90425560696711287949525484709953'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'EB45054677128791555083042146484594')));
+INSERT INTO oficinaTabla_p2  VALUES ('5870','6532 Enim. C.','866348790',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FI88146082461623962018683957064074'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'KJ55597209867397890964762504974329'),
+                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'IJ39106455177803193485789502661802'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AD10717342582416905027910428234466'),
+                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'CU31460157758007117036978351568061'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'NA82264457381598741989494683817690'),
+                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'ZZ80432206613045265071385055745270'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'EI58350612471888479914423261204873'),
+                                                                                        (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'ZX41591306216095159246716987829663'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PF95812037075358869290733997999561')));
+INSERT INTO oficinaTabla_p2  VALUES ('9514','Apdo.:186-3493 Eu Av.','626909784',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'ZB89070802130281351831926081001333'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'XJ62982689661591254344672180612576'),
+                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'EM05622196475818832793679587219930'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'MS79712484094410089746652491481939'),
+                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'CT29848083373054572123559161082452'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'YM97776527494443147280689721886825'),
+                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'VS46400946180933732848010407247092'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'YZ29626612693497168620701014009267'),
+                                                                                                (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PH65612663991810423872346892375490'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'GL62174332400925780853351195340228')));
+INSERT INTO oficinaTabla_p2  VALUES ('1199','Apartado núm.: 242, 6187 Quisque Carretera','319512827',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'GC11108498595260856600587812752500'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'NY32322508338458522212255405176655'),
+                                                                                                                     (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BS05350926992564231669539468850200'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RQ02912494314866274171789907253059'),
+                                                                                                                     (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'MX14044621116068691991135290515564'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RV87973014613741779466901279120070'),
+                                                                                                                     (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'IK91424134167910834375593015806782'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AT00324488330206401327610898869608'),
+                                                                                                                     (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AN75616142769258980573016059708786'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RY92829752608933178656438876108105')));
+INSERT INTO oficinaTabla_p2  VALUES ('8934','1080 Mi Carretera','465780993',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OV35120337827078576884618409948728'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AH55955349110340454702273499219308'),
+                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PW58524607714754174087187747584954'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'UZ73437080903030462956370730444976'),
+                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'AL62879017320647718451337616619162'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'WL20881903893391450526693915360220'),
+                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'SV87652338336001848118733512408152'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'NW00056940963655579264524151629201'),
+                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'UM27947144790004657705962845619861'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BN17040084703449159583729959495788')));
+INSERT INTO oficinaTabla_p2  VALUES ('1508','Apartado núm.: 772, 282 Semper C/','536574688',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'PV60470816813744266555174797245184'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'LI47173022958416544908385790145558'),
+                                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'GJ83756120889692139393411886957748'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'FV69411256630254696777644127275235'),
+                                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'RG82810402080050307647000434858856'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'YX04876371900210783256441115350591'),
+                                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'QF91021800071371971591158198068049'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'DU03533074532335156854612613378642'),
+                                                                                                            (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OI64284360943954177117901833636124'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'HM94519604765270331545436247391528')));
+INSERT INTO oficinaTabla_p2  VALUES ('8848','9311 Proin Carretera','744948262',listaCuentas_p2((SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BN54015334716997389059159891786068'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'WC68289017036674620243379974093682'),
+                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OJ60023935318283110686551359916021'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'OI22411502151235291580501548954760'),
+                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'QN09837723310850431161206293364139'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'DX24266876469249982555172258133759'),
+                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'JK84930871291725086954570801639250'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'IX08452657898345529796726578677976'),
+                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'YU21619025033640403579260144249592'),(SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'BY10087113578567912692979144432606'),
+                                                                                               (SELECT REF(c) FROM CUENTATABLA_P2 c where c.iban = 'ZZ79792401884462158656425214620714')));
 
 
-*/
+INSERT INTO oficinaTabla_p2  VALUES ('5401','Apartado núm.: 517, 4078 Sollicitudin Av.','615365146','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4622','Apdo.:587-7511 Pellentesque Avenida','208867799','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4870','2608 Mauris Avda.','138327395','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4135','726-9715 Aliquet. Avenida','349535106','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8312','8300 Pharetra. Av.','167705336','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6865','8046 Donec ','429372675','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6588','2510 Auctor Ctra.','266394560','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9085','9856 Quis C/','172801270','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6723','366-6381 Vitae, Avda.','482537700','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7815','Apdo.:788-9134 Integer C.','155877285','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0053','927-2337 Phasellus Ctra.','374726347','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3937','Apartado núm.: 449, 8583 Nam C/','398209460','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7381','Apdo.:645-886 Et Calle','900884290','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8289','731-3133 Malesuada C/','114425144','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0778','Apartado núm.: 131, 166 Turpis. C/','428687262','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9839','Apartado núm.: 224, 7943 Sagittis ','960283979','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6731','Apdo.:563-6530 Nisl ','447138342','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1037','Apartado núm.: 900, 8829 Iaculis Avenida','220936534','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9696','Apartado núm.: 849, 2237 Elementum, Avenida','317447810','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2838','2002 Pharetra ','875629548','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2663','242-9757 Ut Avda.','614297443','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8705','Apdo.:488-2021 Etiam Ctra.','250993504','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2435','Apdo.:433-5271 Vestibulum C/','679395075','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7949','472-6422 Leo. Calle','905960355','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5385','Apdo.:347-7212 Ipsum C/','208129171','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0029','453-6456 Felis. Ctra.','453449524','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1315','6074 Convallis C/','161296236','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3584','765-3599 Fermentum Avda.','392647754','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1740','Apartado núm.: 764, 7446 Fames C/','111980176','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9388','Apdo.:576-8498 Ac Avda.','399868169','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3952','Apdo.:914-1916 Iaculis Avenida','328977634','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4005','Apdo.:382-2888 Iaculis C.','666961518','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6739','9281 Metus. Ctra.','648910244','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1739','Apdo.:992-369 Tincidunt C.','631470413','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9065','Apartado núm.: 662, 6879 Feugiat ','215282357','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4355','Apartado núm.: 626, 5029 Rhoncus Calle','326994565','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6681','Apartado núm.: 757, 9977 Pede. Carretera','566238819','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6718','3248 Vivamus Ctra.','115956700','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0815','Apartado núm.: 454, 7013 Mi ','463984313','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5289','Apdo.:496-5036 Elit, Calle','388772833','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7975','5910 Metus Av.','914169626','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1445','Apartado núm.: 503, 432 Imperdiet, Carretera','395387647','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1605','757-1930 Integer Av.','214503061','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4893','546-6483 Nunc Ctra.','998172273','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3722','Apdo.:877-8260 Sociis Calle','698959634','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4074','Apartado núm.: 832, 1959 Phasellus Calle','577802095','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6289','Apartado núm.: 234, 8627 Cras Avda.','247517139','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3137','Apartado núm.: 845, 4405 Neque. Avenida','757452215','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5695','412-9918 Netus Avda.','273894182','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2988','Apartado núm.: 590, 3003 Nibh. Avda.','209986218','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3756','2356 Vulputate, Avenida','773916054','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6887','Apartado núm.: 324, 7643 Nulla ','734523414','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7734','9618 Non Avda.','619759891','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2001','Apartado núm.: 115, 9415 Pharetra. Avda.','848274845','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6233','Apartado núm.: 215, 1455 Euismod Ctra.','384694338','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3172','Apartado núm.: 580, 4565 Ipsum Avenida','497773220','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6124','Apdo.:412-6395 Phasellus Ctra.','537954812','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5590','Apdo.:362-2291 At, Ctra.','739325659','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8571','Apdo.:461-1976 Vitae Calle','845480695','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1043','Apartado núm.: 359, 7955 Suspendisse Avenida','893948440','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0768','Apdo.:416-5869 Dui Avda.','523196196','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2142','838-148 Nunc Avenida','390273713','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1210','263-7460 Arcu. C.','864490136','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4588','Apartado núm.: 482, 8926 Lorem, Avenida','743415503','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8815','7277 Neque. C.','505608311','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7203','902-8970 Dui Calle','692567635','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5228','817-2600 Tincidunt Calle','847388553','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('8178','Apdo.:216-2750 Faucibus Ctra.','772753720','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3072','Apartado núm.: 411, 9276 Turpis ','331964911','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7920','Apdo.:168-5059 Mauris ','960695517','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7343','6786 Enim Avda.','995597553','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7226','2823 Rutrum. Av.','828908641','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9321','Apartado núm.: 751, 2088 Metus. Ctra.','317933852','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('7717','4693 Sed Ctra.','762218517','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4799','Apartado núm.: 786, 6349 Vestibulum Avenida','471558930','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('9683','Apdo.:871-2900 Blandit Calle','211837294','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2423','677-7485 Habitant Carretera','583234591','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4378','4792 Faucibus Avenida','922162250','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1705','744-9497 A, Calle','217957825','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4207','Apdo.:830-2663 Massa. Carretera','623936459','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3132','Apartado núm.: 688, 4195 Dui. Carretera','616333723','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4396','382-1733 Mus. Ctra.','699843784','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2049','Apartado núm.: 821, 610 Amet, Avda.','142436380','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('1986','328-2856 Sit Avda.','414118468','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('5932','Apartado núm.: 225, 6921 Blandit Avenida','630824281','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('2081','Apartado núm.: 927, 1373 Integer Av.','410507916','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('0886','Apdo.:294-9707 Enim. C.','851207640','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('4593','827-6675 Nec Calle','307212069','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('3502','897-4181 Augue. Calle','531689160','NULL');
+INSERT INTO oficinaTabla_p2  VALUES ('6656','Apdo.:406-7707 Maecenas ','558876002','NULL');
+
+
 
 -- Pertenece (Todas las cuentas de cuentaTabla_p2 pertenece a una oficina)
 
@@ -447,109 +588,10 @@ INSERT INTO cuentaAhorro_p2 (IBAN,INTERES, DIA) VALUES ('AG220685217706378961376
 
 
 -- operacionTabla_p2
-/*
 
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (1,'',TO_DATE('2014-10-20 08:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (2,'',TO_DATE('2009-03-19 02:59:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (3,'',TO_DATE('2008-10-04 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (4,'',TO_DATE('2008-12-29 02:24:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (5,'',TO_DATE('2012-08-20 15:50:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (6,'',TO_DATE('2012-10-13 09:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (7,'',TO_DATE('2008-07-22 03:32:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (8,'',TO_DATE('2013-08-16 05:15:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (9,'',TO_DATE('2013-05-31 13:26:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (10,'',TO_DATE('2014-06-06 20:20:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (11,'',TO_DATE('2006-05-05 14:01:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (12,'',TO_DATE('2011-05-29 22:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (13,'',TO_DATE('2011-07-04 11:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (14,'',TO_DATE('2010-05-08 15:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (15,'',TO_DATE('2014-06-23 08:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (16,'',TO_DATE('2014-01-15 11:21:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (17,'',TO_DATE('2007-12-13 16:22:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (18,'',TO_DATE('2009-03-03 14:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (19,'',TO_DATE('2006-05-31 13:07:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (20,'',TO_DATE('2011-01-05 23:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (21,'',TO_DATE('2012-02-19 07:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (22,'',TO_DATE('2009-06-21 20:52:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (23,'',TO_DATE('2012-05-08 23:33:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (24,'',TO_DATE('2011-12-18 16:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (25,'',TO_DATE('2014-08-19 03:59:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (26,'',TO_DATE('2008-06-17 19:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (27,'',TO_DATE('2009-05-09 08:34:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (28,'',TO_DATE('2011-10-15 11:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (29,'',TO_DATE('2013-10-07 10:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (30,'',TO_DATE('2008-09-26 12:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (31,'',TO_DATE('2016-01-04 19:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (32,'',TO_DATE('2007-12-01 13:38:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (33,'',TO_DATE('2014-10-25 15:07:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (34,'',TO_DATE('2008-03-25 08:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (35,'',TO_DATE('2012-08-12 08:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (36,'',TO_DATE('2015-05-24 17:20:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (37,'',TO_DATE('2005-06-06 00:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (38,'',TO_DATE('2014-03-08 01:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (39,'',TO_DATE('2011-07-06 19:05:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (40,'',TO_DATE('2013-05-18 21:45:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (41,'',TO_DATE('2012-12-14 14:05:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (42,'',TO_DATE('2014-04-18 12:33:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (43,'',TO_DATE('2014-11-04 18:03:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (44,'',TO_DATE('2014-08-21 22:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (45,'',TO_DATE('2011-11-29 02:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (46,'',TO_DATE('2007-09-21 00:43:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (47,'',TO_DATE('2009-12-03 04:00:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (48,'',TO_DATE('2009-04-01 04:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (49,'',TO_DATE('2006-11-30 19:54:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (50,'',TO_DATE('2012-05-13 21:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (51,'',TO_DATE('2015-09-18 23:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (52,'',TO_DATE('2010-03-27 22:16:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (53,'',TO_DATE('2007-07-16 09:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (54,'',TO_DATE('2015-03-04 04:12:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (55,'',TO_DATE('2007-04-30 20:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (56,'',TO_DATE('2011-01-28 12:36:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (57,'',TO_DATE('2010-01-01 10:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (58,'',TO_DATE('2008-07-08 21:48:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (59,'',TO_DATE('2008-05-21 17:02:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (60,'',TO_DATE('2007-03-09 17:28:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (61,'',TO_DATE('2010-05-04 21:27:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (62,'',TO_DATE('2013-06-21 09:49:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (63,'',TO_DATE('2013-12-20 02:58:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (64,'',TO_DATE('2012-07-19 12:17:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (65,'',TO_DATE('2008-08-04 15:06:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (66,'',TO_DATE('2007-06-13 11:08:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (67,'',TO_DATE('2015-04-03 16:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (68,'',TO_DATE('2007-02-03 11:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (69,'',TO_DATE('2013-05-03 14:52:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (70,'',TO_DATE('2015-06-19 23:50:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (71,'',TO_DATE('2007-09-06 05:40:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (72,'',TO_DATE('2005-12-13 22:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (73,'',TO_DATE('2011-03-06 07:34:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (74,'',TO_DATE('2007-11-30 07:47:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (75,'',TO_DATE('2015-08-15 10:15:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (76,'',TO_DATE('2014-03-02 12:31:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (77,'',TO_DATE('2015-10-25 22:26:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (78,'',TO_DATE('2006-09-03 21:14:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (79,'',TO_DATE('2015-11-01 00:09:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (80,'',TO_DATE('2014-06-19 09:55:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (81,'',TO_DATE('2015-03-29 20:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (82,'',TO_DATE('2010-06-07 10:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (83,'',TO_DATE('2005-03-25 21:16:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (84,'',TO_DATE('2010-04-21 15:03:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (85,'',TO_DATE('2014-01-11 02:11:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (86,'',TO_DATE('2013-03-13 19:58:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (87,'',TO_DATE('2007-01-09 18:54:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (88,'',TO_DATE('2007-03-15 00:44:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (89,'',TO_DATE('2006-04-28 11:10:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (90,'',TO_DATE('2011-04-11 17:41:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (91,'',TO_DATE('2013-06-29 12:32:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (92,'',TO_DATE('2006-02-26 11:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (93,'',TO_DATE('2010-08-11 14:39:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (94,'',TO_DATE('2012-05-21 20:53:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (95,'',TO_DATE('2006-11-05 07:57:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (96,'',TO_DATE('2006-12-21 00:13:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (97,'',TO_DATE('2013-05-17 02:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (98,'',TO_DATE('2015-10-27 14:37:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (99,'',TO_DATE('2006-05-20 14:23:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-INSERT INTO operacionTabla_p2 (contador,tipo,fechahora,corigen,cdestino,sucursal,concepto) VALUES (100,'',TO_DATE('2007-09-29 21:25:00', 'yyyy-mm-dd HH24:MI:SS'),'','','','');
-*/
+
+
+
 
 /*Tabla tiene_p1
 
