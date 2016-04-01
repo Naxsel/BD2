@@ -10,7 +10,7 @@ DROP TYPE cuentaCorriente_p2;
 DROP TYPE cuentaAhorro_p2;
 DROP TYPE cuenta_p2 FORCE;
 DROP TYPE oficina_p2;
-DROP TYPE operacion_p2;
+DROP TYPE operacion_p2 FORCE;
 DROP TYPE listaCuentas_p2;
 DROP TYPE listaOperaciones_p2;
 
@@ -60,8 +60,7 @@ CREATE OR REPLACE TYPE operacion_p2 as OBJECT(
 	cDestino VARCHAR(34),
 	sucursal VARCHAR(80),
 	concepto VARCHAR(200),
-  cantidad NUMBER,
-  cuentasOperacion listaCuentas_p2
+  cantidad NUMBER
 );
 
 CREATE TABLE usuarioTabla_p2 OF usuario_p2(PRIMARY KEY(dni));
