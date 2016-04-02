@@ -153,7 +153,7 @@ public class InsertarDatos {
         Oficina o5 = new Oficina("1199","Apartado núm.: 242, 6187 Quisque Carretera",319512827,null);
         Cuenta[] t10 = {c2, c3};
         o5.setCuentas(t10);
-        Oficina o6 = new Oficina("5870","6532 Enim. C.",866348790,null;
+        Oficina o6 = new Oficina("5870","6532 Enim. C.",866348790,null);
         Cuenta[] t11 = {c4};
         o6.setCuentas(t11);
         Oficina o7 = new Oficina("8848","9311 Proin Carretera",744948262,null);
@@ -252,26 +252,66 @@ public class InsertarDatos {
         Oficina o98 = new Oficina("1508","Apartado núm.: 772, 282 Semper C/",536574688,null);
         Oficina o99 = new Oficina("5932","Apartado núm.: 225, 6921 Blandit Avenida",630824281,null);
 
-        Usuario u1 = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,[c21,c23]);
-        Usuario u2 = new Usuario("92141555M","Bruno","Stewart",89,"Apartado núm.: 183, 7005 Praesent Ctra.","libero.Integer.in@Cumsociisnatoque.org",89316763,[c22,c1]);
-        Usuario u100 = new Usuario("38331046C","Otto","Frederick",97,"Apdo.:822-776 Sed, Avenida","senectus@velit.co.uk",17481518,[c24,c25]);
-        Usuario u3 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233,[c6,c2]);
-        Usuario u4 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740,[c8,c7]);
-        Usuario u5 = new Usuario("88709936O","Megan","Fulton",21,"Apdo.:152-9606 Nec, C/","pede@ultriciesornare.co.uk",90782401,[c7,c8,c3]);
-        Usuario u6 = new Usuario("43117428J","Hannah","Ford",65,"Apartado núm.: 937, 445 Semper C.","Phasellus.elit.pede@lectusCum.org",28939847,[c9,c4]);
-        Usuario u7 = new Usuario("35117554Q","Carl","Fowler",36,"321-5349 Vulputate C.","Proin@arcuimperdiet.net",41419586,[c25,c24]);
-        Usuario u8 = new Usuario("54136748M","Harding","Franks",71,"935-8589 A Avenida","mi.Aliquam.gravida@lacusUt.net",12146367,[c10]);
-        Usuario u9 = new Usuario("83145806D","Shoshana","Joyce",90,"880-3394 In Carretera","Mauris.eu.turpis@augueacipsum.org",21548203,[c23]);
-        Usuario u10 = new Usuario("35500342P","Hamilton","Mcgowan",99,"Apartado núm.: 647, 190 Velit ","ipsum.ac@Vivamus.org",42160395,[c11]);
-        Usuario u11 = new Usuario("47171447R","Briar","Franks",83,"Apdo.:952-8344 Malesuada Carretera","et.rutrum@commodoatlibero.net",26983897,[c12]);
-        Usuario u12 = new Usuario("39897410T","Xenos","Calderon",20,"603 In C.","gravida@egetipsumDonec.org",10614294,[c13]);
-        Usuario u13 = new Usuario("82545668W","Julian","Clements",33,"455-4836 Ante. C.","Fusce.dolor@sedfacilisis.edu",72347342,[c14]);
-        Usuario u14 = new Usuario("77863158P","Leilani","Barnett",75,"888-9110 Urna. Avda.","eleifend.nec@sociis.co.uk",30916976,[c15]);
-        Usuario u15 = new Usuario("18093847G","Jenette","Sims",61,"Apdo.:436-8148 Euismod Calle","turpis@Donec.ca",92648598,[c16]);
-        Usuario u16 = new Usuario("17791361N","Dieter","Knapp",62,"Apdo.:789-6964 Vestibulum Ctra.","Cras.convallis.convallis@pedemalesuadavel.edu",53376837,[c17]);
-        Usuario u17 = new Usuario("68163525V","Garrison","Vaughn",59,"Apdo.:335-159 Metus Calle","sed@quamdignissimpharetra.org",82503747,[c18]);
-        Usuario u18 = new Usuario("93953253G","Barry","Vincent",51,"Apdo.:762-8794 Sodales C/","Cras@velturpisAliquam.ca",16829915,[c19]);
-        Usuario u19 = new Usuario("30135317S","Christine","Howell",85,"Apartado núm.: 537, 7494 Eros Avda.","at@auctorodio.com",29147595,[c5,c20]);
+        Usuario u1 = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,null);
+        Cuenta[] t13 = {c21,c23};
+        u1.setCuentas(t13);
+        Usuario u2 = new Usuario("92141555M","Bruno","Stewart",89,"Apartado núm.: 183, 7005 Praesent Ctra.","libero.Integer.in@Cumsociisnatoque.org",89316763,null);
+        Cuenta[] t14 = {c22,c1};
+        u2.setCuentas(t14);
+        Usuario u100 = new Usuario("38331046C","Otto","Frederick",97,"Apdo.:822-776 Sed, Avenida","senectus@velit.co.uk",17481518,null);
+        Cuenta[] t15 = {c24,c25};
+        u100.setCuentas(t15);
+        Usuario u3 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233,null);
+        Cuenta[] t16 = {c6,c2};
+        u3.setCuentas(t16);
+        Usuario u4 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740,null);
+        Cuenta[] t17 = {c8,c7};
+        u4.setCuentas(t17);
+        Usuario u5 = new Usuario("88709936O","Megan","Fulton",21,"Apdo.:152-9606 Nec, C/","pede@ultriciesornare.co.uk",90782401,null);
+        Cuenta[] t18 = {c7,c8,c3};
+        u5.setCuentas(t18);
+        Usuario u6 = new Usuario("43117428J","Hannah","Ford",65,"Apartado núm.: 937, 445 Semper C.","Phasellus.elit.pede@lectusCum.org",28939847,null);
+        Cuenta[] t19 = {c9,c4};
+        u6.setCuentas(t19);
+        Usuario u7 = new Usuario("35117554Q","Carl","Fowler",36,"321-5349 Vulputate C.","Proin@arcuimperdiet.net",41419586,null);
+        Cuenta[] t20 = {c25,c24};
+        u7.setCuentas(t20);
+        Usuario u8 = new Usuario("54136748M","Harding","Franks",71,"935-8589 A Avenida","mi.Aliquam.gravida@lacusUt.net",12146367,null);
+        Cuenta[] t21 = {c10};
+        u8.setCuentas(t21);
+        Usuario u9 = new Usuario("83145806D","Shoshana","Joyce",90,"880-3394 In Carretera","Mauris.eu.turpis@augueacipsum.org",21548203,null);
+        Cuenta[] t22 = {c23};
+        u9.setCuentas(t22);
+        Usuario u10 = new Usuario("35500342P","Hamilton","Mcgowan",99,"Apartado núm.: 647, 190 Velit ","ipsum.ac@Vivamus.org",42160395,null);
+        Cuenta[] t23 = {c11};
+        u10.setCuentas(t23);
+        Usuario u11 = new Usuario("47171447R","Briar","Franks",83,"Apdo.:952-8344 Malesuada Carretera","et.rutrum@commodoatlibero.net",26983897,null);
+        Cuenta[] t24 = {c12};
+        u11.setCuentas(t24);
+        Usuario u12 = new Usuario("39897410T","Xenos","Calderon",20,"603 In C.","gravida@egetipsumDonec.org",10614294,null);
+        Cuenta[] t25 = {c13};
+        u12.setCuentas(t25);
+        Usuario u13 = new Usuario("82545668W","Julian","Clements",33,"455-4836 Ante. C.","Fusce.dolor@sedfacilisis.edu",72347342,null);
+        Cuenta[] t26 = {c14};
+        u13.setCuentas(t26);
+        Usuario u14 = new Usuario("77863158P","Leilani","Barnett",75,"888-9110 Urna. Avda.","eleifend.nec@sociis.co.uk",30916976,null);
+        Cuenta[] t27 = {c15};
+        u14.setCuentas(t27);
+        Usuario u15 = new Usuario("18093847G","Jenette","Sims",61,"Apdo.:436-8148 Euismod Calle","turpis@Donec.ca",92648598,null);
+        Cuenta[] t28 = {c16};
+        u15.setCuentas(t28);
+        Usuario u16 = new Usuario("17791361N","Dieter","Knapp",62,"Apdo.:789-6964 Vestibulum Ctra.","Cras.convallis.convallis@pedemalesuadavel.edu",53376837,null);
+        Cuenta[] t29 = {c17};
+        u16.setCuentas(t29);
+        Usuario u17 = new Usuario("68163525V","Garrison","Vaughn",59,"Apdo.:335-159 Metus Calle","sed@quamdignissimpharetra.org",82503747,null);
+        Cuenta[] t30 = {c18};
+        u17.setCuentas(t30);
+        Usuario u18 = new Usuario("93953253G","Barry","Vincent",51,"Apdo.:762-8794 Sodales C/","Cras@velturpisAliquam.ca",16829915,null);
+        Cuenta[] t31 = {c19};
+        u18.setCuentas(t31);
+        Usuario u19 = new Usuario("30135317S","Christine","Howell",85,"Apartado núm.: 537, 7494 Eros Avda.","at@auctorodio.com",29147595,null);
+        Cuenta[] t32 = {c5,c20};
+        u19.setCuentas(t32);
         Usuario u20 = new Usuario("76450987Y","Stacey","Leblanc",90,"Apartado núm.: 549, 1019 Massa. Avda.","nec.mollis@nonquamPellentesque.co.uk",53205353,null);
         Usuario u21 = new Usuario("11085222F","Lamar","Rhodes",36,"Apdo.:843-2217 Adipiscing, Ctra.","Phasellus@eratnonummy.net",77637474,null);
         Usuario u22 = new Usuario("35673839Q","Lana","William",24,"Apdo.:842-5300 Auctor, Avenida","pede.Nunc@gravidasitamet.com",96596554,null);
@@ -354,8 +394,4 @@ public class InsertarDatos {
         Usuario u99 = new Usuario("94059211M","Jenette","Monroe",90,"7352 Laoreet, Avda.","urna.suscipit.nonummy@facilisisfacilisismagna.ca",61406530,null);
 
     }
-
-
-
-
 }
