@@ -18,6 +18,8 @@ public class AccesDB {
 
     final static String DB4OFILENAME = DB_FOLDER + "\\" + DB_FILE;
 
+    public static ObjectContainer db;
+
     public static void main(String[]args) {
         new File(DB4OFILENAME).delete();
         ObjectContainer db=Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), DB4OFILENAME);
