@@ -1,4 +1,4 @@
-DROP TABLE usuarioTabla_p3;
+DROP TABLE usuarioTabla_p4;
 DROP TABLE oficinaTabla_p4;
 DROP TABLE cuentaTabla_p4;
 DROP TABLE operacionTabla_p4;
@@ -13,55 +13,51 @@ DROP TYPE oficina_p4;
 DROP TYPE operacion_p4;
 
 
-CREATE OR REPLACE TYPE usuario_p4 as(
+CREATE TYPE usuario_p4 as(
   dni VARCHAR(10),
   nombre VARCHAR(30),
   apellidos VARCHAR(80),
-  edad NUMBER,
+  edad INT,
   direccion VARCHAR(80),
   email VARCHAR(80),
-  telefono NUMBER
-);
+  telefono INT
+)MODE DB2SQL;
 
-CREATE OR REPLACE TYPE cuenta_p4 as(
+CREATE TYPE cuenta_p4 as(
   iban VARCHAR(34),
   numero VARCHAR(34),
   creacion DATE,
   saldo FLOAT(20)
-)NOT FINAL;
+)MODE DB2SQL;
 
-CREATE OR REPLACE TYPE cuentaCorriente_p4 UNDER cuenta_p4;
+CREATE  TYPE cuentaCorriente_p4 UNDER cuenta_p4 MODE DB2SQL;
 
-CREATE OR REPLACE TYPE cuentaAhorro_p4 UNDER cuenta_p4 as(
+CREATE  TYPE cuentaAhorro_p4 UNDER cuenta_p4 as(
   interes FLOAT(5),
   dia DATE
-);
+)MODE DB2SQL;
 
-CREATE OR REPLACE TYPE oficina_p4 as(
+CREATE  TYPE oficina_p4 as(
   codigo VARCHAR(50),
   direccion VARCHAR(80),
-  telefono NUMBER
-);
+  telefono INT
+)MODE DB2SQL;
 
-CREATE OR REPLACE TYPE operacion_p4 as(
-  contador NUMBER,
+CREATE  TYPE operacion_p4 as(
+  contador INT,
   tipo VARCHAR(15),		--mirar si hacer tipo nuevo
   fechaHora DATE,		--juntar fecha y hora porque el tipo date en oracle almacena las dos
   cOrigen VARCHAR(34),
   cDestino VARCHAR(34),
   sucursal VARCHAR(80),
   concepto VARCHAR(200),
-  cantidad NUMBER
-);
+  cantidad INT
+)MODE DB2SQL;
 
-CREATE TABLE usuarioTabla_p4 OF usuario_p4;
-ALTER TABLE usuarioTabla_p4 ADD PRIMARY KEY(dni);
-CREATE TABLE cuentaTabla_p4 OF cuenta_p4;
-ALTER TABLE cuentaTabla_p4 ADD PRIMARY KEY(iban);
-CREATE TABLE oficinaTabla_p4 OF oficina_p4;
-ALTER TABLE oficinaTabla_p4 ADD PRIMARY KEY(codigo);
-CREATE TABLE operacionTabla_p4 OF operacion_p4;
-ALTER TABLE operacionTabla_p4 ADD PRIMARY KEY(contador);
+CREATE TABLE usuarioTabla_p4 OF usuario_p4 (REF IS oid USER GENERATED, dni WITH OPTIONS NOT NULL);
+CREATE TABLE cuentaTabla_p4 OF cuenta_p4(REF IS oid USER GENERATED, iban WITH OPTIONS NOT NULL);
+CREATE TABLE oficinaTabla_p4 OF oficina_p4(REF IS oid USER GENERATED, codigo WITH OPTIONS NOT NULL);
+CREATE TABLE operacionTabla_p4 OF operacion_p4(REF IS oid USER GENERATED, contador WITH OPTIONS NOT NULL);
 
 CREATE TABLE tiene_p4(
   dni REF(usuario_p4),

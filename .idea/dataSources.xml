@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="979720097">
+  <component name="DataSourceManagerImpl" format="xml" hash="1168260314">
     <data-source source="LOCAL" name="Oracle - @localhost" uuid="54298d42-0b4f-4bb3-90f2-fdbe9993ca06">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
@@ -13,6 +13,14 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="DB2 (LUW) - practica@localhost" uuid="c3aff619-0d72-42f5-87aa-9d6d32b117ba">
+      <driver-ref>db2</driver-ref>
+      <jdbc-driver>com.ibm.db2.jcc.DB2Driver</jdbc-driver>
+      <jdbc-url>jdbc:db2://localhost:50000/practica</jdbc-url>
+      <driver-properties>
+        <property name="retrieveMessagesFromServerOnGetMessage" value="true" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

@@ -712,6 +712,24 @@ IBAN</columns>
     </database-model>
   </data-source>
   <data-source name="PostgreSQL - postgres@localhost" uuid="3330c9fd-b41c-4bd9-bc4d-a0c02fe73f96">
-    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+    <database-info product="PostgreSQL" version="9.1.20" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="POSTGRES" format-version="2.5">
+      <database id="1" name="postgres"/>
+      <schema id="2" parent="1" name="public">
+        <object-id>2200</object-id>
+        <comment>standard public schema</comment>
+        <introspection-timestamp>2016-04-02.23:14:44.179</introspection-timestamp>
+      </schema>
+    </database-model>
+  </data-source>
+  <data-source name="DB2 (LUW) - practica@localhost" uuid="c3aff619-0d72-42f5-87aa-9d6d32b117ba">
+    <database-info product="DB2/LINUX" version="SQL10057" jdbc-version="4.0" driver-name="IBM Data Server Driver for JDBC and SQLJ" driver-version="4.7.85">
+      <extra-name-characters>@#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
   </data-source>
 </component>
