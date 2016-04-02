@@ -14,8 +14,8 @@ DROP TYPE operacion_p2 FORCE;
 DROP TYPE listaCuentas_p2;
 DROP TYPE listaOperaciones_p2;
 
-CREATE TYPE listaCuentas_p2 AS VARRAY(110) OF REF cuenta_p2;
-CREATE TYPE listaOperaciones_p2 AS VARRAY(110) OF REF operacion_p2;
+CREATE OR REPLACE TYPE listaCuentas_p2 AS VARRAY(110) OF REF cuenta_p2;
+CREATE OR REPLACE TYPE listaOperaciones_p2 AS VARRAY(110) OF REF operacion_p2;
 
 
 CREATE OR REPLACE TYPE usuario_p2 as OBJECT(
