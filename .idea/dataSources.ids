@@ -10,8 +10,8 @@
       <schema id="1" name="BD2">
         <object-id>40</object-id>
         <created-timestamp>2016-03-14.11:53:06</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:27</modified-timestamp>
-        <introspection-timestamp>2016-04-02.17:07:29</introspection-timestamp>
+        <modified-timestamp>2016-04-02.17:10:06</modified-timestamp>
+        <introspection-timestamp>2016-04-02.17:10:05</introspection-timestamp>
       </schema>
       <table id="2" parent="1" name="CAHORRO_P1">
         <object-id>13989</object-id>
@@ -26,9 +26,9 @@
         <organization>HEAP</organization>
       </table>
       <table id="4" parent="1" name="CUENTATABLA_P2">
-        <object-id>14057</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:27</modified-timestamp>
+        <object-id>14083</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <organization>HEAP</organization>
         <row-object-type>BD2.CUENTA_P2</row-object-type>
       </table>
@@ -39,9 +39,9 @@
         <organization>HEAP</organization>
       </table>
       <table id="6" parent="1" name="OFICINATABLA_P2">
-        <object-id>14062</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14088</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <organization>HEAP</organization>
         <row-object-type>BD2.OFICINA_P2</row-object-type>
       </table>
@@ -52,9 +52,9 @@
         <organization>HEAP</organization>
       </table>
       <table id="8" parent="1" name="OPERACIONTABLA_P2">
-        <object-id>14067</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14093</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <organization>HEAP</organization>
         <row-object-type>BD2.OPERACION_P2</row-object-type>
       </table>
@@ -77,42 +77,41 @@
         <organization>HEAP</organization>
       </table>
       <table id="12" parent="1" name="USUARIOTABLA_P2">
-        <object-id>14052</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14078</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <organization>HEAP</organization>
         <row-object-type>BD2.USUARIO_P2</row-object-type>
       </table>
       <object-type id="13" parent="1" name="CUENTA_P2">
-        <object-id>14045</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:24</modified-timestamp>
+        <object-id>14071</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:06</modified-timestamp>
       </object-type>
       <object-type id="14" parent="1" name="CUENTAAHORRO_P2">
-        <object-id>14050</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:27</modified-timestamp>
-        <super-object>BD2.CUENTA_P2</super-object>
+        <object-id>14076</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
       </object-type>
       <object-type id="15" parent="1" name="CUENTACORRIENTE_P2">
-        <object-id>14049</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14075</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
       </object-type>
       <object-type id="16" parent="1" name="OFICINA_P2">
-        <object-id>14051</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14077</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
       </object-type>
       <object-type id="17" parent="1" name="OPERACION_P2">
-        <object-id>14047</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14073</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
       </object-type>
       <object-type id="18" parent="1" name="USUARIO_P2">
-        <object-id>14048</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:24</modified-timestamp>
+        <object-id>14074</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:06</modified-timestamp>
       </object-type>
       <column id="19" parent="2" name="IBAN">
         <mandatory>1</mandatory>
@@ -203,40 +202,40 @@
       <column id="35" parent="4" name="LISTAOPERACIONES">
         <data-type>BD2.LISTAOPERACIONES_P2</data-type>
       </column>
-      <index id="36" parent="4" name="SYS_C004610">
+      <index id="36" parent="4" name="SYS_C004618">
         <name-surrogate>1</name-surrogate>
-        <object-id>14061</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14087</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <index id="37" parent="4" name="SYS_C004609">
+      <index id="37" parent="4" name="SYS_C004617">
         <name-surrogate>1</name-surrogate>
-        <object-id>14060</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14086</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>IBAN</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <key id="38" parent="4" name="SYS_C004609">
+      <key id="38" parent="4" name="SYS_C004617">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>IBAN</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004609</underlying-index>
+        <underlying-index>SYS_C004617</underlying-index>
         <primary>1</primary>
       </key>
-      <key id="39" parent="4" name="SYS_C004610">
+      <key id="39" parent="4" name="SYS_C004618">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004610</underlying-index>
+        <underlying-index>SYS_C004618</underlying-index>
       </key>
       <column id="40" parent="5" name="CODIGO">
         <mandatory>1</mandatory>
@@ -281,40 +280,40 @@
       <column id="48" parent="6" name="CUENTASOFICINA">
         <data-type>BD2.LISTACUENTAS_P2</data-type>
       </column>
-      <index id="49" parent="6" name="SYS_C004612">
+      <index id="49" parent="6" name="SYS_C004620">
         <name-surrogate>1</name-surrogate>
-        <object-id>14066</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14092</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <index id="50" parent="6" name="SYS_C004611">
+      <index id="50" parent="6" name="SYS_C004619">
         <name-surrogate>1</name-surrogate>
-        <object-id>14065</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14091</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>CODIGO</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <key id="51" parent="6" name="SYS_C004611">
+      <key id="51" parent="6" name="SYS_C004619">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>CODIGO</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004611</underlying-index>
+        <underlying-index>SYS_C004619</underlying-index>
         <primary>1</primary>
       </key>
-      <key id="52" parent="6" name="SYS_C004612">
+      <key id="52" parent="6" name="SYS_C004620">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004612</underlying-index>
+        <underlying-index>SYS_C004620</underlying-index>
       </key>
       <column id="53" parent="7" name="CONTADOR">
         <mandatory>1</mandatory>
@@ -404,40 +403,40 @@
       <column id="72" parent="8" name="CANTIDAD">
         <data-type>NUMBER(*)</data-type>
       </column>
-      <index id="73" parent="8" name="SYS_C004614">
+      <index id="73" parent="8" name="SYS_C004622">
         <name-surrogate>1</name-surrogate>
-        <object-id>14069</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14095</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <index id="74" parent="8" name="SYS_C004613">
+      <index id="74" parent="8" name="SYS_C004621">
         <name-surrogate>1</name-surrogate>
-        <object-id>14068</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14094</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>CONTADOR</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <key id="75" parent="8" name="SYS_C004613">
+      <key id="75" parent="8" name="SYS_C004621">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>CONTADOR</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004613</underlying-index>
+        <underlying-index>SYS_C004621</underlying-index>
         <primary>1</primary>
       </key>
-      <key id="76" parent="8" name="SYS_C004614">
+      <key id="76" parent="8" name="SYS_C004622">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004614</underlying-index>
+        <underlying-index>SYS_C004622</underlying-index>
       </key>
       <column id="77" parent="9" name="IBAN">
         <mandatory>1</mandatory>
@@ -600,40 +599,40 @@ IBAN</columns>
       <column id="105" parent="12" name="CUENTASUSUARIO">
         <data-type>BD2.LISTACUENTAS_P2</data-type>
       </column>
-      <index id="106" parent="12" name="SYS_C004608">
+      <index id="106" parent="12" name="SYS_C004616">
         <name-surrogate>1</name-surrogate>
-        <object-id>14056</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14082</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <index id="107" parent="12" name="SYS_C004607">
+      <index id="107" parent="12" name="SYS_C004615">
         <name-surrogate>1</name-surrogate>
-        <object-id>14055</object-id>
-        <created-timestamp>2016-04-02.17:07:23</created-timestamp>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <object-id>14081</object-id>
+        <created-timestamp>2016-04-02.17:10:05</created-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>DNI</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
         <tablespace-name>BD2_PERM_01</tablespace-name>
       </index>
-      <key id="108" parent="12" name="SYS_C004607">
+      <key id="108" parent="12" name="SYS_C004615">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>DNI</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004607</underlying-index>
+        <underlying-index>SYS_C004615</underlying-index>
         <primary>1</primary>
       </key>
-      <key id="109" parent="12" name="SYS_C004608">
+      <key id="109" parent="12" name="SYS_C004616">
         <name-surrogate>1</name-surrogate>
-        <modified-timestamp>2016-04-02.17:07:23</modified-timestamp>
+        <modified-timestamp>2016-04-02.17:10:05</modified-timestamp>
         <columns>SYS_NC_OID$</columns>
         <initially-deferred>1</initially-deferred>
-        <underlying-index>SYS_C004608</underlying-index>
+        <underlying-index>SYS_C004616</underlying-index>
       </key>
       <object-attribute id="110" parent="13" name="IBAN">
         <type>VARCHAR2</type>
@@ -650,70 +649,64 @@ IBAN</columns>
       <object-attribute id="114" parent="13" name="LISTAOPERACIONES">
         <type>BD2.LISTAOPERACIONES_P2</type>
       </object-attribute>
-      <object-attribute id="115" parent="14" name="INTERES">
-        <type>FLOAT</type>
-      </object-attribute>
-      <object-attribute id="116" parent="14" name="DIA">
-        <type>NUMBER(2)</type>
-      </object-attribute>
-      <object-attribute id="117" parent="16" name="CODIGO">
+      <object-attribute id="115" parent="16" name="CODIGO">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="118" parent="16" name="DIRECCION">
+      <object-attribute id="116" parent="16" name="DIRECCION">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="119" parent="16" name="TELEFONO">
+      <object-attribute id="117" parent="16" name="TELEFONO">
         <type>INTEGER</type>
       </object-attribute>
-      <object-attribute id="120" parent="16" name="CUENTASOFICINA">
+      <object-attribute id="118" parent="16" name="CUENTASOFICINA">
         <type>BD2.LISTACUENTAS_P2</type>
       </object-attribute>
-      <object-attribute id="121" parent="17" name="CONTADOR">
+      <object-attribute id="119" parent="17" name="CONTADOR">
         <type>INTEGER</type>
       </object-attribute>
-      <object-attribute id="122" parent="17" name="TIPO">
+      <object-attribute id="120" parent="17" name="TIPO">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="123" parent="17" name="FECHAHORA">
+      <object-attribute id="121" parent="17" name="FECHAHORA">
         <type>DATE</type>
       </object-attribute>
-      <object-attribute id="124" parent="17" name="CORIGEN">
+      <object-attribute id="122" parent="17" name="CORIGEN">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="125" parent="17" name="CDESTINO">
+      <object-attribute id="123" parent="17" name="CDESTINO">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="126" parent="17" name="SUCURSAL">
+      <object-attribute id="124" parent="17" name="SUCURSAL">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="127" parent="17" name="CONCEPTO">
+      <object-attribute id="125" parent="17" name="CONCEPTO">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="128" parent="17" name="CANTIDAD">
+      <object-attribute id="126" parent="17" name="CANTIDAD">
         <type>NUMBER</type>
       </object-attribute>
-      <object-attribute id="129" parent="18" name="DNI">
+      <object-attribute id="127" parent="18" name="DNI">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="130" parent="18" name="NOMBRE">
+      <object-attribute id="128" parent="18" name="NOMBRE">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="131" parent="18" name="APELLIDOS">
+      <object-attribute id="129" parent="18" name="APELLIDOS">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="132" parent="18" name="EDAD">
+      <object-attribute id="130" parent="18" name="EDAD">
         <type>NUMBER(3)</type>
       </object-attribute>
-      <object-attribute id="133" parent="18" name="DIRECCION">
+      <object-attribute id="131" parent="18" name="DIRECCION">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="134" parent="18" name="EMAIL">
+      <object-attribute id="132" parent="18" name="EMAIL">
         <type>VARCHAR2</type>
       </object-attribute>
-      <object-attribute id="135" parent="18" name="TELEFONO">
+      <object-attribute id="133" parent="18" name="TELEFONO">
         <type>NUMBER(15)</type>
       </object-attribute>
-      <object-attribute id="136" parent="18" name="CUENTASUSUARIO">
+      <object-attribute id="134" parent="18" name="CUENTASUSUARIO">
         <type>BD2.LISTACUENTAS_P2</type>
       </object-attribute>
     </database-model>
