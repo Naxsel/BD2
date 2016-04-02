@@ -28,6 +28,14 @@ public class AccesDB {
 
 
 
+
+
+
+
+
+
+
+
         ObjectSet result2 = db.queryByExample(Usuario.class);
         listResult(result2);
 
