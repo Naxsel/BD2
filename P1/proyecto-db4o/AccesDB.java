@@ -11,22 +11,22 @@ import java.util.List;
 
 public class AccesDB {
 
-    final static String DB_FOLDER = "C:\\Users\\PORTATIL\\Documents\\A-Universidad\\Tercero";
+    final static String DB_FOLDER = "C:\\Users\\anago\\Documents";
     //final static String DB_FOLDER = System.getProperty("user.home");
 
     final static String DB_FILE = "bd-bancaria.db4o";
 
     final static String DB4OFILENAME = DB_FOLDER + "\\" + DB_FILE;
 
+    public static ObjectContainer db;
+
     public static void main(String[]args) {
         new File(DB4OFILENAME).delete();
         ObjectContainer db=Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), DB4OFILENAME);
 
-        Usuario u = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,null);
-        almacenarUsuario(db,u);
+       InsertarDatos.crearInsertarDatos(db);
 
-        ObjectSet result2 = db.queryByExample(Usuario.class);
-        listResult(result2);
+        listResult(db);
 
         cerrarConexion(db);
     }
@@ -39,15 +39,7 @@ public class AccesDB {
             System.out.print("Error al cerrar conexion");
         }
     }
-    public static void almacenarUsuario(ObjectContainer obj, Usuario u) {
-        try {
-            obj.store(u);
-            System.out.print("Se ha almacenado correctamente el usuario");
-        }
-        catch(Exception e) {
-            System.out.print("Error al almacenar usuario");
-        }
-    }
+
 
     public static void listResult(List<?> result){
         System.out.println(result.size());
