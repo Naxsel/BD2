@@ -50,13 +50,14 @@ public class Oficina {
     }
     
     public static void creaOficinas(ObjectContainer) {
-        Oficina o1 = new Oficina('1986','328-2856 Sit Avda.','414118468',null);
-        Oficina o2 = new Oficina('6445','Apartado núm.: 561, 5888 Ut, Avenida','596929870',null);
-        Oficina o3 = new Oficina('3434','Apartado núm.: 132, 3014 Mauris Calle','843944968',null);
-        Oficina o4 = new Oficina('8934','1080 Mi Carretera','465780993',null);
-        Oficina o5 = new Oficina('1199','Apartado núm.: 242, 6187 Quisque Carretera','319512827',null);
-        Oficina o6 = new Oficina('5870','6532 Enim. C.','866348790',null);
-        Oficina o7 = new Oficina('8848','9311 Proin Carretera','744948262',null);
+        Cuenta t[];
+        Oficina o1 = new Oficina('1986','328-2856 Sit Avda.','414118468',[c21, c22, c10, c9, c8, c7, c6, c25, c24]);
+        Oficina o2 = new Oficina('6445','Apartado núm.: 561, 5888 Ut, Avenida','596929870',[c11, c23, c12, c13, c14, c15, c16, c17, c18, c19]);
+        Oficina o3 = new Oficina('3434','Apartado núm.: 132, 3014 Mauris Calle','843944968',[c20]);
+        Oficina o4 = new Oficina('8934','1080 Mi Carretera','465780993',[c1, c2]);
+        Oficina o5 = new Oficina('1199','Apartado núm.: 242, 6187 Quisque Carretera','319512827',[c2, c3]);
+        Oficina o6 = new Oficina('5870','6532 Enim. C.','866348790',[c4]);
+        Oficina o7 = new Oficina('8848','9311 Proin Carretera','744948262',[c5]);
         Oficina o8 = new Oficina('7778','880-8708 Volutpat Carretera','862869364',null);
         Oficina o9 = new Oficina('5401','Apartado núm.: 517, 4078 Sollicitudin Av.','615365146',null);
         Oficina o10 = new Oficina('4622','Apdo.:587-7511 Pellentesque Avenida','208867799',null);
