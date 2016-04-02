@@ -40,10 +40,7 @@ CREATE OR REPLACE TYPE cuenta_p2 as OBJECT(
 
 CREATE OR REPLACE TYPE cuentaCorriente_p2 UNDER cuenta_p2();
 
-CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
-	interes FLOAT,
-	dia NUMBER(2)
-);
+
 
 CREATE OR REPLACE TYPE oficina_p2 as OBJECT(
 	codigo VARCHAR(50),
@@ -68,6 +65,10 @@ CREATE TABLE cuentaTabla_p2 OF cuenta_p2(PRIMARY KEY(iban));	/* con la cuenta_p2
 CREATE TABLE oficinaTabla_p2 OF oficina_p2(PRIMARY KEY(codigo));
 CREATE TABLE operacionTabla_p2 OF operacion_p2(PRIMARY KEY(contador));
 
+CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
+	interes FLOAT,
+	dia NUMBER(2)
+);
 /*
 CREATE TABLE tiene_p2(
 	dni REF usuario_p2,
