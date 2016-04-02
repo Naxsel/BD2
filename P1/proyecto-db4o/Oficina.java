@@ -1,6 +1,5 @@
-/**
- * Created by anicacortes on 01/04/2016.
- */
+import java.util.Arrays;
+
 public class Oficina {
 
     private String codigo;
@@ -45,5 +44,15 @@ public class Oficina {
 
     public void setCuentas(Cuenta[] cuentas) {
         this.cuentas = cuentas;
+    }
+
+    @Override
+    public String toString() {
+        return "Oficina{" +
+                "codigo='" + codigo + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", telefono=" + telefono +
+                ", cuentas=" + Arrays.toString(cuentas) +
+                '}';
     }
 }

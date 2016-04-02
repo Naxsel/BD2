@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Date;
 
 public class Cuenta {
@@ -54,5 +55,16 @@ public class Cuenta {
 
     public void setListaOperaciones(int[] listaOperaciones) {
         this.listaOperaciones = listaOperaciones;
+    }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "iban='" + iban + '\'' +
+                ", numero='" + numero + '\'' +
+                ", creacion=" + creacion +
+                ", saldo=" + saldo +
+                ", listaOperaciones=" + Arrays.toString(listaOperaciones) +
+                '}';
     }
 }

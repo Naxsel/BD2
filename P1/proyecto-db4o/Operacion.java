@@ -84,4 +84,18 @@ public class Operacion {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "Operacion{" +
+                "contador=" + contador +
+                ", tipo='" + tipo + '\'' +
+                ", fechaHora=" + fechaHora +
+                ", cOrigen='" + cOrigen + '\'' +
+                ", cDestino='" + cDestino + '\'' +
+                ", sucursal='" + sucursal + '\'' +
+                ", concepto='" + concepto + '\'' +
+                ", cantidad=" + cantidad +
+                '}';
+    }
 }

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Usuario {
     private String dni;
@@ -82,5 +83,19 @@ public class Usuario {
 
     public void setCuentas(String[] cuentas) {
         this.cuentas = cuentas;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", direccion='" + direccion + '\'' +
+                ", email='" + email + '\'' +
+                ", telefono=" + telefono +
+                ", cuentas=" + Arrays.toString(cuentas) +
+                '}';
     }
 }

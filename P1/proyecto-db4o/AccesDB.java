@@ -4,9 +4,9 @@ import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 import com.db4o.internal.Exceptions4;
 import com.db4o.query.Query;
-import com.db4o.*;
 
 import java.io.File;
+import java.util.List;
 //import com.sun.org.apache.xml.internal.security.signature.ObjectContainer;
 
 public class AccesDB {
@@ -20,16 +20,14 @@ public class AccesDB {
 
     public static void main(String[]args) {
         new File(DB4OFILENAME).delete();
-
-        // storePilots
         ObjectContainer db=Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), DB4OFILENAME);
 
         Usuario u = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,null);
         almacenarUsuario(db,u);
-        Query query=db.query();
-        query.constrain(Usuario.class);
-        /*ObjectSet result=query.execute();
-        listResult(result);*/
+
+        ObjectSet result2 = db.queryByExample(Usuario.class);
+        listResult(result2);
+
         cerrarConexion(db);
     }
 
@@ -50,5 +48,12 @@ public class AccesDB {
             System.out.print("Error al almacenar usuario");
         }
     }
-    //Mas metodos de almacenamiento en BD
+
+    public static void listResult(List<?> result){
+        System.out.println(result.size());
+        for (Object o : result) {
+            System.out.println(o);
+        }
+    }
+
 }

@@ -25,4 +25,12 @@ public class CuentaAhorro extends Cuenta {
     public void setDia(int dia) {
         this.dia = dia;
     }
+
+    @Override
+    public String toString() {
+        return "CuentaAhorro{" +
+                "interes=" + interes +
+                ", dia=" + dia +
+                '}';
+    }
 }
