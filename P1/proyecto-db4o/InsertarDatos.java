@@ -5,7 +5,7 @@ public class InsertarDatos {
     public static void almacenarUsuario(ObjectContainer obj, Usuario u) {
         try {
             obj.store(u);
-            System.out.print("Se ha almacenado correctamente el usuario");
+            //System.out.print("Se ha almacenado correctamente el usuario");
         }
         catch(Exception e) {
             System.out.print("Error al almacenar usuario");
@@ -15,7 +15,7 @@ public class InsertarDatos {
     public static void almacenarCuenta(ObjectContainer obj, Cuenta c) {
         try {
             obj.store(c);
-            System.out.print("Se ha almacenado correctamente la cuenta");
+            //System.out.print("Se ha almacenado correctamente la cuenta");
         }
         catch(Exception e) {
             System.out.print("Error al almacenar cuenta");
@@ -25,7 +25,7 @@ public class InsertarDatos {
     public static void almacenarOperacion(ObjectContainer obj, Operacion op) {
         try {
             obj.store(op);
-            System.out.print("Se ha almacenado correctamente la operacion");
+            //System.out.print("Se ha almacenado correctamente la operacion");
         }
         catch(Exception e) {
             System.out.print("Error al almacenar operacion");
@@ -35,7 +35,7 @@ public class InsertarDatos {
     public static void almacenarOficina(ObjectContainer obj, Oficina o) {
         try {
             obj.store(o);
-            System.out.print("Se ha almacenado correctamente la oficina");
+            //System.out.print("Se ha almacenado correctamente la oficina");
         }
         catch(Exception e) {
             System.out.print("Error al almacenar oficina");
@@ -100,6 +100,8 @@ public class InsertarDatos {
         Operacion op54 = new Operacion(54,"retirada","2015-03-04 04:12:00","AR32595816696735123283490230286479","AR32595816696735123283490230286479","cajero 51","",25.00);
         Operacion op55 = new Operacion(55,"retirada","2007-04-30 20:31:00","AR32595816696735123283490230286479","AR32595816696735123283490230286479","cajero 51","",25.00);
 
+        System.out.println("Creacion de operacion terminada");
+
         Cuenta c1 = new Cuenta("WL20881903893391450526693915360220","VX531536933708406882147414","2015-09-02",912.00,null);
         Operacion[] t = {op11,op12,op13,op14,op15,op16,op17,op18,op19,op20,op21,op22,op23,op24};
         c1.setListaOperaciones(t);
@@ -137,6 +139,8 @@ public class InsertarDatos {
         c18.setListaOperaciones(t5);
         CuentaAhorro c19 = new CuentaAhorro("PA57877801854929214196122747132446","RD552668092213034380759678","2016-03-15",1067.00,null,2.00,3);
         CuentaAhorro c20 = new CuentaAhorro("AG22068521770637896137627734009238","ZI551737991879785552530525","2015-07-26",937.00,null,1.00,2);
+
+        System.out.println("Creacion de cuentas terminada");
 
         Oficina o1 = new Oficina("1986","328-2856 Sit Avda.",414118468,null);
         Cuenta[] t6 = {c21, c22, c10, c9, c8, c7, c6, c25, c24};
@@ -251,6 +255,8 @@ public class InsertarDatos {
         Oficina o97 = new Oficina("6656","Apdo.:406-7707 Maecenas ",558876002,null);
         Oficina o98 = new Oficina("1508","Apartado núm.: 772, 282 Semper C/",536574688,null);
         Oficina o99 = new Oficina("5932","Apartado núm.: 225, 6921 Blandit Avenida",630824281,null);
+
+        System.out.println("Creacion de oficina terminada");
 
         Usuario u1 = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,null);
         Cuenta[] t13 = {c21,c23};
@@ -393,6 +399,8 @@ public class InsertarDatos {
         Usuario u98 = new Usuario("71056385F","Ella","Chen",99,"Apartado núm.: 520, 6796 Eu Carretera","et@eu.net",46737107,null);
         Usuario u99 = new Usuario("94059211M","Jenette","Monroe",90,"7352 Laoreet, Avda.","urna.suscipit.nonummy@facilisisfacilisismagna.ca",61406530,null);
 
+        System.out.println("Creacion de usuarios terminada");
+
         InsertarDatos.almacenarUsuario(db,u1);
         InsertarDatos.almacenarUsuario(db,u2);
         InsertarDatos.almacenarUsuario(db,u3);
@@ -494,6 +502,8 @@ public class InsertarDatos {
         InsertarDatos.almacenarUsuario(db,u99);
         InsertarDatos.almacenarUsuario(db,u100);
 
+        System.out.println("Insercion de usuarios terminada");
+
         InsertarDatos.almacenarOperacion(db,op1);
         InsertarDatos.almacenarOperacion(db,op2);
         InsertarDatos.almacenarOperacion(db,op3);
@@ -550,6 +560,8 @@ public class InsertarDatos {
         InsertarDatos.almacenarOperacion(db,op54);
         InsertarDatos.almacenarOperacion(db,op55);
 
+        System.out.println("Insercion de operacion terminada");
+
         InsertarDatos.almacenarCuenta(db,c1);
         InsertarDatos.almacenarCuenta(db,c2);
         InsertarDatos.almacenarCuenta(db,c3);
@@ -575,6 +587,8 @@ public class InsertarDatos {
         InsertarDatos.almacenarCuenta(db,c23);
         InsertarDatos.almacenarCuenta(db,c24);
         InsertarDatos.almacenarCuenta(db,c25);
+
+        System.out.println("Insercion de cuentas terminada");
 
         InsertarDatos.almacenarOficina(db,o1);
         InsertarDatos.almacenarOficina(db,o2);
@@ -675,6 +689,7 @@ public class InsertarDatos {
         InsertarDatos.almacenarOficina(db,o97);
         InsertarDatos.almacenarOficina(db,o98);
         InsertarDatos.almacenarOficina(db,o99);
+        System.out.println("Insercion de oficina terminada");
     }
 
 
