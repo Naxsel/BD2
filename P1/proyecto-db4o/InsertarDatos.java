@@ -42,7 +42,7 @@ public class InsertarDatos {
         }
     }
 
-    public static void crearInsertarDatos(){
+    public static void crearInsertarDatos(ObjectContainer db){
 
         Operacion op1 = new Operacion(1,"transferencia","2014-10-20 08:13:00","FP33730958577227579078926552917807","JI40453364997466550044235348213144","","",100.00);
         Operacion op2 = new Operacion(2,"transferencia","2009-03-19 02:59:00","FP33730958577227579078926552917807","JI40453364997466550044235348213144","","",100.00);
@@ -393,5 +393,109 @@ public class InsertarDatos {
         Usuario u98 = new Usuario("71056385F","Ella","Chen",99,"Apartado núm.: 520, 6796 Eu Carretera","et@eu.net",46737107,null);
         Usuario u99 = new Usuario("94059211M","Jenette","Monroe",90,"7352 Laoreet, Avda.","urna.suscipit.nonummy@facilisisfacilisismagna.ca",61406530,null);
 
+        InsertarDatos.almacenarUsuario(db,u1);
+        InsertarDatos.almacenarUsuario(db,u2);
+        InsertarDatos.almacenarUsuario(db,u3);
+        InsertarDatos.almacenarUsuario(db,u4);
+        InsertarDatos.almacenarUsuario(db,u5);
+        InsertarDatos.almacenarUsuario(db,u6);
+        InsertarDatos.almacenarUsuario(db,u7);
+        InsertarDatos.almacenarUsuario(db,u8);
+        InsertarDatos.almacenarUsuario(db,u9);
+        InsertarDatos.almacenarUsuario(db,u10);
+        InsertarDatos.almacenarUsuario(db,u11);
+        InsertarDatos.almacenarUsuario(db,u12);
+        InsertarDatos.almacenarUsuario(db,u13);
+        InsertarDatos.almacenarUsuario(db,u14);
+        InsertarDatos.almacenarUsuario(db,u15);
+        InsertarDatos.almacenarUsuario(db,u16);
+        InsertarDatos.almacenarUsuario(db,u17);
+        InsertarDatos.almacenarUsuario(db,u18);
+        InsertarDatos.almacenarUsuario(db,u19);
+        InsertarDatos.almacenarUsuario(db,u20);
+        InsertarDatos.almacenarUsuario(db,u21);
+        InsertarDatos.almacenarUsuario(db,u22);
+        InsertarDatos.almacenarUsuario(db,u23);
+        InsertarDatos.almacenarUsuario(db,u24);
+        InsertarDatos.almacenarUsuario(db,u25);
+        InsertarDatos.almacenarUsuario(db,u26);
+        InsertarDatos.almacenarUsuario(db,u27);
+        InsertarDatos.almacenarUsuario(db,u28);
+        InsertarDatos.almacenarUsuario(db,u29);
+        InsertarDatos.almacenarUsuario(db,u30);
+        InsertarDatos.almacenarUsuario(db,u31);
+        InsertarDatos.almacenarUsuario(db,u32);
+        InsertarDatos.almacenarUsuario(db,u33);
+        InsertarDatos.almacenarUsuario(db,u34);
+        InsertarDatos.almacenarUsuario(db,u35);
+        InsertarDatos.almacenarUsuario(db,u36);
+        InsertarDatos.almacenarUsuario(db,u37);
+        InsertarDatos.almacenarUsuario(db,u38);
+        InsertarDatos.almacenarUsuario(db,u39);
+        InsertarDatos.almacenarUsuario(db,u40);
+        InsertarDatos.almacenarUsuario(db,u41);
+        InsertarDatos.almacenarUsuario(db,u42);
+        InsertarDatos.almacenarUsuario(db,u43);
+        InsertarDatos.almacenarUsuario(db,u44);
+        InsertarDatos.almacenarUsuario(db,u45);
+        InsertarDatos.almacenarUsuario(db,u46);
+        InsertarDatos.almacenarUsuario(db,u47);
+        InsertarDatos.almacenarUsuario(db,u48);
+        InsertarDatos.almacenarUsuario(db,u49);
+        InsertarDatos.almacenarUsuario(db,u50);
+        InsertarDatos.almacenarUsuario(db,u51);
+        InsertarDatos.almacenarUsuario(db,u52);
+        InsertarDatos.almacenarUsuario(db,u53);
+        InsertarDatos.almacenarUsuario(db,u54);
+        InsertarDatos.almacenarUsuario(db,u55);
+        InsertarDatos.almacenarUsuario(db,u56);
+        InsertarDatos.almacenarUsuario(db,u57);
+        InsertarDatos.almacenarUsuario(db,u58);
+        InsertarDatos.almacenarUsuario(db,u59);
+        InsertarDatos.almacenarUsuario(db,u60);
+        InsertarDatos.almacenarUsuario(db,u61);
+        InsertarDatos.almacenarUsuario(db,u62);
+        InsertarDatos.almacenarUsuario(db,u63);
+        InsertarDatos.almacenarUsuario(db,u64);
+        InsertarDatos.almacenarUsuario(db,u65);
+        InsertarDatos.almacenarUsuario(db,u66);
+        InsertarDatos.almacenarUsuario(db,u67);
+        InsertarDatos.almacenarUsuario(db,u68);
+        InsertarDatos.almacenarUsuario(db,u69);
+        InsertarDatos.almacenarUsuario(db,u70);
+        InsertarDatos.almacenarUsuario(db,u71);
+        InsertarDatos.almacenarUsuario(db,u72);
+        InsertarDatos.almacenarUsuario(db,u73);
+        InsertarDatos.almacenarUsuario(db,u74);
+        InsertarDatos.almacenarUsuario(db,u75);
+        InsertarDatos.almacenarUsuario(db,u76);
+        InsertarDatos.almacenarUsuario(db,u77);
+        InsertarDatos.almacenarUsuario(db,u78);
+        InsertarDatos.almacenarUsuario(db,u79);
+        InsertarDatos.almacenarUsuario(db,u80);
+        InsertarDatos.almacenarUsuario(db,u81);
+        InsertarDatos.almacenarUsuario(db,u82);
+        InsertarDatos.almacenarUsuario(db,u83);
+        InsertarDatos.almacenarUsuario(db,u84);
+        InsertarDatos.almacenarUsuario(db,u85);
+        InsertarDatos.almacenarUsuario(db,u86);
+        InsertarDatos.almacenarUsuario(db,u87);
+        InsertarDatos.almacenarUsuario(db,u88);
+        InsertarDatos.almacenarUsuario(db,u89);
+        InsertarDatos.almacenarUsuario(db,u90);
+        InsertarDatos.almacenarUsuario(db,u91);
+        InsertarDatos.almacenarUsuario(db,u92);
+        InsertarDatos.almacenarUsuario(db,u93);
+        InsertarDatos.almacenarUsuario(db,u94);
+        InsertarDatos.almacenarUsuario(db,u95);
+        InsertarDatos.almacenarUsuario(db,u96);
+        InsertarDatos.almacenarUsuario(db,u97);
+        InsertarDatos.almacenarUsuario(db,u98);
+        InsertarDatos.almacenarUsuario(db,u99);
+        InsertarDatos.almacenarUsuario(db,u100);
+
+
     }
+
+
 }

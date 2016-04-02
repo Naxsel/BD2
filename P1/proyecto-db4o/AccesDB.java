@@ -25,7 +25,8 @@ public class AccesDB {
         ObjectContainer db=Db4oEmbedded.openFile(Db4oEmbedded.newConfiguration(), DB4OFILENAME);
 
         Usuario u = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911,null);
-        almacenarUsuario(db,u);
+
+
 
         ObjectSet result2 = db.queryByExample(Usuario.class);
         listResult(result2);
@@ -41,15 +42,7 @@ public class AccesDB {
             System.out.print("Error al cerrar conexion");
         }
     }
-    public static void almacenarUsuario(ObjectContainer obj, Usuario u) {
-        try {
-            obj.store(u);
-            System.out.print("Se ha almacenado correctamente el usuario");
-        }
-        catch(Exception e) {
-            System.out.print("Error al almacenar usuario");
-        }
-    }
+
 
     public static void listResult(List<?> result){
         System.out.println(result.size());
