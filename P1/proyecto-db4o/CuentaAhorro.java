@@ -1,10 +1,9 @@
-import java.util.Date;
 
 public class CuentaAhorro extends Cuenta {
     private double interes;
     private int dia;
 
-    public CuentaAhorro(String iban, String numero, Date creacion, double saldo, Operacion[] listaOperaciones, double interes, int dia) {
+    public CuentaAhorro(String iban, String numero, String creacion, double saldo, Operacion[] listaOperaciones, double interes, int dia) {
         super(iban, numero, creacion, saldo, listaOperaciones);
         this.interes = interes;
         this.dia = dia;
