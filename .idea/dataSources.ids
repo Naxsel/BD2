@@ -30,10 +30,6 @@
     </database-model>
   </data-source>
   <data-source name="DB2 (LUW) - practica@localhost" uuid="c3aff619-0d72-42f5-87aa-9d6d32b117ba">
-    <database-info product="DB2/LINUX" version="SQL10057" jdbc-version="4.0" driver-name="IBM Data Server Driver for JDBC and SQLJ" driver-version="4.7.85">
-      <extra-name-characters>@#</extra-name-characters>
-      <identifier-quote-string>&quot;</identifier-quote-string>
-    </database-info>
-    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
