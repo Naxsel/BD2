@@ -11,7 +11,7 @@ import java.util.List;
 
 public class AccesDB {
 
-    final static String DB_FOLDER = "C:\\Users\\anago\\Documents";
+    final static String DB_FOLDER = "./db-files";
     //final static String DB_FOLDER = System.getProperty("user.home");
 
     final static String DB_FILE = "bd-bancaria.db4o";
@@ -26,7 +26,7 @@ public class AccesDB {
 
        InsertarDatos.crearInsertarDatos(db);
 
-        listResult(db);
+
 
         cerrarConexion(db);
     }
@@ -41,6 +41,9 @@ public class AccesDB {
     }
 
 
+    /*
+    Metodo para ver los objetos almacenados en la base
+     */
     public static void listResult(List<?> result){
         System.out.println(result.size());
         for (Object o : result) {

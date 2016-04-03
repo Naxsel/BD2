@@ -1,0 +1,1 @@
+javac -cp ./lib/db4o-8.0.184.15484-all-java5.jar -d classes ./src/*.java
