@@ -2,9 +2,6 @@ DROP TABLE usuarioTabla_p2;
 DROP TABLE oficinaTabla_p2;
 DROP TABLE cuentaTabla_p2;
 DROP TABLE operacionTabla_p2;
-/*DROP TABLE tiene_p2;
-DROP TABLE pertenece_p2;
-DROP TABLE hace_p2;*/
 DROP TYPE usuario_p2;
 DROP TYPE cuentaCorriente_p2;
 DROP TYPE cuentaAhorro_p2;
@@ -69,19 +66,3 @@ CREATE OR REPLACE TYPE cuentaAhorro_p2 UNDER cuenta_p2(
 	interes FLOAT,
 	dia NUMBER(2)
 );
-/*
-CREATE TABLE tiene_p2(
-	dni REF usuario_p2,
-	iban REF cuenta_p2
-);
-
-CREATE TABLE pertenece_p2(
-	codigo REF oficina_p2,
-	iban REF cuenta_p2
-);
-
-CREATE TABLE hace_p2(
-	iban REF cuenta_p2,
-	contador REF operacion_p2
-);
-*/

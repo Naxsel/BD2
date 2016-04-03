@@ -2,8 +2,6 @@ DROP TABLE usuarioTabla_p3 CASCADE;
 DROP TABLE cuentaTabla_p3 CASCADE;
 DROP TABLE oficinaTabla_p3 CASCADE;
 DROP TABLE operacionTabla_p3 CASCADE;
-/*DROP TABLE tiene_p3;
-DROP TABLE pertenece_p3;*/
 DROP TYPE tipooperacion_p3 CASCADE;
 DROP TYPE usuario_p3;
 DROP TYPE cuenta_p3 CASCADE;
@@ -61,14 +59,3 @@ CREATE TABLE operacionTabla_p3 OF operacion_p3(PRIMARY KEY(contador),
   FOREIGN KEY (cDestino) REFERENCES cuentatabla_p3(iban),
   FOREIGN KEY (cOrigen) REFERENCES cuentatabla_p3(iban)
 );
-/*
-CREATE TABLE tiene_p3(
-  dni VARCHAR(10) REFERENCES usuarioTabla_p3(dni),
-  iban VARCHAR(34) REFERENCES cuentaTabla_p3(iban)
-);
-
-CREATE TABLE pertenece_p3(
-  codigo INTEGER REFERENCES oficinaTabla_p3(codigo),
-  iban VARCHAR(34) REFERENCES cuentaTabla_p3(iban)
-);
-*/
