@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/P1/Creacion/bd-bancaria-or-db2.sql" dialect="DB2" />
+    <file url="file://$PROJECT_DIR$/P1/Creacion/bd-bancaria-or-oracle.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/P1/Creacion/bd-bancaria-or-postgresql.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/P1/Creacion/bd-bancaria-oracle.sql" dialect="OracleSqlPlus" />
     <file url="file://$PROJECT_DIR$/P1/Creacion/user-schema-refactor.sql" dialect="Oracle" />
-    <file url="file://$PROJECT_DIR$/P1/Implementaciones/bd-bancaria-or-db2.sql" dialect="DB2" />
-    <file url="file://$PROJECT_DIR$/P1/Implementaciones/bd-bancaria-or-oracle.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/P1/Implementaciones/bd-bancaria-or-postgresql.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/P1/Poblar/db2.sql" dialect="DB2" />
-    <file url="file://$PROJECT_DIR$/P1/Poblar/oracle.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/P1/Poblar/oracleOR.sql" dialect="OracleSqlPlus" />
-    <file url="file://$PROJECT_DIR$/P1/Poblar/postgreOR-Arrays.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/P1/Poblar/postgreOR.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/P1/Poblar/bd-bancaria-pruebas-or-postgre.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/P1/Poblar/bd-bancaria-pruebas.sql" dialect="OracleSqlPlus" />
+    <file url="file://$PROJECT_DIR$/P1/Poblar/bd-bancaria-ruebas-or-oracle.sql" dialect="OracleSqlPlus" />
   </component>
 </project>
