@@ -1,17 +1,21 @@
+DROP TABLE tiene_p4;
+DROP TABLE pertenece_p4;
+DROP TABLE hace_p4;
 DROP TABLE usuarioTabla_p4;
 DROP TABLE oficinaTabla_p4;
 DROP TABLE cuentaTabla_p4;
 DROP TABLE operacionTabla_p4;
-DROP TABLE tiene_p4;
-DROP TABLE pertenece_p4;
-DROP TABLE hace_p4;
 DROP TYPE usuario_p4;
 DROP TYPE cuentaCorriente_p4;
 DROP TYPE cuentaAhorro_p4;
 DROP TYPE cuenta_p4;
 DROP TYPE oficina_p4;
 DROP TYPE operacion_p4;
+DROP TYPE listaCuentas_p4;
+DROP TYPE listaOperaciones_p4;
 
+CREATE TYPE listaCuentas_p4 as VARCHAR(34) ARRAY[];
+CREATE TYPE listaOperaciones_p4 as VARCHAR(34) ARRAY[];
 
 CREATE TYPE usuario_p4 as(
   dni VARCHAR(10),
@@ -21,6 +25,7 @@ CREATE TYPE usuario_p4 as(
   direccion VARCHAR(80),
   email VARCHAR(80),
   telefono INT
+  -- cuentas listaCuentas_p4
 )MODE DB2SQL;
 
 CREATE TYPE cuenta_p4 as(
@@ -28,6 +33,7 @@ CREATE TYPE cuenta_p4 as(
   numero VARCHAR(34),
   creacion DATE,
   saldo FLOAT(20)
+  -- operaciones listaOperaciones_p4
 )MODE DB2SQL;
 
 CREATE  TYPE cuentaCorriente_p4 UNDER cuenta_p4 MODE DB2SQL;
