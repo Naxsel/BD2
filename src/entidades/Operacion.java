@@ -3,76 +3,14 @@ package entidades;
 import oracle.sql.DATE;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by anicacortes on 18/04/2016.
  */
 @Entity
 @IdClass(idOperacion.class)
-public class Operacion {
-    public String getIban() {
-        return iban;
-    }
-
-    public void setIban(String iban) {
-        this.iban = iban;
-    }
-
-    public String getContador() {
-        return contador;
-    }
-
-    public void setContador(String contador) {
-        this.contador = contador;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
-    public DATE getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(DATE fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
-    }
-
-    public String getcDestino() {
-        return cDestino;
-    }
-
-    public void setcDestino(String cDestino) {
-        this.cDestino = cDestino;
-    }
-
-    public double getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(double cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public String getConcepto() {
-        return concepto;
-    }
-
-    public void setConcepto(String concepto) {
-        this.concepto = concepto;
-    }
+public class Operacion implements Serializable{
 
     @Id
     @Column(name = "iban",nullable = false, length = 34)
@@ -177,4 +115,6 @@ public class Operacion {
                 ", concepto='" + concepto + '\'' +
                 '}';
     }
+
+
 }
