@@ -7,10 +7,17 @@ import java.util.*;
 @Entity(name = "CLIENTE")
 public class Cliente implements Serializable
 {
+
+    @ManyToMany
+    private Set<Cuenta> arrayCuentas;
     @Id
     @Column(name = "ID_CLIENTE", nullable = false)
     private long idCliente;
 
+
+	private Set<Cuenta> getCuentas() {
+        return arrayCuentas;
+    }
     @Column(name = "NOMBRE", nullable = false,length = 50)
     private String nombre;
 
