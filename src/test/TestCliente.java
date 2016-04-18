@@ -15,7 +15,7 @@ public class TestCliente
 		
 		trans.begin();
 
-		Cliente cliente = new Cliente();
+		Oficina cliente = new Oficina();
 		cliente.setNombre("Juan");
 		cliente.setApellidos("Lolo Lulo");
 		cliente.setTipoCliente("BUENO");
