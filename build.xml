@@ -1,0 +1,44 @@
+<project name="JPA Tests" default="compile">
+
+    <property name="sourcedir" value="${basedir}/src"/>
+    <property name="targetdir" value="${basedir}/build"/>
+    <property name="librarydir" value="${basedir}/lib"/>
+
+    <path id="libraries">
+        <fileset dir="${librarydir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${targetdir}"/>
+        <mkdir dir="${targetdir}"/>
+    </target>
+
+	<!--  Note about includeantruntime in javac: if you need the ant runtime in the classpath set it to yes/true otherwise to no/false -->
+	
+    <target name="compile" depends="clean, copy-resources">
+      <javac srcdir="${sourcedir}"
+             destdir="${targetdir}"
+			 includeantruntime="false" 
+             classpathref="libraries"
+             debug="on"/>
+    </target>
+
+    <target name="copy-resources">
+        <copy todir="${targetdir}">
+            <fileset dir="${sourcedir}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+    <target name="run" depends="compile">
+        <java classname="test.TestCliente" fork="true" classpathref="libraries">
+            <classpath path="${targetdir}"/>
+			<!-- <sysproperty key="java.net.preferIPv4Stack" value="false"/> -->
+        </java>
+    </target>
+
+</project>
