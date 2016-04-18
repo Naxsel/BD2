@@ -1,7 +1,8 @@
 package test;
 
-import javax.persistence.*;
 import entidades.*;
+
+import javax.persistence.*;
 
 public class TestCliente 
 {

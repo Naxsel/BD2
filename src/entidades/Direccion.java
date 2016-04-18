@@ -1,7 +1,7 @@
 package entidades;
 
-import java.io.*;
 import javax.persistence.*;
+import java.io.*;
 
 @Embeddable
 public class Direccion implements Serializable
