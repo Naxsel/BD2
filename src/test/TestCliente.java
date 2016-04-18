@@ -23,6 +23,7 @@ public class TestCliente
 		cliente.getDireccion().setPiso("5D");
 		cliente.getDireccion().setCiudad("Zaragoza");
 		cliente.getDireccion().setCodPostal("50018");
+		System.out.println("Funciona");
 		em.persist(cliente);
 		trans.commit();
 		
