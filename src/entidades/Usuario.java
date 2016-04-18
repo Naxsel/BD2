@@ -23,10 +23,10 @@ public class Usuario implements Serializable{
     @Column(name = "direccion", nullable = false, length = 80)
     private String direccion;
 
-    @Column(name = "email", nullable = true, length = 80)
+    @Column(name = "email", length = 80)
     private String email;
 
-    @Column(name = "telefono", nullable = true, length = 15)
+    @Column(name = "telefono", length = 15)
     private int telefono;
 
 
