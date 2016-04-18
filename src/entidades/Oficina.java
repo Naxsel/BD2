@@ -1,9 +1,8 @@
 package entidades;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import java.io.Serializable;
+import javax.persistence.*;
+import java.io.*;
+import java.util.*;
 
 @Entity(name = "oficina")
 public class Oficina implements Serializable {
