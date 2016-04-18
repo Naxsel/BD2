@@ -8,11 +8,11 @@ import java.io.Serializable;
  */
 public class idOperacion implements Serializable {
 
-    private String iban;
+    private Cuenta iban;
 
     private int contador;
 
-    public idOperacion(String iban, int contador) {
+    public idOperacion(Cuenta iban, int contador) {
         this.iban = iban;
         this.contador = contador;
     }

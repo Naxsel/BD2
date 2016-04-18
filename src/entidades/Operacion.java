@@ -13,8 +13,9 @@ import java.io.Serializable;
 public class Operacion implements Serializable{
 
     @Id
+    @ManyToOne
     @Column(name = "iban",nullable = false, length = 34)
-    private String iban;
+    private Cuenta iban;
 
     @Id
     @Column(name = "contador",nullable = false)
@@ -29,8 +30,9 @@ public class Operacion implements Serializable{
     @Column(name = "hora",nullable = false)
     private String hora;
 
+    @ManyToOne
     @Column(name = "cDestino",nullable = false, length = 34)
-    private String cDestino;
+    private Cuenta cDestino;
 
     @Column(name = "cantidad",nullable = false)
     private double cantidad;
@@ -38,11 +40,11 @@ public class Operacion implements Serializable{
     @Column(name = "concepto",nullable = false, length = 200)
     private String concepto;
 
-    public String getIban() {
+    public Cuenta getIban() {
         return iban;
     }
 
-    public void setIban(String iban) {
+    public void setIban(Cuenta iban) {
         this.iban = iban;
     }
 
@@ -78,11 +80,11 @@ public class Operacion implements Serializable{
         this.hora = hora;
     }
 
-    public String getcDestino() {
+    public Cuenta getcDestino() {
         return cDestino;
     }
 
-    public void setcDestino(String cDestino) {
+    public void setcDestino(Cuenta cDestino) {
         this.cDestino = cDestino;
     }
 

@@ -1,9 +1,6 @@
 package entidades;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.Set;
 
 /**
@@ -12,53 +9,24 @@ import java.util.Set;
 @Entity(name = "CUENTA")
 public class Cuenta {
 
+    @ManyToMany(mappedBy = "arrayCuentas")
+    private Set<Cliente> arrayClientes;
+
+    @OneToMany(mappedBy = "iban")
+    private Set<Operacion> arrayOperaciones;
+
     @Id
     @Column(name = "IBAN", nullable = false, length = 10)
     private String dni;
 
-    @Column(name = "ncuenta", nullable = false, length = 30)
-    private String nombre;
+    @Column(name = "numCuenta", nullable = false, length = 30)
+    private String numCuenta;
 
     @Column(name = "creacion", nullable = false, length = 80)
-    private String apellidos;
+    private String creacion;
 
     @Column(name = "saldo", nullable = false, length = 3)
-    private int edad;
-
-    @ManyToMany(mappedBy = "clientes")
-    private Set<Cliente> arrayClientes;
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getApellidos() {
-        return apellidos;
-    }
-
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
+    private int saldo;
 
     public Set<Cliente> getArrayClientes() {
         return arrayClientes;
@@ -68,4 +36,55 @@ public class Cuenta {
         this.arrayClientes = arrayClientes;
     }
 
+    public Set<Operacion> getArrayOperaciones() {
+        return arrayOperaciones;
+    }
+
+    public void setArrayOperaciones(Set<Operacion> arrayOperaciones) {
+        this.arrayOperaciones = arrayOperaciones;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getNumCuenta() {
+        return numCuenta;
+    }
+
+    public void setNumCuenta(String numCuenta) {
+        this.numCuenta = numCuenta;
+    }
+
+    public String getCreacion() {
+        return creacion;
+    }
+
+    public void setCreacion(String creacion) {
+        this.creacion = creacion;
+    }
+
+    public int getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(int saldo) {
+        this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Cuenta{" +
+                "arrayClientes=" + arrayClientes +
+                ", arrayOperaciones=" + arrayOperaciones +
+                ", dni='" + dni + '\'' +
+                ", numCuenta='" + numCuenta + '\'' +
+                ", creacion='" + creacion + '\'' +
+                ", saldo=" + saldo +
+                '}';
+    }
 }
