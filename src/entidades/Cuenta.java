@@ -1,11 +1,13 @@
 package entidades;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by naxsel on 18/04/16.
  */
+
+@Entity(name = "Cuenta")
+@Inheritance(strategy= InheritanceType.JOINED)
 public class Cuenta {
 
     @Id
