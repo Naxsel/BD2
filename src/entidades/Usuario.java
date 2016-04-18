@@ -23,10 +23,10 @@ public class Usuario implements Serializable{
     @Column(name = "direccion", nullable = false, length = 80)
     private String direccion;
 
-    @Column(name = "email", nullable = true, length = 80)
+    @Column(name = "email", length = 80)
     private String email;
 
-    @Column(name = "telefono", nullable = false, length = 15)
+    @Column(name = "telefono", length = 15)
     private int telefono;
 
 
@@ -84,5 +84,18 @@ public class Usuario implements Serializable{
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", direccion='" + direccion + '\'' +
+                ", email='" + email + '\'' +
+                ", telefono=" + telefono +
+                '}';
     }
 }
