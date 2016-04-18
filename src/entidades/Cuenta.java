@@ -12,7 +12,6 @@ import java.util.Set;
 @Entity(name = "CUENTA")
 public class Cuenta {
 
-
     private Set<Cliente> arrayClientes;
 
     @ManyToMany(mappedBy = "clientes")

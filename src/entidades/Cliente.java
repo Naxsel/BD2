@@ -8,6 +8,7 @@ import java.util.*;
 public class Cliente implements Serializable
 {
 
+
     @ManyToMany
     private Set<Cuenta> arrayCuentas;
     @Id
