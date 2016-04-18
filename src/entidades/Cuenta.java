@@ -12,9 +12,10 @@ import java.util.Set;
 @Entity(name = "CUENTA")
 public class Cuenta {
 
+    @ManyToMany(mappedBy = "clientes")
     private Set<Cliente> arrayClientes;
 
-    @ManyToMany(mappedBy = "clientes")
+
     public Set<Cliente> getArrayClientes() {
         return arrayClientes;
     }
