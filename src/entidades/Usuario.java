@@ -85,4 +85,17 @@ public class Usuario implements Serializable{
     public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario{" +
+                "dni='" + dni + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", edad=" + edad +
+                ", direccion='" + direccion + '\'' +
+                ", email='" + email + '\'' +
+                ", telefono=" + telefono +
+                '}';
+    }
 }
