@@ -12,19 +12,7 @@ import java.util.Set;
 @Entity(name = "CUENTA")
 public class Cuenta {
 
-    private Set<Cliente> arrayClientes;
-
-    @ManyToMany(mappedBy = "clientes")
-    public Set<Cliente> getArrayClientes() {
-        return arrayClientes;
-    }
-
-    public void setArrayClientes(Set<Cliente> arrayClientes) {
-        this.arrayClientes = arrayClientes;
-    }
-
     @Id
-
     @Column(name = "IBAN", nullable = false, length = 10)
     private String dni;
 
@@ -36,5 +24,48 @@ public class Cuenta {
 
     @Column(name = "saldo", nullable = false, length = 3)
     private int edad;
+
+    @ManyToMany(mappedBy = "clientes")
+    private Set<Cliente> arrayClientes;
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public Set<Cliente> getArrayClientes() {
+        return arrayClientes;
+    }
+
+    public void setArrayClientes(Set<Cliente> arrayClientes) {
+        this.arrayClientes = arrayClientes;
+    }
 
 }
