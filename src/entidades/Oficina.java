@@ -1,21 +1,22 @@
 package entidades;
 
-import javax.persistence.*;
-import java.io.*;
-import java.util.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
 
 @Entity(name = "oficina")
-public class Oficina implements Serializable
-{
-	@Id
-	@Column(name = "codigo", nullable = false)
-	private int codigo;
-		
-	@Column(name = "dir", length = 80)
-	private String dir;
-		
-	@Column(name = "telefono")
-	private int telefono;
+public class Oficina implements Serializable {
+
+    @Id
+    @Column(name = "codigo", nullable = false)
+    private int codigo;
+
+    @Column(name = "dir", length = 80)
+    private String dir;
+
+    @Column(name = "telefono")
+    private int telefono;
 
     public int getCodigo() {
         return codigo;
