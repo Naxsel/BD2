@@ -7,6 +7,12 @@ import java.util.*;
 @Entity(name = "oficina")
 public class Oficina implements Serializable {
 
+    @OneToMany(mappedBy = "oficina")
+    private Set<CCorriente> arrayCuentasC;
+
+    @OneToMany(mappedBy = "operacion")
+    private Set<Operacion> arrayOperaciones;
+
     @Id
     @Column(name = "codigo", nullable = false)
     private int codigo;
@@ -41,6 +47,14 @@ public class Oficina implements Serializable {
         this.telefono = telefono;
     }
 
+    public Set<CCorriente> getArrayCuentasC() {
+        return arrayCuentasC;
+    }
+
+    public void setArrayCuentasC(Set<CCorriente> arrayCuentasC) {
+        this.arrayCuentasC = arrayCuentasC;
+    }
+
     @Override
     public String toString() {
         return "Oficina{" +
@@ -48,5 +62,21 @@ public class Oficina implements Serializable {
                 ", dir='" + dir + '\'' +
                 ", telefono=" + telefono +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Oficina oficina = (Oficina) o;
+
+        return codigo == oficina.codigo;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return codigo;
     }
 }

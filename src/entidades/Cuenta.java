@@ -87,4 +87,20 @@ public class Cuenta {
                 ", arrayOperaciones=" + arrayOperaciones +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Cuenta cuenta = (Cuenta) o;
+
+        return iban != null ? iban.equals(cuenta.iban) : cuenta.iban == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return iban != null ? iban.hashCode() : 0;
+    }
 }

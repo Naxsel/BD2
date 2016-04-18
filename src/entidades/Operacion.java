@@ -34,6 +34,9 @@ public class Operacion implements Serializable{
     @Column(name = "cDestino",nullable = false, length = 34)
     private Cuenta cDestino;
 
+    @ManyToOne
+    private Oficina oficina;
+
     @Column(name = "cantidad",nullable = false)
     private double cantidad;
 
@@ -118,5 +121,22 @@ public class Operacion implements Serializable{
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
+        Operacion operacion = (Operacion) o;
+
+        if (iban != null ? !iban.equals(operacion.iban) : operacion.iban != null) return false;
+        return contador != null ? contador.equals(operacion.contador) : operacion.contador == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = iban != null ? iban.hashCode() : 0;
+        result = 31 * result + (contador != null ? contador.hashCode() : 0);
+        return result;
+    }
 }

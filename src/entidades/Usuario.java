@@ -98,4 +98,20 @@ public class Usuario implements Serializable{
                 ", telefono=" + telefono +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Usuario usuario = (Usuario) o;
+
+        return dni != null ? dni.equals(usuario.dni) : usuario.dni == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return dni != null ? dni.hashCode() : 0;
+    }
 }
