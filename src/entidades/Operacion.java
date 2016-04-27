@@ -8,13 +8,25 @@ import java.io.Serializable;
 /**
  * Created by anicacortes on 18/04/2016.
  */
-@Entity
+@Entity(name = "Operacion_p4")
 @IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
+    public Operacion(Cuenta iban, String contador, String tipo, DATE fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
+        this.iban = iban;
+        this.contador = contador;
+        this.tipo = tipo;
+        this.fecha = fecha;
+        this.hora = hora;
+        this.cDestino = cDestino;
+        this.oficinaOperacion = oficinaOperacion;
+        this.cantidad = cantidad;
+        this.concepto = concepto;
+    }
+
     @Id
     @ManyToOne
-    @Column(name = "iban",nullable = false, length = 34)
+    @JoinColumn(name = "iban",nullable = false)
     private Cuenta iban;
 
     @Id
@@ -31,11 +43,11 @@ public class Operacion implements Serializable{
     private String hora;
 
     @ManyToOne
-    @Column(name = "cDestino",nullable = false, length = 34)
+    @JoinColumn(name = "cDestino",nullable = false)
     private Cuenta cDestino;
 
     @ManyToOne
-    private Oficina oficina;
+    private Oficina oficinaOperacion;
 
     @Column(name = "cantidad",nullable = false)
     private double cantidad;

@@ -6,11 +6,20 @@ import java.util.Set;
 /**
  * Created by naxsel on 18/04/16.
  */
-@Entity(name = "CUENTA")
+@Entity(name = "Cuenta_p4")
 public class Cuenta {
 
+    public Cuenta(String iban, String numCuenta, String creacion, int saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
+        this.iban = iban;
+        this.numCuenta = numCuenta;
+        this.creacion = creacion;
+        this.saldo = saldo;
+        this.arrayUsuarios = arrayUsuarios;
+        this.arrayOperaciones = arrayOperaciones;
+    }
+
     @Id
-    @Column(name = "IBAN", nullable = false, length = 10)
+    @Column(name = "IBAN", nullable = false, length = 34)
     private String iban;
 
     @Column(name = "numCuenta", nullable = false, length = 30)
@@ -23,7 +32,9 @@ public class Cuenta {
     private int saldo;
 
     @ManyToMany(mappedBy = "arrayCuentas")
-    private Set<Cliente> arrayClientes;
+    private Set<Usuario> arrayUsuarios;
+
+
 
     @OneToMany(mappedBy = "iban")
     private Set<Operacion> arrayOperaciones;
@@ -60,12 +71,12 @@ public class Cuenta {
         this.saldo = saldo;
     }
 
-    public Set<Cliente> getArrayClientes() {
-        return arrayClientes;
+    public Set<Usuario> getArrayUsuarios() {
+        return arrayUsuarios;
     }
 
-    public void setArrayClientes(Set<Cliente> arrayClientes) {
-        this.arrayClientes = arrayClientes;
+    public void setArrayUsuarios(Set<Usuario> arrayUsuarios) {
+        this.arrayUsuarios = arrayUsuarios;
     }
 
     public Set<Operacion> getArrayOperaciones() {
@@ -83,7 +94,7 @@ public class Cuenta {
                 ", numCuenta='" + numCuenta + '\'' +
                 ", creacion='" + creacion + '\'' +
                 ", saldo=" + saldo +
-                ", arrayClientes=" + arrayClientes +
+                ", arrayUsuarios=" + arrayUsuarios +
                 ", arrayOperaciones=" + arrayOperaciones +
                 '}';
     }

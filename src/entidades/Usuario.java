@@ -4,8 +4,19 @@ import javax.persistence.*;
 import java.io.*;
 import java.util.*;
 
-@Entity(name = "Usuario")
+@Entity(name = "Usuario_p4")
 public class Usuario implements Serializable{
+
+    public Usuario(String dni, String nombre, String apellidos, int edad, String direccion, String email, int telefono, Set<Cuenta> arrayCuentas) {
+        this.dni = dni;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+        this.direccion = direccion;
+        this.email = email;
+        this.telefono = telefono;
+        this.arrayCuentas = arrayCuentas;
+    }
 
     @Id
     @Column(name = "dni", nullable = false, length = 10)
@@ -29,6 +40,8 @@ public class Usuario implements Serializable{
     @Column(name = "telefono", length = 15)
     private int telefono;
 
+    @ManyToMany
+    private Set<Cuenta> arrayCuentas;
 
     public String getDni() {
         return dni;

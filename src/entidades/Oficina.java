@@ -4,13 +4,21 @@ import javax.persistence.*;
 import java.io.*;
 import java.util.*;
 
-@Entity(name = "oficina")
+@Entity(name = "Oficina_p4")
 public class Oficina implements Serializable {
 
-    @OneToMany(mappedBy = "oficina")
+    public Oficina(Set<CCorriente> arrayCuentasC, Set<Operacion> arrayOperaciones, int codigo, String dir, int telefono) {
+        this.arrayCuentasC = arrayCuentasC;
+        this.arrayOperaciones = arrayOperaciones;
+        this.codigo = codigo;
+        this.dir = dir;
+        this.telefono = telefono;
+    }
+
+    @OneToMany(mappedBy = "oficinaCuenta")
     private Set<CCorriente> arrayCuentasC;
 
-    @OneToMany(mappedBy = "operacion")
+    @OneToMany(mappedBy = "oficinaOperacion")
     private Set<Operacion> arrayOperaciones;
 
     @Id
