@@ -27,6 +27,14 @@ public class TestBanco {
 
         //Insertar en la parte uno
 
+        CAhorro ca = new CAhorro("FP33730958577227579078926552917807", "ZP918886081013488002618758","2016-08-17",11.58,null,null,2.65, 10);
+        CAhorro ca2 = new CAhorro("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null,3.0, 1);
+        CAhorro ca3 = new CAhorro("HL76676038213950241779936041435785","PG652702401877598541560408","2015-03-07",244.81,null,null,2.5, 31);
+        CAhorro ca4 = new CAhorro("BD19607765245983312200917823690887","YE869232102933034067936432","2015-07-25",1833.01,null,null,2.5, 28);
+        CAhorro ca5 = new CAhorro("HR80011754363760623558518621971359","HJ971697288847463286863263","2016-06-01",144.44,null,null,1.85, 25);
+        CCorriente co = new CCorriente("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,null,null);
+        CCorriente co2 = new CCorriente("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,null,null);
+
         Date d = new Date(2014-10-20);
         Operacion op = new Operacion(null,"1","t",d,"08:13:00",null,null,10.25,"");
         Operacion op1 = new Operacion(null,"2","t",d,"08:13:00",null,null,10.25,"");
@@ -38,6 +46,13 @@ public class TestBanco {
 
         Set<Operacion> sO = new HashSet<>();
         sO.add(op);sO.add(op1);sO.add(op2);sO.add(op3);sO.add(op4);
+        ca.setArrayOperaciones(sO);
+        sO.clear();sO.add(op5);
+        co.setArrayOperaciones(sO);
+        sO.clear();sO.add(op6);
+        co2.setArrayOperaciones(sO);
+        /*Set<Operacion> sO = new HashSet<>();
+        sO.add(op);sO.add(op1);sO.add(op2);sO.add(op3);sO.add(op4);
         Cuenta c = new Cuenta("FP33730958577227579078926552917807","ZP918886081013488002618758","2016-08-17",11.58,null,sO);
         Cuenta c2 = new Cuenta("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null);
         Cuenta c3 = new Cuenta("HL76676038213950241779936041435785","PG652702401877598541560408","2015-03-07",244.81,null,null);
@@ -47,28 +62,26 @@ public class TestBanco {
         Cuenta c6 = new Cuenta("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,sO);
         sO.clear();sO.add(op6);
         Cuenta c7 = new Cuenta("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,sO);
+        */
 
         Set<Cuenta> s = new HashSet<>();
-        s.add(c);
+        s.add(ca);
         Usuario u = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911, s);
-        s.clear(); s.add(c2);
+        s.clear(); s.add(ca2);
         Usuario u1 = new Usuario("92141555M","Bruno","Stewart",89,"Apartado núm.: 183, 7005 Praesent Ctra.","libero.Integer.in@Cumsociisnatoque.org",89316763, s);
-        s.clear(); s.add(c3);
+        s.clear(); s.add(ca3);
         Usuario u2 = new Usuario("38331046C","Otto","Frederick",97,"Apdo.:822-776 Sed, Avenida","senectus@velit.co.uk",17481518, s);
-        s.clear(); s.add(c5);
+        s.clear(); s.add(ca5);
         Usuario u3 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740, s);
-        s.clear(); s.add(c6);
+        s.clear(); s.add(co);
         Usuario u4 = new Usuario("65291361T","Wade","Wilder",50,"Apartado núm.: 755, 7066 Dictum C/","nec.leo@iaculis.com",68318364, s);
-        s.clear(); s.add(c4);
+        s.clear(); s.add(ca4);
         Usuario u5 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233, s);
         s.clear();
 
         /*Set<Usuario> sU = new HashSet<>();
         sU.add(u);
         c.setArrayUsuarios(sU);*/
-
-        CCorriente co = new CCorriente("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,null,null);
-        CCorriente co2 = new CCorriente("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,null,null);
 
         Set<CCorriente> s1 = new HashSet<>();
         Oficina o = new Oficina(null,null,7778,"880-8708 Volutpat Carretera",862869364);
@@ -81,14 +94,25 @@ public class TestBanco {
         s1.clear(); s1.add(co2);
         Oficina o6 = new Oficina(s1,null,8848,"9311 Proin Carretera",744948262);
 
-        CAhorro ca = new CAhorro("FP33730958577227579078926552917807", "ZP918886081013488002618758","2016-08-17",11.58,null,null,2.65, 10);
-        CAhorro ca2 = new CAhorro("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null,3.0, 1);
-        CAhorro ca3 = new CAhorro("HL76676038213950241779936041435785","PG652702401877598541560408","2015-03-07",244.81,null,null,2.5, 31);
-        CAhorro ca4 = new CAhorro("BD19607765245983312200917823690887","YE869232102933034067936432","2015-07-25",1833.01,null,null,2.5, 28);
-        CAhorro ca5 = new CAhorro("HR80011754363760623558518621971359","HJ971697288847463286863263","2016-06-01",144.44,null,null,1.85, 25);
-
-
-
+        op.setcDestino(ca2);
+        op1.setcDestino(ca2);
+        op2.setcDestino(ca2);
+        op3.setcDestino(ca2);
+        op4.setcDestino(ca2);
+        /*em.persist(c);
+        em.persist(c2);
+        em.persist(c3);
+        em.persist(c4);
+        em.persist(c5);
+        em.persist(c6);
+        em.persist(c7);*/
+        em.persist(co);
+        em.persist(co2);
+        em.persist(ca);
+        em.persist(ca2);
+        em.persist(ca3);
+        em.persist(ca4);
+        em.persist(ca5);
         em.persist(u);
         em.persist(u1);
         em.persist(u2);
