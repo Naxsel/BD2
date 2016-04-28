@@ -16,7 +16,7 @@ public class CCorriente extends Cuenta {
     private Oficina oficinaCuenta;
 
 
-    public CCorriente(String iban, String numCuenta, String creacion, int saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones,Oficina oficinaCuenta) {
+    public CCorriente(String iban, String numCuenta, String creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones,Oficina oficinaCuenta) {
         super( iban,  numCuenta,  creacion,  saldo,  arrayUsuarios,  arrayOperaciones);
         this.oficinaCuenta = oficinaCuenta;
     }

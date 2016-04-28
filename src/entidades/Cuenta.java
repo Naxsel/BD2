@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity(name = "Cuenta_p4")
 public class Cuenta {
 
-    public Cuenta(String iban, String numCuenta, String creacion, int saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
+    public Cuenta(String iban, String numCuenta, String creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
         this.iban = iban;
         this.numCuenta = numCuenta;
         this.creacion = creacion;
@@ -29,7 +29,7 @@ public class Cuenta {
     private String creacion;
 
     @Column(name = "saldo", nullable = false, length = 3)
-    private int saldo;
+    private double saldo;
 
     @ManyToMany(mappedBy = "arrayCuentas")
     private Set<Usuario> arrayUsuarios;
@@ -63,11 +63,11 @@ public class Cuenta {
         this.creacion = creacion;
     }
 
-    public int getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 

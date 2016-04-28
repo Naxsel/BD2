@@ -11,7 +11,7 @@ import java.util.Set;
 @Entity(name = "CAhorro_p4")
 public class CAhorro extends Cuenta {
 
-    public CAhorro(String iban, String numCuenta, String creacion, int saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones,double interes, int dia) {
+    public CAhorro(String iban, String numCuenta, String creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones,double interes, int dia) {
         super( iban,  numCuenta,  creacion,  saldo,arrayUsuarios,arrayOperaciones);
         this.interes = interes;
         this.dia = dia;
