@@ -4,6 +4,7 @@ import oracle.sql.DATE;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by anicacortes on 18/04/2016.
@@ -12,7 +13,7 @@ import java.io.Serializable;
 @IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
-    public Operacion(Cuenta iban, String contador, String tipo, DATE fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
+    public Operacion(Cuenta iban, String contador, String tipo, Date fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.iban = iban;
         this.contador = contador;
         this.tipo = tipo;
@@ -37,7 +38,7 @@ public class Operacion implements Serializable{
     private String tipo;
 
     @Column(name = "fecha",nullable = false)
-    private DATE fecha;
+    private Date fecha;
 
     @Column(name = "hora",nullable = false)
     private String hora;
@@ -79,11 +80,11 @@ public class Operacion implements Serializable{
         this.tipo = tipo;
     }
 
-    public DATE getFecha() {
+    public Date getFecha() {
         return fecha;
     }
 
-    public void setFecha(DATE fecha) {
+    public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
