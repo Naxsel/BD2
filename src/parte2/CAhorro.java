@@ -2,12 +2,14 @@ package parte2;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 import java.util.Date;
 import java.util.Set;
 
 @Entity
 @Table(name="CAHORRO_P1")
+@PrimaryKeyJoinColumn(name="IBAN")
 public class CAhorro extends Cuenta {
 
     public CAhorro(String iban, String numCuenta, Date creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones, double interes, int dia) {

@@ -4,18 +4,18 @@ import oracle.sql.DATE;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name="OPERACION_P1")
 @IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
-    public Operacion(Cuenta iban, String contador, String tipo, DATE fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
+    public Operacion(Cuenta iban, int contador, String tipo, Date fecha, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.iban = iban;
         this.contador = contador;
         this.tipo = tipo;
         this.fecha = fecha;
-        this.hora = hora;
         this.cDestino = cDestino;
         this.oficinaOperacion = oficinaOperacion;
         this.cantidad = cantidad;
@@ -24,34 +24,32 @@ public class Operacion implements Serializable{
 
     @Id
     @ManyToOne
-    @JoinColumn(name = "iban",nullable = false)
+    @JoinColumn(name = "IBAN",nullable = false)
     private Cuenta iban;
 
     @Id
-    @Column(name = "contador",nullable = false)
-    private String contador;
+    @Column(name = "CONTADOR",nullable = false)
+    private int contador;
 
-    @Column(name = "tipo",nullable = false)
+    @Column(name = "TIPO",nullable = false)
     private String tipo;
 
-    @Column(name = "fecha",nullable = false)
-    private DATE fecha;
+    @Column(name = "FECHAHORA",nullable = false)
+    private Date fecha;
 
-    @Column(name = "hora",nullable = false)
-    private String hora;
+    @Column(name = "CANTIDAD",nullable = false)
+    private double cantidad;
+
+    @Column(name = "CONCEPTO",nullable = false, length = 200)
+    private String concepto;
 
     @ManyToOne
-    @JoinColumn(name = "cDestino",nullable = false)
+    @JoinColumn(name = "CDESTINO",nullable = false)
     private Cuenta cDestino;
 
     @ManyToOne
+    @JoinColumn(name = "SUCURSAL",nullable = false)
     private Oficina oficinaOperacion;
-
-    @Column(name = "cantidad",nullable = false)
-    private double cantidad;
-
-    @Column(name = "concepto",nullable = false, length = 200)
-    private String concepto;
 
     public Cuenta getIban() {
         return iban;
@@ -61,36 +59,12 @@ public class Operacion implements Serializable{
         this.iban = iban;
     }
 
-    public String getContador() {
-        return contador;
-    }
-
-    public void setContador(String contador) {
-        this.contador = contador;
-    }
-
     public String getTipo() {
         return tipo;
     }
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public DATE getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(DATE fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
     }
 
     public Cuenta getcDestino() {
@@ -117,6 +91,30 @@ public class Operacion implements Serializable{
         this.concepto = concepto;
     }
 
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public Oficina getOficinaOperacion() {
+        return oficinaOperacion;
+    }
+
+    public void setOficinaOperacion(Oficina oficinaOperacion) {
+        this.oficinaOperacion = oficinaOperacion;
+    }
+
     @Override
     public String toString() {
         return "Operacion{" +
@@ -124,7 +122,6 @@ public class Operacion implements Serializable{
                 ", contador='" + contador + '\'' +
                 ", tipo='" + tipo + '\'' +
                 ", fecha=" + fecha +
-                ", hora='" + hora + '\'' +
                 ", cDestino='" + cDestino + '\'' +
                 ", cantidad=" + cantidad +
                 ", concepto='" + concepto + '\'' +
@@ -138,15 +135,31 @@ public class Operacion implements Serializable{
 
         Operacion operacion = (Operacion) o;
 
-        if (iban != null ? !iban.equals(operacion.iban) : operacion.iban != null) return false;
-        return contador != null ? contador.equals(operacion.contador) : operacion.contador == null;
+        if (contador != operacion.contador) return false;
+        if (Double.compare(operacion.cantidad, cantidad) != 0) return false;
+        if (!iban.equals(operacion.iban)) return false;
+        if (tipo != null ? !tipo.equals(operacion.tipo) : operacion.tipo != null) return false;
+        if (fecha != null ? !fecha.equals(operacion.fecha) : operacion.fecha != null) return false;
+        if (cDestino != null ? !cDestino.equals(operacion.cDestino) : operacion.cDestino != null) return false;
+        if (oficinaOperacion != null ? !oficinaOperacion.equals(operacion.oficinaOperacion) : operacion.oficinaOperacion != null)
+            return false;
+        return concepto != null ? concepto.equals(operacion.concepto) : operacion.concepto == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = iban != null ? iban.hashCode() : 0;
-        result = 31 * result + (contador != null ? contador.hashCode() : 0);
+        int result;
+        long temp;
+        result = iban.hashCode();
+        result = 31 * result + contador;
+        result = 31 * result + (tipo != null ? tipo.hashCode() : 0);
+        result = 31 * result + (fecha != null ? fecha.hashCode() : 0);
+        result = 31 * result + (cDestino != null ? cDestino.hashCode() : 0);
+        result = 31 * result + (oficinaOperacion != null ? oficinaOperacion.hashCode() : 0);
+        temp = Double.doubleToLongBits(cantidad);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + (concepto != null ? concepto.hashCode() : 0);
         return result;
     }
 }

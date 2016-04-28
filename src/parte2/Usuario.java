@@ -20,28 +20,29 @@ public class Usuario implements Serializable{
     }
 
     @Id
-    @Column(name = "dni", nullable = false, length = 10)
+    @Column(name = "DNI", nullable = false, length = 10)
     private String dni;
 
-    @Column(name = "nombre", nullable = false, length = 30)
+    @Column(name = "NOMBRE", nullable = false, length = 30)
     private String nombre;
 
-    @Column(name = "apellidos", nullable = false, length = 80)
+    @Column(name = "APELLIDOS", nullable = false, length = 80)
     private String apellidos;
 
-    @Column(name = "edad", nullable = false, length = 3)
+    @Column(name = "EDAD", nullable = false, length = 3)
     private int edad;
 
-    @Column(name = "direccion", nullable = false, length = 80)
+    @Column(name = "DIRECCION", nullable = false, length = 80)
     private String direccion;
 
-    @Column(name = "email", length = 80)
+    @Column(name = "EMAIL", length = 80)
     private String email;
 
-    @Column(name = "telefono", length = 15)
+    @Column(name = "TELEFONO", length = 15)
     private int telefono;
 
     @ManyToMany
+    @JoinTable(name="TIENE_P1", joinColumns = @JoinColumn(name="DNI"), inverseJoinColumns = @JoinColumn(name="IBAN"))
     private Set<Cuenta> arrayCuentas;
 
     public String getDni() {

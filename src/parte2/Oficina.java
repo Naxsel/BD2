@@ -23,13 +23,13 @@ public class Oficina implements Serializable {
     private Set<Operacion> arrayOperaciones;
 
     @Id
-    @Column(name = "codigo", nullable = false)
+    @Column(name = "CODIGO", nullable = false)
     private int codigo;
 
-    @Column(name = "dir", length = 80)
+    @Column(name = "DIRECCION", length = 80)
     private String dir;
 
-    @Column(name = "telefono")
+    @Column(name = "TELEFONO")
     private int telefono;
 
     public int getCodigo() {

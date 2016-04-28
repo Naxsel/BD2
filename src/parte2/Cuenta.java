@@ -4,8 +4,10 @@ import javax.persistence.*;
 import java.util.Date;
 import java.util.Set;
 
+
 @Entity
 @Table(name="CUENTA_P1")
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Cuenta {
 
     public Cuenta(String iban, String numCuenta, Date creacion, Double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
@@ -32,8 +34,6 @@ public class Cuenta {
 
     @ManyToMany(mappedBy = "arrayCuentas")
     private Set<Usuario> arrayUsuarios;
-
-
 
     @OneToMany(mappedBy = "iban")
     private Set<Operacion> arrayOperaciones;
