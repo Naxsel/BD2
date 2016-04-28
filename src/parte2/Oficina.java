@@ -1,13 +1,11 @@
 package parte2;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
-@Entity(name = "Oficina_p4")
+@Entity
+@Table(name="OFICINA_P1")
 public class Oficina implements Serializable {
 
     public Oficina(Set<CCorriente> arrayCuentasC, Set<Operacion> arrayOperaciones, int codigo, String dir, int telefono) {

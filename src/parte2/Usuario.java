@@ -1,13 +1,11 @@
 package parte2;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
-@Entity(name = "Usuario_p4")
+@Entity
+@Table(name="USUARIO_P1")
 public class Usuario implements Serializable{
 
     public Usuario(String dni, String nombre, String apellidos, int edad, String direccion, String email, int telefono, Set<Cuenta> arrayCuentas) {

@@ -1,15 +1,14 @@
 package parte2;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Set;
 
-/**
- * Created by naxsel on 18/04/16.
- */
-@Entity(name = "Cuenta_p4")
+@Entity
+@Table(name="CUENTA_P1")
 public class Cuenta {
 
-    public Cuenta(String iban, String numCuenta, String creacion, int saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
+    public Cuenta(String iban, String numCuenta, Date creacion, Double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
         this.iban = iban;
         this.numCuenta = numCuenta;
         this.creacion = creacion;
@@ -22,14 +21,14 @@ public class Cuenta {
     @Column(name = "IBAN", nullable = false, length = 34)
     private String iban;
 
-    @Column(name = "numCuenta", nullable = false, length = 30)
+    @Column(name = "NUMERO", nullable = false, length = 34)
     private String numCuenta;
 
-    @Column(name = "creacion", nullable = false, length = 80)
-    private String creacion;
+    @Column(name = "CREACION", nullable = false, length = 80)
+    private Date creacion;
 
-    @Column(name = "saldo", nullable = false, length = 3)
-    private int saldo;
+    @Column(name = "SALDO", nullable = false, length = 3)
+    private Double saldo;
 
     @ManyToMany(mappedBy = "arrayCuentas")
     private Set<Usuario> arrayUsuarios;
@@ -55,19 +54,19 @@ public class Cuenta {
         this.numCuenta = numCuenta;
     }
 
-    public String getCreacion() {
+    public Date getCreacion() {
         return creacion;
     }
 
-    public void setCreacion(String creacion) {
+    public void setCreacion(Date creacion) {
         this.creacion = creacion;
     }
 
-    public int getSaldo() {
+    public Double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
+    public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
 

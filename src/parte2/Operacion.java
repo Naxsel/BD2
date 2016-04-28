@@ -5,10 +5,8 @@ import oracle.sql.DATE;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * Created by anicacortes on 18/04/2016.
- */
-@Entity(name = "Operacion_p4")
+@Entity
+@Table(name="OPERACION_P1")
 @IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 

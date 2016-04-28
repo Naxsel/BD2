@@ -2,11 +2,7 @@ package parte2;
 
 import java.io.Serializable;
 
-/**
- * Created by anicacortes on 18/04/2016.
- */
 public class idOperacion implements Serializable {
-
 
     private Cuenta iban;
 
