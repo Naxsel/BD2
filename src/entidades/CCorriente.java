@@ -20,4 +20,12 @@ public class CCorriente extends Cuenta {
         super( iban,  numCuenta,  creacion,  saldo,  arrayUsuarios,  arrayOperaciones);
         this.oficinaCuenta = oficinaCuenta;
     }
+
+    public Oficina getOficinaCuenta() {
+        return oficinaCuenta;
+    }
+
+    public void setOficinaCuenta(Oficina oficinaCuenta) {
+        this.oficinaCuenta = oficinaCuenta;
+    }
 }

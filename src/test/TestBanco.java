@@ -7,9 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by naxsel on 18/04/16.
@@ -26,6 +24,10 @@ public class TestBanco {
         trans.begin();
 
         //Insertar en la parte uno
+        em.createNativeQuery("DELETE FROM Cuenta_p4").executeUpdate();
+        em.createNativeQuery("DELETE FROM Usuario_p4").executeUpdate();
+        em.createNativeQuery("DELETE FROM Oficina_p4").executeUpdate();
+        em.createNativeQuery("DELETE FROM Operacion_p4").executeUpdate();
 
         CAhorro ca = new CAhorro("FP33730958577227579078926552917807", "ZP918886081013488002618758","2016-08-17",11.58,null,null,2.65, 10);
         CAhorro ca2 = new CAhorro("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null,3.0, 1);
@@ -34,35 +36,6 @@ public class TestBanco {
         CAhorro ca5 = new CAhorro("HR80011754363760623558518621971359","HJ971697288847463286863263","2016-06-01",144.44,null,null,1.85, 25);
         CCorriente co = new CCorriente("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,null,null);
         CCorriente co2 = new CCorriente("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,null,null);
-
-        Date d = new Date(2014-10-20);
-        Operacion op = new Operacion(null,"1","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op1 = new Operacion(null,"2","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op2 = new Operacion(null,"3","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op3 = new Operacion(null,"4","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op4 = new Operacion(null,"5","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op5 = new Operacion(null,"27","t",d,"08:13:00",null,null,50.60,"");
-        Operacion op6 = new Operacion(null,"41","t",d,"08:13:00",null,null,25.80,"");
-
-        Set<Operacion> sO = new HashSet<>();
-        sO.add(op);sO.add(op1);sO.add(op2);sO.add(op3);sO.add(op4);
-        ca.setArrayOperaciones(sO);
-        sO.clear();sO.add(op5);
-        co.setArrayOperaciones(sO);
-        sO.clear();sO.add(op6);
-        co2.setArrayOperaciones(sO);
-        /*Set<Operacion> sO = new HashSet<>();
-        sO.add(op);sO.add(op1);sO.add(op2);sO.add(op3);sO.add(op4);
-        Cuenta c = new Cuenta("FP33730958577227579078926552917807","ZP918886081013488002618758","2016-08-17",11.58,null,sO);
-        Cuenta c2 = new Cuenta("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null);
-        Cuenta c3 = new Cuenta("HL76676038213950241779936041435785","PG652702401877598541560408","2015-03-07",244.81,null,null);
-        Cuenta c4 = new Cuenta("BD19607765245983312200917823690887","YE869232102933034067936432","2015-07-25",1833.01,null,null);
-        Cuenta c5 = new Cuenta("HR80011754363760623558518621971359","HJ971697288847463286863263","2016-06-01",144.44,null,null);
-        sO.clear();sO.add(op5);
-        Cuenta c6 = new Cuenta("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,sO);
-        sO.clear();sO.add(op6);
-        Cuenta c7 = new Cuenta("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,sO);
-        */
 
         Set<Cuenta> s = new HashSet<>();
         s.add(ca);
@@ -78,34 +51,27 @@ public class TestBanco {
         s.clear(); s.add(ca4);
         Usuario u5 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233, s);
         s.clear();
-
-        /*Set<Usuario> sU = new HashSet<>();
-        sU.add(u);
-        c.setArrayUsuarios(sU);*/
-
         Set<CCorriente> s1 = new HashSet<>();
+
         Oficina o = new Oficina(null,null,7778,"880-8708 Volutpat Carretera",862869364);
         Oficina o1 = new Oficina(null,null,5401,"Apartado núm.: 517, 4078 Sollicitudin Av.",615365146);
         Oficina o2 = new Oficina(null,null,4622,"Apdo.:587-7511 Pellentesque Avenida",208867799);
         Oficina o3 = new Oficina(null,null,4870,"2608 Mauris Avda.",138327395);
         Oficina o4 = new Oficina(null,null,4135,"726-9715 Aliquet. Avenida",349535106);
-        s1.add(co);
-        Oficina o5 = new Oficina(s1,null,1986,"328-2856 Sit Avda.",414118468);
-        s1.clear(); s1.add(co2);
-        Oficina o6 = new Oficina(s1,null,8848,"9311 Proin Carretera",744948262);
+        Oficina o5 = new Oficina(null,null,1986,"328-2856 Sit Avda.",414118468);
+        Oficina o6 = new Oficina(null,null,8848,"9311 Proin Carretera",744948262);
 
-        op.setcDestino(ca2);
-        op1.setcDestino(ca2);
-        op2.setcDestino(ca2);
-        op3.setcDestino(ca2);
-        op4.setcDestino(ca2);
-        /*em.persist(c);
-        em.persist(c2);
-        em.persist(c3);
-        em.persist(c4);
-        em.persist(c5);
-        em.persist(c6);
-        em.persist(c7);*/
+        co.setOficinaCuenta(o5);
+        co2.setOficinaCuenta(o6);
+
+        Operacion op = new Operacion(new idOperacion(ca,1),"t",new GregorianCalendar(2104,10,20),"08:13:00",ca2,o,10.25,"");
+        Operacion op1 = new Operacion(new idOperacion(ca,2),"t",new GregorianCalendar(2009,3,19),"08:13:00",ca2,o1,10.25,"");
+        Operacion op2 = new Operacion(new idOperacion(ca,3),"t",new GregorianCalendar(2008,10,4),"08:13:00",ca2,o2,10.25,"");
+        Operacion op3 = new Operacion(new idOperacion(ca,4),"t",new GregorianCalendar(2008,12,29),"08:13:00",ca2,o3,10.25,"");
+        Operacion op4 = new Operacion(new idOperacion(ca,5),"t",new GregorianCalendar(2012,8,20),"08:13:00",ca2,o4,10.25,"");
+        Operacion op5 = new Operacion(new idOperacion(co,27),"i",new GregorianCalendar(2009,5,9),"08:13:00",co,o1,50.60,"");
+        Operacion op6 = new Operacion(new idOperacion(co2,41),"r",new GregorianCalendar(2012,12,14),"08:13:00",co2,o3,25.80,"");
+
         em.persist(co);
         em.persist(co2);
         em.persist(ca);
@@ -134,6 +100,7 @@ public class TestBanco {
         em.persist(op5);
         em.persist(op6);
 
+        em.getTransaction().commit();
         em.close();
         entityManagerFactory.close();
     }
