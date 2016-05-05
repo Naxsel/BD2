@@ -6,7 +6,9 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created by anicacortes on 28/04/2016.
@@ -22,7 +24,7 @@ public class Test {
 
         trans.begin();
 
-        Date date = new Date(2016, 8, 03);
+        //Calendar c = new GregorianCalendar(2016,8,03);
         Cuenta c = new Cuenta("FP33730958577227579078926552917807","ZP918886081013488002618758","2016-08-17",11.58,null,null);
         Cuenta c2 = new Cuenta("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null);
         Cuenta c3 = new Cuenta("HL76676038213950241779936041435785","PG652702401877598541560408","2015-03-07",244.81,null,null);
