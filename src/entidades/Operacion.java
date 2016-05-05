@@ -12,6 +12,10 @@ import java.util.Date;
 //@IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
+    public Operacion() {
+
+    }
+
     public Operacion(idOperacion id, String tipo, Calendar fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.id = id;
         this.tipo = tipo;

@@ -9,11 +9,6 @@ import java.io.Serializable;
 @Embeddable
 public class idOperacion implements Serializable {
 
-    public idOperacion(Cuenta iban, int contador) {
-        this.iban2 = iban;
-        this.contador = contador;
-    }
-
     //@Id
     @ManyToOne
     @JoinColumn(name = "iban",nullable = false)
@@ -22,6 +17,17 @@ public class idOperacion implements Serializable {
     //@Id
     @Column(name = "contador",nullable = false)
     private int contador;
+
+
+    public idOperacion(Cuenta iban, int contador) {
+        this.iban2 = iban;
+        this.contador = contador;
+    }
+    public idOperacion() {
+
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
