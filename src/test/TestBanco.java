@@ -7,9 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by naxsel on 18/04/16.
@@ -35,14 +33,14 @@ public class TestBanco {
         CCorriente co = new CCorriente("BY10087113578567912692979144432606","DA442510510273806814083072","2015-05-14",1559.90,null,null,null);
         CCorriente co2 = new CCorriente("ZZ79792401884462158656425214620714","VC054785344569835728805815","2015-07-13",1272.65,null,null,null);
 
-        Date d = new Date(2014-10-20);
-        Operacion op = new Operacion(null,"1","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op1 = new Operacion(null,"2","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op2 = new Operacion(null,"3","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op3 = new Operacion(null,"4","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op4 = new Operacion(null,"5","t",d,"08:13:00",null,null,10.25,"");
-        Operacion op5 = new Operacion(null,"27","t",d,"08:13:00",null,null,50.60,"");
-        Operacion op6 = new Operacion(null,"41","t",d,"08:13:00",null,null,25.80,"");
+        Calendar c = new GregorianCalendar(2016,8,03);
+        Operacion op = new Operacion(null,"1","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,10.25,"");
+        Operacion op1 = new Operacion(null,"2","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,10.25,"");
+        Operacion op2 = new Operacion(null,"3","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,10.25,"");
+        Operacion op3 = new Operacion(null,"4","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,10.25,"");
+        Operacion op4 = new Operacion(null,"5","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,10.25,"");
+        Operacion op5 = new Operacion(null,"27","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,50.60,"");
+        Operacion op6 = new Operacion(null,"41","t",new GregorianCalendar(2016,8,03),"08:13:00",null,null,25.80,"");
 
         Set<Operacion> sO = new HashSet<>();
         sO.add(op);sO.add(op1);sO.add(op2);sO.add(op3);sO.add(op4);

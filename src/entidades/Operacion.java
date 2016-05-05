@@ -4,6 +4,7 @@ import oracle.sql.DATE;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -13,7 +14,7 @@ import java.util.Date;
 @IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
-    public Operacion(Cuenta iban, String contador, String tipo, Date fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
+    public Operacion(Cuenta iban, String contador, String tipo, Calendar fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.iban = iban;
         this.contador = contador;
         this.tipo = tipo;
@@ -37,8 +38,9 @@ public class Operacion implements Serializable{
     @Column(name = "tipo",nullable = false)
     private String tipo;
 
+    @Temporal(TemporalType.DATE)
     @Column(name = "fecha",nullable = false)
-    private Date fecha;
+    private Calendar fecha;
 
     @Column(name = "hora",nullable = false)
     private String hora;
@@ -80,11 +82,11 @@ public class Operacion implements Serializable{
         this.tipo = tipo;
     }
 
-    public Date getFecha() {
+    public Calendar getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(Calendar fecha) {
         this.fecha = fecha;
     }
 
