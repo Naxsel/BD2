@@ -1,7 +1,7 @@
 package parte2;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Set;
 
 
@@ -10,7 +10,7 @@ import java.util.Set;
 @Inheritance(strategy=InheritanceType.JOINED)
 public class Cuenta {
 
-    public Cuenta(String iban, String numCuenta, Date creacion, Double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
+    public Cuenta(String iban, String numCuenta, Calendar creacion, Double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones) {
         this.iban = iban;
         this.numCuenta = numCuenta;
         this.creacion = creacion;
@@ -26,8 +26,9 @@ public class Cuenta {
     @Column(name = "NUMERO", nullable = false, length = 34)
     private String numCuenta;
 
+    @Temporal(TemporalType.DATE)
     @Column(name = "CREACION", nullable = false, length = 80)
-    private Date creacion;
+    private Calendar creacion;
 
     @Column(name = "SALDO", nullable = false, length = 3)
     private Double saldo;
@@ -54,11 +55,11 @@ public class Cuenta {
         this.numCuenta = numCuenta;
     }
 
-    public Date getCreacion() {
+    public Calendar getCreacion() {
         return creacion;
     }
 
-    public void setCreacion(Date creacion) {
+    public void setCreacion(Calendar creacion) {
         this.creacion = creacion;
     }
 

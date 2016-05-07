@@ -3,13 +3,8 @@ package entidades;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Calendar;
-import java.util.Date;
 
-/**
- * Created by anicacortes on 18/04/2016.
- */
 @Entity(name = "Operacion_p4")
-//@IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
     public Operacion() {

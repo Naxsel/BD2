@@ -42,7 +42,8 @@ public class Usuario implements Serializable{
     private int telefono;
 
     @ManyToMany
-    @JoinTable(name="TIENE_P1", joinColumns = @JoinColumn(name="DNI"), inverseJoinColumns = @JoinColumn(name="IBAN"))
+    @JoinTable(name="TIENE_P1", joinColumns = @JoinColumn(name="DNI",referencedColumnName="DNI"),
+            inverseJoinColumns = @JoinColumn(name="IBAN",referencedColumnName="IBAN"))
     private Set<Cuenta> arrayCuentas;
 
     public String getDni() {
@@ -99,6 +100,14 @@ public class Usuario implements Serializable{
 
     public void setTelefono(int telefono) {
         this.telefono = telefono;
+    }
+
+    public Set<Cuenta> getArrayCuentas() {
+        return arrayCuentas;
+    }
+
+    public void setArrayCuentas(Set<Cuenta> arrayCuentas) {
+        this.arrayCuentas = arrayCuentas;
     }
 
     @Override

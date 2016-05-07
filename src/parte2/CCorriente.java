@@ -1,7 +1,7 @@
 package parte2;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Set;
 
 @Entity
@@ -14,8 +14,16 @@ public class CCorriente extends Cuenta {
     private Oficina oficinaCuenta;
 
 
-    public CCorriente(String iban, String numCuenta, Date creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones, Oficina oficinaCuenta) {
+    public CCorriente(String iban, String numCuenta, Calendar creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones, Oficina oficinaCuenta) {
         super( iban,  numCuenta,  creacion,  saldo,  arrayUsuarios,  arrayOperaciones);
+        this.oficinaCuenta = oficinaCuenta;
+    }
+
+    public Oficina getOficinaCuenta() {
+        return oficinaCuenta;
+    }
+
+    public void setOficinaCuenta(Oficina oficinaCuenta) {
         this.oficinaCuenta = oficinaCuenta;
     }
 }

@@ -3,21 +3,8 @@ package entidades;
 import javax.persistence.*;
 import java.io.Serializable;
 
-/**
- * Created by anicacortes on 18/04/2016.
- */
 @Embeddable
 public class idOperacion implements Serializable {
-
-    //@Id
-    @ManyToOne
-    @JoinColumn(name = "iban",nullable = false)
-    private Cuenta iban2;
-
-    //@Id
-    @Column(name = "contador",nullable = false)
-    private int contador;
-
 
     public idOperacion(Cuenta iban, int contador) {
         this.iban2 = iban;
@@ -27,7 +14,12 @@ public class idOperacion implements Serializable {
 
     }
 
+    @ManyToOne
+    @JoinColumn(name = "iban",nullable = false)
+    private Cuenta iban2;
 
+    @Column(name = "contador",nullable = false)
+    private int contador;
 
     @Override
     public boolean equals(Object o) {

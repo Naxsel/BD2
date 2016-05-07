@@ -4,7 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.Set;
 
 @Entity
@@ -12,7 +12,7 @@ import java.util.Set;
 @PrimaryKeyJoinColumn(name="IBAN")
 public class CAhorro extends Cuenta {
 
-    public CAhorro(String iban, String numCuenta, Date creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones, double interes, int dia) {
+    public CAhorro(String iban, String numCuenta, Calendar creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones, double interes, int dia) {
         super( iban,  numCuenta,  creacion,  saldo,arrayUsuarios,arrayOperaciones);
         this.interes = interes;
         this.dia = dia;

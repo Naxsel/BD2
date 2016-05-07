@@ -4,17 +4,18 @@ import oracle.sql.DATE;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
 
 @Entity
 @Table(name="OPERACION_P1")
-@IdClass(idOperacion.class)
 public class Operacion implements Serializable{
 
-    public Operacion(Cuenta iban, int contador, String tipo, Calendar fecha, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
-        this.iban = iban;
-        this.contador = contador;
+    public Operacion() { }
+
+    public Operacion(idOperacion id, String tipo, Timestamp fecha, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
+        this.id = id;
         this.tipo = tipo;
         this.fecha = fecha;
         this.cDestino = cDestino;
@@ -23,21 +24,20 @@ public class Operacion implements Serializable{
         this.concepto = concepto;
     }
 
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "IBAN",nullable = false)
-    private Cuenta iban;
+    @EmbeddedId
+    private idOperacion id;
 
-    @Id
-    @Column(name = "CONTADOR",nullable = false)
-    private int contador;
+    @ManyToOne
+    @JoinColumn(name = "iban",nullable = false)
+    @MapsId("iban2")
+    private Cuenta iban;
 
     @Column(name = "TIPO",nullable = false)
     private String tipo;
 
-    @Temporal(TemporalType.DATE)
+    //@Temporal(TemporalType.DATE)
     @Column(name = "FECHAHORA",nullable = false)
-    private Calendar fecha;
+    private Timestamp fecha;
 
     @Column(name = "CANTIDAD",nullable = false)
     private double cantidad;
@@ -93,20 +93,20 @@ public class Operacion implements Serializable{
         this.concepto = concepto;
     }
 
-    public int getContador() {
-        return contador;
-    }
-
-    public void setContador(int contador) {
-        this.contador = contador;
-    }
-
-    public Calendar getFecha() {
+    public Timestamp getFecha() {
         return fecha;
     }
 
-    public void setFecha(Calendar fecha) {
+    public void setFecha(Timestamp fecha) {
         this.fecha = fecha;
+    }
+
+    public idOperacion getId() {
+        return id;
+    }
+
+    public void setId(idOperacion id) {
+        this.id = id;
     }
 
     public Oficina getOficinaOperacion() {
@@ -120,13 +120,14 @@ public class Operacion implements Serializable{
     @Override
     public String toString() {
         return "Operacion{" +
-                "iban='" + iban + '\'' +
-                ", contador='" + contador + '\'' +
+                "id=" + id +
+                ", iban=" + iban +
                 ", tipo='" + tipo + '\'' +
                 ", fecha=" + fecha +
-                ", cDestino='" + cDestino + '\'' +
                 ", cantidad=" + cantidad +
                 ", concepto='" + concepto + '\'' +
+                ", cDestino=" + cDestino +
+                ", oficinaOperacion=" + oficinaOperacion +
                 '}';
     }
 
@@ -137,15 +138,14 @@ public class Operacion implements Serializable{
 
         Operacion operacion = (Operacion) o;
 
-        if (contador != operacion.contador) return false;
         if (Double.compare(operacion.cantidad, cantidad) != 0) return false;
-        if (!iban.equals(operacion.iban)) return false;
+        if (id != null ? !id.equals(operacion.id) : operacion.id != null) return false;
+        if (iban != null ? !iban.equals(operacion.iban) : operacion.iban != null) return false;
         if (tipo != null ? !tipo.equals(operacion.tipo) : operacion.tipo != null) return false;
         if (fecha != null ? !fecha.equals(operacion.fecha) : operacion.fecha != null) return false;
+        if (concepto != null ? !concepto.equals(operacion.concepto) : operacion.concepto != null) return false;
         if (cDestino != null ? !cDestino.equals(operacion.cDestino) : operacion.cDestino != null) return false;
-        if (oficinaOperacion != null ? !oficinaOperacion.equals(operacion.oficinaOperacion) : operacion.oficinaOperacion != null)
-            return false;
-        return concepto != null ? concepto.equals(operacion.concepto) : operacion.concepto == null;
+        return oficinaOperacion != null ? oficinaOperacion.equals(operacion.oficinaOperacion) : operacion.oficinaOperacion == null;
 
     }
 
@@ -153,15 +153,15 @@ public class Operacion implements Serializable{
     public int hashCode() {
         int result;
         long temp;
-        result = iban.hashCode();
-        result = 31 * result + contador;
+        result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (iban != null ? iban.hashCode() : 0);
         result = 31 * result + (tipo != null ? tipo.hashCode() : 0);
         result = 31 * result + (fecha != null ? fecha.hashCode() : 0);
-        result = 31 * result + (cDestino != null ? cDestino.hashCode() : 0);
-        result = 31 * result + (oficinaOperacion != null ? oficinaOperacion.hashCode() : 0);
         temp = Double.doubleToLongBits(cantidad);
         result = 31 * result + (int) (temp ^ (temp >>> 32));
         result = 31 * result + (concepto != null ? concepto.hashCode() : 0);
+        result = 31 * result + (cDestino != null ? cDestino.hashCode() : 0);
+        result = 31 * result + (oficinaOperacion != null ? oficinaOperacion.hashCode() : 0);
         return result;
     }
 }
