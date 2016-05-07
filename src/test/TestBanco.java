@@ -66,13 +66,13 @@ public class TestBanco {
         co.setOficinaCuenta(o5);
         co2.setOficinaCuenta(o6);
 
-        Operacion op = new Operacion(new idOperacion(ca,1),"t",new GregorianCalendar(2104,10,20),"08:13:00",ca2,o,10.25,"Primera op");
-        Operacion op1 = new Operacion(new idOperacion(ca,2),"t",new GregorianCalendar(2009,3,19),"08:13:00",ca2,o1,10.25,"Segun");
-        Operacion op2 = new Operacion(new idOperacion(ca,3),"t",new GregorianCalendar(2008,10,4),"08:13:00",ca2,o2,10.25,"Tercer");
-        Operacion op3 = new Operacion(new idOperacion(ca,4),"t",new GregorianCalendar(2008,12,29),"08:13:00",ca2,o3,10.25,"Cuart");
-        Operacion op4 = new Operacion(new idOperacion(ca,5),"t",new GregorianCalendar(2012,8,20),"08:13:00",ca2,o4,10.25,"Qi");
-        Operacion op5 = new Operacion(new idOperacion(co,27),"i",new GregorianCalendar(2009,5,9),"08:13:00",co,o1,50.60,"Sex");
-        Operacion op6 = new Operacion(new idOperacion(co2,41),"r",new GregorianCalendar(2012,12,14),"08:13:00",co2,o3,25.80,"Sept");
+        Operacion op = new Operacion(ca,1,"t",new GregorianCalendar(2104,10,20),"08:13:00",ca2,o,10.25,"Primera op");
+        Operacion op1 = new Operacion(ca,2,"t",new GregorianCalendar(2009,3,19),"08:13:00",ca2,o1,10.25,"Segun");
+        Operacion op2 = new Operacion(ca,3,"t",new GregorianCalendar(2008,10,4),"08:13:00",ca2,o2,10.25,"Tercer");
+        Operacion op3 = new Operacion(ca,4,"t",new GregorianCalendar(2008,12,29),"08:13:00",ca2,o3,10.25,"Cuart");
+        Operacion op4 = new Operacion(ca,5,"t",new GregorianCalendar(2012,8,20),"08:13:00",ca2,o4,10.25,"Qi");
+        Operacion op5 = new Operacion(co,27,"i",new GregorianCalendar(2009,5,9),"08:13:00",co,o1,50.60,"Sex");
+        Operacion op6 = new Operacion(co2,41,"r",new GregorianCalendar(2012,12,14),"08:13:00",co2,o3,25.80,"Sept");
 
         em.persist(co);
         em.persist(co2);
