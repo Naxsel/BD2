@@ -18,6 +18,8 @@ public class CAhorro extends Cuenta {
         this.dia = dia;
     }
 
+    public CAhorro() {    }
+
     @Column(name = "INTERES")
     private double interes;
 
@@ -38,5 +40,36 @@ public class CAhorro extends Cuenta {
 
     public void setDia(int dia) {
         this.dia = dia;
+    }
+
+    @Override
+    public String toString() {
+        return "CAhorro{" +
+                "interes=" + interes +
+                ", dia=" + dia +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+
+        CAhorro cAhorro = (CAhorro) o;
+
+        if (Double.compare(cAhorro.interes, interes) != 0) return false;
+        return dia == cAhorro.dia;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = super.hashCode();
+        long temp;
+        temp = Double.doubleToLongBits(interes);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        result = 31 * result + dia;
+        return result;
     }
 }

@@ -19,6 +19,8 @@ public class Usuario implements Serializable{
         this.arrayCuentas = arrayCuentas;
     }
 
+    public Usuario() { }
+
     @Id
     @Column(name = "DNI", nullable = false, length = 10)
     private String dni;
@@ -131,7 +133,6 @@ public class Usuario implements Serializable{
         Usuario usuario = (Usuario) o;
 
         return dni != null ? dni.equals(usuario.dni) : usuario.dni == null;
-
     }
 
     @Override

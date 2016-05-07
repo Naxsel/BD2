@@ -1,18 +1,12 @@
 package parte2;
 
-import oracle.sql.DATE;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.sql.Timestamp;
-import java.util.Calendar;
-import java.util.Date;
 
 @Entity
 @Table(name="OPERACION_P1")
 public class Operacion implements Serializable{
-
-    public Operacion() { }
 
     public Operacion(idOperacion id, String tipo, Timestamp fecha, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.id = id;
@@ -23,6 +17,8 @@ public class Operacion implements Serializable{
         this.cantidad = cantidad;
         this.concepto = concepto;
     }
+
+    public Operacion() { }
 
     @EmbeddedId
     private idOperacion id;
@@ -35,7 +31,6 @@ public class Operacion implements Serializable{
     @Column(name = "TIPO",nullable = false)
     private String tipo;
 
-    //@Temporal(TemporalType.DATE)
     @Column(name = "FECHAHORA",nullable = false)
     private Timestamp fecha;
 

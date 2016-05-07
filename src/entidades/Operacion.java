@@ -7,10 +7,6 @@ import java.util.Calendar;
 @Entity(name = "Operacion_p4")
 public class Operacion implements Serializable{
 
-    public Operacion() {
-
-    }
-
     public Operacion(idOperacion id, String tipo, Calendar fecha, String hora, Cuenta cDestino, Oficina oficinaOperacion, double cantidad, String concepto) {
         this.id = id;
         this.tipo = tipo;
@@ -20,6 +16,10 @@ public class Operacion implements Serializable{
         this.oficinaOperacion = oficinaOperacion;
         this.cantidad = cantidad;
         this.concepto = concepto;
+    }
+
+    public Operacion() {
+
     }
 
     @EmbeddedId
@@ -41,10 +41,6 @@ public class Operacion implements Serializable{
     private String hora;
 
     @ManyToOne
-    @JoinColumn(name = "cDestino",nullable = false)
-    private Cuenta cDestino;
-
-    @ManyToOne
     private Oficina oficinaOperacion;
 
     @Column(name = "cantidad",nullable = false)
@@ -52,6 +48,10 @@ public class Operacion implements Serializable{
 
     @Column(name = "concepto",nullable = false, length = 200)
     private String concepto;
+
+    @ManyToOne
+    @JoinColumn(name = "cDestino",nullable = false)
+    private Cuenta cDestino;
 
     public idOperacion getId() {
         return id;

@@ -3,9 +3,6 @@ package entidades;
 import javax.persistence.*;
 import java.util.Set;
 
-/**
- * Created by naxsel on 18/04/16.
- */
 @Entity(name = "Cuenta_p4")
 public class Cuenta {
 
@@ -18,9 +15,7 @@ public class Cuenta {
         this.arrayOperaciones = arrayOperaciones;
     }
 
-    public Cuenta() {
-
-    }
+    public Cuenta() { }
 
     @Id
     @Column(name = "IBAN", nullable = false, length = 34)
@@ -37,8 +32,6 @@ public class Cuenta {
 
     @ManyToMany(mappedBy = "arrayCuentas")
     private Set<Usuario> arrayUsuarios;
-
-
 
     @OneToMany(mappedBy = "iban")
     private Set<Operacion> arrayOperaciones;
@@ -111,7 +104,6 @@ public class Cuenta {
         Cuenta cuenta = (Cuenta) o;
 
         return iban != null ? iban.equals(cuenta.iban) : cuenta.iban == null;
-
     }
 
     @Override

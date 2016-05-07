@@ -15,15 +15,7 @@ public class Oficina implements Serializable {
         this.telefono = telefono;
     }
 
-    public Oficina() {
-
-    }
-
-    @OneToMany(mappedBy = "oficinaCuenta")
-    private Set<CCorriente> arrayCuentasC;
-
-    @OneToMany(mappedBy = "oficinaOperacion")
-    private Set<Operacion> arrayOperaciones;
+    public Oficina() {    }
 
     @Id
     @Column(name = "codigo", nullable = false)
@@ -34,6 +26,12 @@ public class Oficina implements Serializable {
 
     @Column(name = "telefono")
     private int telefono;
+
+    @OneToMany(mappedBy = "oficinaCuenta")
+    private Set<CCorriente> arrayCuentasC;
+
+    @OneToMany(mappedBy = "oficinaOperacion")
+    private Set<Operacion> arrayOperaciones;
 
     public int getCodigo() {
         return codigo;

@@ -24,6 +24,14 @@ public class idOperacion implements Serializable {
     private int contador;
 
     @Override
+    public String toString() {
+        return "idOperacion{" +
+                "iban2=" + iban2 +
+                ", contador=" + contador +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;

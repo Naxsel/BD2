@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.Calendar;
 import java.util.Set;
 
-
 @Entity
 @Table(name="CUENTA_P1")
 @Inheritance(strategy=InheritanceType.JOINED)
@@ -18,6 +17,8 @@ public class Cuenta {
         this.arrayUsuarios = arrayUsuarios;
         this.arrayOperaciones = arrayOperaciones;
     }
+
+    public Cuenta() {    }
 
     @Id
     @Column(name = "IBAN", nullable = false, length = 34)
