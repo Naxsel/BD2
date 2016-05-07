@@ -25,6 +25,7 @@ public class TestBanco {
 
         //Insertar en la parte uno
 
+        em.createNativeQuery("DELETE FROM Usuario_p4_Cuenta_p4").executeUpdate();
         em.createNativeQuery("DELETE FROM Usuario_p4").executeUpdate();
         em.createNativeQuery("DELETE FROM Operacion_p4").executeUpdate();
         em.createNativeQuery("DELETE FROM Cuenta_p4").executeUpdate();
@@ -43,18 +44,16 @@ public class TestBanco {
         Set<Cuenta> s = new HashSet<>();
         s.add(ca);
         Usuario u = new Usuario("31168350Y","Naida","Ayala",81,"2817 Dictum. C.","et.netus@dolorDonecfringilla.edu",23980911, s);
-        s.clear(); s.add(ca2);
-        Usuario u1 = new Usuario("92141555M","Bruno","Stewart",89,"Apartado núm.: 183, 7005 Praesent Ctra.","libero.Integer.in@Cumsociisnatoque.org",89316763, s);
-        s.clear(); s.add(ca3);
-        Usuario u2 = new Usuario("38331046C","Otto","Frederick",97,"Apdo.:822-776 Sed, Avenida","senectus@velit.co.uk",17481518, s);
-        s.clear(); s.add(ca5);
-        Usuario u3 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740, s);
-        s.clear(); s.add(co);
-        Usuario u4 = new Usuario("65291361T","Wade","Wilder",50,"Apartado núm.: 755, 7066 Dictum C/","nec.leo@iaculis.com",68318364, s);
-        s.clear(); s.add(ca4);
-        Usuario u5 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233, s);
-        s.clear();
-        Set<CCorriente> s1 = new HashSet<>();
+        Set<Cuenta> s1 = new HashSet<>(); s1.add(ca2);
+        Usuario u1 = new Usuario("92141555M","Bruno","Stewart",89,"Apartado núm.: 183, 7005 Praesent Ctra.","libero.Integer.in@Cumsociisnatoque.org",89316763, s1);
+        Set<Cuenta> s2 = new HashSet<>(); s2.add(ca3);
+        Usuario u2 = new Usuario("38331046C","Otto","Frederick",97,"Apdo.:822-776 Sed, Avenida","senectus@velit.co.uk",17481518, s2);
+        Set<Cuenta> s3 = new HashSet<>(); s3.add(ca5);
+        Usuario u3 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740, s3);
+        Set<Cuenta> s4 = new HashSet<>(); s4.add(co);
+        Usuario u4 = new Usuario("65291361T","Wade","Wilder",50,"Apartado núm.: 755, 7066 Dictum C/","nec.leo@iaculis.com",68318364, s4);
+        Set<Cuenta> s5 = new HashSet<>(); s5.add(ca4);
+        Usuario u5 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233, s5);
 
         Oficina o = new Oficina(null,null,7778,"880-8708 Volutpat Carretera",862869364);
         Oficina o1 = new Oficina(null,null,5401,"Apartado núm.: 517, 4078 Sollicitudin Av.",615365146);

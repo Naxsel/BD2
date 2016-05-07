@@ -50,7 +50,7 @@ public class TestParte2 {
         Usuario u3 = new Usuario("75814109T","Caleb","Acosta",20,"Apdo.:579-3498 Dictum. Carretera","vulputate.ullamcorper.magna@tinciduntvehicula.co.uk",29678740, s3);
         Set<Cuenta> s4 = new HashSet<>(); s4.add(co);
         Usuario u4 = new Usuario("65291361T","Wade","Wilder",50,"Apartado núm.: 755, 7066 Dictum C/","nec.leo@iaculis.com",68318364, s4);
-        Set<Cuenta> s5 = new HashSet<>(); s.add(ca4);
+        Set<Cuenta> s5 = new HashSet<>(); s5.add(ca4);
         Usuario u5 = new Usuario("77927535U","Cara","Sanford",38,"828-2547 Lorem Calle","facilisis.non@sagittis.org",82656233, s5);
 
         Oficina o = new Oficina(null,null,7778,"880-8708 Volutpat Carretera",862869364);
