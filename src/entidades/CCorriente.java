@@ -12,14 +12,18 @@ import java.util.Set;
 @Entity(name = "CCorriente_p4")
 public class CCorriente extends Cuenta {
 
-    @ManyToOne
-    private Oficina oficinaCuenta;
-
 
     public CCorriente(String iban, String numCuenta, String creacion, double saldo, Set<Usuario> arrayUsuarios, Set<Operacion> arrayOperaciones,Oficina oficinaCuenta) {
         super( iban,  numCuenta,  creacion,  saldo,  arrayUsuarios,  arrayOperaciones);
         this.oficinaCuenta = oficinaCuenta;
     }
+
+    public CCorriente() {
+
+    }
+
+    @ManyToOne
+    private Oficina oficinaCuenta;
 
     public Oficina getOficinaCuenta() {
         return oficinaCuenta;

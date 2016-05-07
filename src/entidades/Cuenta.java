@@ -18,6 +18,10 @@ public class Cuenta {
         this.arrayOperaciones = arrayOperaciones;
     }
 
+    public Cuenta() {
+
+    }
+
     @Id
     @Column(name = "IBAN", nullable = false, length = 34)
     private String iban;

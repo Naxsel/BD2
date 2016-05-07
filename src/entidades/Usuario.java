@@ -18,6 +18,10 @@ public class Usuario implements Serializable{
         this.arrayCuentas = arrayCuentas;
     }
 
+    public Usuario() {
+
+    }
+
     @Id
     @Column(name = "dni", nullable = false, length = 10)
     private String dni;

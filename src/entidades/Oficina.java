@@ -15,6 +15,10 @@ public class Oficina implements Serializable {
         this.telefono = telefono;
     }
 
+    public Oficina() {
+
+    }
+
     @OneToMany(mappedBy = "oficinaCuenta")
     private Set<CCorriente> arrayCuentasC;
 

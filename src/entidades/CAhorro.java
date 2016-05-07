@@ -17,6 +17,10 @@ public class CAhorro extends Cuenta {
         this.dia = dia;
     }
 
+    public CAhorro() {
+
+    }
+
     @Column(name = "interes")
     private double interes;
 

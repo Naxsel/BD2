@@ -24,10 +24,13 @@ public class TestBanco {
         trans.begin();
 
         //Insertar en la parte uno
-        em.createNativeQuery("DELETE FROM Cuenta_p4").executeUpdate();
+
         em.createNativeQuery("DELETE FROM Usuario_p4").executeUpdate();
-        em.createNativeQuery("DELETE FROM Oficina_p4").executeUpdate();
         em.createNativeQuery("DELETE FROM Operacion_p4").executeUpdate();
+        em.createNativeQuery("DELETE FROM Cuenta_p4").executeUpdate();
+        em.createNativeQuery("DELETE FROM Oficina_p4").executeUpdate();
+
+
 
         CAhorro ca = new CAhorro("FP33730958577227579078926552917807", "ZP918886081013488002618758","2016-08-17",11.58,null,null,2.65, 10);
         CAhorro ca2 = new CAhorro("JI40453364997466550044235348213144","TL198715503499491378322716","2016-08-17",1412.07,null,null,3.0, 1);
