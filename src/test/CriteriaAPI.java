@@ -1,5 +1,6 @@
 package test;
 
+import parte2.CCorriente;
 import parte2.Cuenta;
 import parte2.Operacion;
 import parte2.Usuario;
@@ -26,6 +27,7 @@ public class CriteriaAPI {
         System.out.println("Consultas Criteria API");
         consulta1("31168350Y");
         System.out.println();
+
     }
 
     /**
