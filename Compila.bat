@@ -1,3 +1,1 @@
-call ant
-pause
-
+javac -cp .\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar -d classes .\src\*\*.java
