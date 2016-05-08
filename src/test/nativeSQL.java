@@ -50,7 +50,7 @@ public class nativeSQL {
         System.out.println("Devuelve usarios que pertenecen a la oficina indicada");
         Query q = em.createNativeQuery("SELECT U.nombre,U.apellidos,U.dni FROM Usuario_P1 U WHERE EXISTS " +
                 "(SELECT * FROM Tiene_P1 T LEFT JOIN CCorriente_P1 C ON C.iban=T.iban " +
-                "WHERE EXISTS (SELECT * FROM Pertenece_P1 P WHERE P.iban = C.iban AND P.codigo="+oficina+"))");
+                "WHERE T.dni = U.dni AND EXISTS (SELECT * FROM Pertenece_P1 P WHERE P.iban = C.iban AND P.codigo="+oficina+"))");
         List<Object[]> cuentas = q.getResultList();
         System.out.println("nombre,apellidos,dni");
         for (Object [] c: cuentas) {

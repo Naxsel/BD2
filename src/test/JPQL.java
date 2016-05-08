@@ -54,6 +54,7 @@ public class JPQL {
                 "(SELECT B FROM CCorriente B join B.oficinaCuenta O WHERE B.iban = C.iban AND O.codigo= :oficina)")
                 .setParameter("oficina",oficina);
         List<Usuario> usuarios = q.getResultList();
+        System.out.println(usuarios.size());
         for (Usuario c: usuarios) {
             System.out.println(c);
         }
