@@ -1,3 +1,0 @@
-call ant clean
-pause
-
