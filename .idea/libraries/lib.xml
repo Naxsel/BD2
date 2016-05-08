@@ -13,6 +13,7 @@
       <root url="jar://$PROJECT_DIR$/lib/dom4j-1.6.1.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/hsqldb.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/classes12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/antlr-3.5.2-complete.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
