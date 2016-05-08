@@ -15,8 +15,9 @@ public class nativeSQL {
         entityManagerFactory = Persistence.createEntityManagerFactory("EjemploDeUnidadDePersistencia");
         em = entityManagerFactory.createEntityManager();
         EntityTransaction trans = em.getTransaction();
-
         trans.begin();
+
+        System.out.println("Consultas SQL nativo");
         consulta1("31168350Y");
         System.out.println();
         consulta2(1986);

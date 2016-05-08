@@ -2,10 +2,7 @@ package test;
 
 import parte2.Usuario;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -19,18 +16,13 @@ public class JPQL {
     public static void main(String[] args) {
         entityManagerFactory = Persistence.createEntityManagerFactory("EjemploDeUnidadDePersistencia");
         em = entityManagerFactory.createEntityManager();
+        EntityTransaction trans = em.getTransaction();
+        trans.begin();
 
-
+        System.out.println("Consultas JPQL");
         consulta1("31168350Y");
         System.out.println();
         consulta2(1986);
-
-//        Query query = em.createQuery("consulta").setParameter ;
-//        List<tipo> list = query.getResultList();
-//
-//        for (tipo e : list) {
-//            System.out.println(e);
-//        }
     }
 
     /**
@@ -58,8 +50,6 @@ public class JPQL {
      */
     private static void consulta2(int oficina) {
         System.out.println("Devuelve usarios que pertenecen a la oficina indicada");
-//        Query q = em.createQuery("SELECT U FROM Usuario U join U.arrayCuentas C join C.arrayOperaciones B " +
-//                "join B.oficinaOperacion O WHERE O.codigo = :oficina").setParameter("oficina",oficina);
         Query q = em.createQuery("SELECT U FROM Usuario U join U.arrayCuentas C WHERE EXISTS " +
                 "(SELECT B FROM CCorriente B join B.oficinaCuenta O WHERE B.iban = C.iban AND O.codigo= :oficina)")
                 .setParameter("oficina",oficina);
